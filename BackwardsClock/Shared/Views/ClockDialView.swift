@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct ClockDialView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            ArcView()
+            ClockTicksView(tickLength: 8)
+            BackwardsClockNumbers()
+        }
     }
 }
 
 struct ClockDialView_Previews: PreviewProvider {
     static var previews: some View {
         ClockDialView()
+            .frame(width: 300, height: 300, alignment: .center)
     }
 }

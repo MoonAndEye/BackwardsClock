@@ -7,16 +7,40 @@
 
 import SwiftUI
 
-enum HandLength: Double {
+enum HandLength {
 
-    case second = 1
-    case minute = 0.95
-    case hour = 0.627
+    case second
+    case minute
+    case hour
+    
+    func getLengthRatio() -> Double {
+        switch self {
+        case .second:
+            return 1
+        case .minute:
+            return 0.95
+        case .hour:
+            return 0.627
+        }
+    }
+    
+    func getSpacing() -> CGFloat {
+        switch self {
+        case .second:
+            return 2
+        case .minute:
+            return 2
+        case .hour:
+            return 5
+        }
+    }
 }
 
 struct HandShape: Shape {
     
-    var spacing: CGFloat
+    var spacing: CGFloat {
+        return handLength.getSpacing()
+    }
     
     var handLength: HandLength
     
@@ -33,22 +57,23 @@ struct HandShape: Shape {
     
     func getHandPointY(rect: CGRect, handLength: HandLength) -> CGFloat {
         
-        return rect.midY * ( 1 - handLength.rawValue)
+        let edge = min(rect.size.width, rect.size.height)
+        return edge * ( 1 - handLength.getLengthRatio())
     }
 }
 struct HandShape_Previews: PreviewProvider {
     static var previews: some View {
         
         Group {
-            HandShape(spacing: 2, handLength: .second)
+            HandShape(handLength: .second)
                 .fill(BCColor.secondHandColor)
                 .frame(width: 200, height: 200, alignment: .center)
                 .background(.cyan)
-            HandShape(spacing: 2, handLength: .minute)
+            HandShape(handLength: .minute)
                 .fill(BCColor.minuteHandColor)
                 .frame(width: 200, height: 200, alignment: .center)
                 .background(.cyan)
-            HandShape(spacing: 2, handLength: .hour)
+            HandShape(handLength: .hour)
                 .fill(BCColor.hourHandColor)
                 .frame(width: 200, height: 200, alignment: .center)
                 .background(.cyan)
