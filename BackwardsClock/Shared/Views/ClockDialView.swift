@@ -13,6 +13,7 @@ struct ClockDialView: View {
         ZStack {
             ArcView()
             ClockTicksView(tickLength: 8)
+            BackwardsClockNumbers()
         }
     }
 }
@@ -21,6 +22,5 @@ struct ClockDialView_Previews: PreviewProvider {
     static var previews: some View {
         ClockDialView()
             .frame(width: 300, height: 300, alignment: .center)
-            .background(.blue)
     }
 }

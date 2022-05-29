@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SecondHandView: View {
     var body: some View {
-        HandShape(spacing: 2, handLength: .second)
+        HandShape(handLength: .second)
             .fill(BCColor.secondHandColor)
     }
 }
