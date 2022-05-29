@@ -11,9 +11,7 @@ import SwiftUI
 struct BackwardsClockApp: App {
     var body: some Scene {
         WindowGroup {
-//            ClockTicksView(tickLength: 8)
             ClockContainerView()
-//            SecondHandView()
         }
     }
 }

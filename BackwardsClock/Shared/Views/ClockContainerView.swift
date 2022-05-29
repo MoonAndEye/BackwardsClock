@@ -6,8 +6,19 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ClockContainerView: View {
+    
+    private let timer = Timer.publish(every: 0.1, tolerance: nil, on: .main, in: .common).autoconnect()
+    
+    @State var secondAngle: Angle = .zero
+    
+    @State var minuteAngle: Angle = .zero
+    
+    @State var hourAngle: Angle = .zero
+    
+    
     var body: some View {
         
         ZStack {
@@ -19,7 +30,18 @@ struct ClockContainerView: View {
             SecondHandView()
         }
         .frame(width: 300, height: 300)
+        .onReceive(timer) { value in
+            
+            print("Timer published value: \(value.timeIntervalSince1970)")
+            calculateAngle(from: value.timeIntervalSince1970)
+        }
     }
+    
+    private func calculateAngle(from timeInterval: TimeInterval) {
+        
+        
+    }
+    
 }
 
 struct ClockContainerView_Previews: PreviewProvider {
