@@ -40,12 +40,13 @@ struct ClockTicksView: View {
                 }
             }
         }
+        .padding()
     }
 }
 
 struct ClockTicksView_Previews: PreviewProvider {
     static var previews: some View {
         ClockTicksView(tickLength: 5)
-            .frame(width: 200, height: 200, alignment: .center)
+            .previewLayout(.sizeThatFits)
     }
 }
