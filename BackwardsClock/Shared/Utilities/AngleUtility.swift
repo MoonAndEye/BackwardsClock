@@ -29,6 +29,10 @@ struct AngleUtility {
         return (Double(second) / secondToMinute) * Double.pi * 2
     }
     
+    func getBackwardsSecondHandRadius(from timeInterval: TimeInterval) -> Double {
+        return -getSecondHandRadius(from: timeInterval)
+    }
+    
     func getMinuteHandRadius(from timeInterval: TimeInterval) -> Double {
         
         guard let minute = dateUtility.getMinute(from: timeInterval) else {
@@ -36,6 +40,10 @@ struct AngleUtility {
               }
         
         return (Double(minute) / minuteToHour) * Double.pi * 2
+    }
+    
+    func getBackwardsMinuteHandRadius(from timeInterval: TimeInterval) -> Double {
+        return -getMinuteHandRadius(from: timeInterval)
     }
     
     func getHourHandRadius(from timeInterval: TimeInterval) -> Double {
@@ -49,6 +57,10 @@ struct AngleUtility {
         let majorRadius = (Double(hourMod) / Double(hourToOneCircle)) * Double.pi * 2
         let minorRadius = getMinorHourRadius(from: minute)
         return majorRadius + minorRadius
+    }
+    
+    func getBackwardsHourHandRadius(from timeInterval: TimeInterval) -> Double {
+        return -getHourHandRadius(from: timeInterval)
     }
     
     private func getMinorHourRadius(from minute: Int) -> Double {

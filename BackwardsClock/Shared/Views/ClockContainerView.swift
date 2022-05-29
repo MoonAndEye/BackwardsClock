@@ -18,17 +18,18 @@ struct ClockContainerView: View {
     
     @State var hourAngle: Angle = .zero
     
-    private lazy var dateUtility: DateUtility = .init()
+    private var angleUtility: AngleUtility = .init()
     
     var body: some View {
         
         ZStack {
             ClockDialView()
             HourHandView()
-                .rotationEffect(.radians(Double.pi * 1))
+                .rotationEffect(hourAngle)
             MinuteHandView()
-                .rotationEffect(.radians(Double.pi * 0.45))
+                .rotationEffect(minuteAngle)
             SecondHandView()
+                .rotationEffect(secondAngle)
         }
         .frame(width: 300, height: 300)
         .onReceive(timer) { value in
@@ -40,7 +41,9 @@ struct ClockContainerView: View {
     
     private func calculateAngle(from timeInterval: TimeInterval) {
         
-        
+        secondAngle = Angle(radians: angleUtility.getBackwardsSecondHandRadius(from: timeInterval))
+        minuteAngle = Angle(radians: angleUtility.getBackwardsMinuteHandRadius(from: timeInterval))
+        hourAngle = Angle(radians: angleUtility.getBackwardsHourHandRadius(from: timeInterval))
     }
     
 }
