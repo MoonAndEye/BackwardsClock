@@ -25,6 +25,10 @@
 		9B4251552843245A006D908C /* HandShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4251532843245A006D908C /* HandShape.swift */; };
 		9B42515728433C29006D908C /* ClockDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42515628433C29006D908C /* ClockDialView.swift */; };
 		9B42515828433C29006D908C /* ClockDialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42515628433C29006D908C /* ClockDialView.swift */; };
+		9B42515A28434176006D908C /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42515928434175006D908C /* ArcView.swift */; };
+		9B42515B28434176006D908C /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42515928434175006D908C /* ArcView.swift */; };
+		9B42515D2843438B006D908C /* ClockTicksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42515C2843438B006D908C /* ClockTicksView.swift */; };
+		9B42515E2843438B006D908C /* ClockTicksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42515C2843438B006D908C /* ClockTicksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,8 @@
 		9B42514D28431997006D908C /* BCColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCColor.swift; sourceTree = "<group>"; };
 		9B4251532843245A006D908C /* HandShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShape.swift; sourceTree = "<group>"; };
 		9B42515628433C29006D908C /* ClockDialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockDialView.swift; sourceTree = "<group>"; };
+		9B42515928434175006D908C /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
+		9B42515C2843438B006D908C /* ClockTicksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTicksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				9B4251462842705A006D908C /* ClockContainerView.swift */,
+				9B42515C2843438B006D908C /* ClockTicksView.swift */,
+				9B42515928434175006D908C /* ArcView.swift */,
 				9B42515628433C29006D908C /* ClockDialView.swift */,
 				9B42514928431768006D908C /* SecondHandView.swift */,
 				9B4251532843245A006D908C /* HandShape.swift */,
@@ -336,7 +344,9 @@
 				9B42514E28431997006D908C /* BCColor.swift in Sources */,
 				9B42513128426E5D006D908C /* BackwardsClockApp.swift in Sources */,
 				9B42514A28431768006D908C /* SecondHandView.swift in Sources */,
+				9B42515A28434176006D908C /* ArcView.swift in Sources */,
 				9B4251472842705A006D908C /* ClockContainerView.swift in Sources */,
+				9B42515D2843438B006D908C /* ClockTicksView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +359,9 @@
 				9B42514F28431997006D908C /* BCColor.swift in Sources */,
 				9B42513228426E5D006D908C /* BackwardsClockApp.swift in Sources */,
 				9B42514B28431768006D908C /* SecondHandView.swift in Sources */,
+				9B42515B28434176006D908C /* ArcView.swift in Sources */,
 				9B4251482842705A006D908C /* ClockContainerView.swift in Sources */,
+				9B42515E2843438B006D908C /* ClockTicksView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

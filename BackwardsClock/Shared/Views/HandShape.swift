@@ -33,7 +33,8 @@ struct HandShape: Shape {
     
     func getHandPointY(rect: CGRect, handLength: HandLength) -> CGFloat {
         
-        return rect.midY * ( 1 - handLength.rawValue)
+        let edge = min(rect.size.width, rect.size.height)
+        return edge * ( 1 - handLength.rawValue)
     }
 }
 struct HandShape_Previews: PreviewProvider {
