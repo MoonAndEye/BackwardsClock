@@ -11,6 +11,9 @@
 
 ScreenShot:
 
-![img](./Resource/iPhoneScreenShot.png)
+![iPhoneScreenShot](https://user-images.githubusercontent.com/9646258/170884163-cb6d2a7d-65a9-45b2-a83a-a5686a0e142b.png)
 
+video:
+
+https://user-images.githubusercontent.com/9646258/170884172-a808fa30-3108-481b-80bb-2a74d358368c.mp4
 
