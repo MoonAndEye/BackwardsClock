@@ -18,6 +18,7 @@ struct ClockContainerView: View {
     
     @State var hourAngle: Angle = .zero
     
+    private lazy var dateUtility: DateUtility = .init()
     
     var body: some View {
         
