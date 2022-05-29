@@ -9,10 +9,16 @@ import SwiftUI
 
 struct ClockContainerView: View {
     var body: some View {
-        // Backgorund // 1 ~ 12
-        // HourHandView
-        // MinuteHandView()
-        SecondHandView()
+        
+        ZStack {
+            ClockDialView()
+            HourHandView()
+                .rotationEffect(.radians(Double.pi * 1))
+            MinuteHandView()
+                .rotationEffect(.radians(Double.pi * 0.45))
+            SecondHandView()
+        }
+        .frame(width: 300, height: 300)
     }
 }
 

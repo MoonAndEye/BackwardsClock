@@ -18,7 +18,7 @@ enum HandLength {
         case .second:
             return 1
         case .minute:
-            return 0.95
+            return 0.9
         case .hour:
             return 0.627
         }
@@ -29,9 +29,9 @@ enum HandLength {
         case .second:
             return 2
         case .minute:
-            return 2
+            return 4
         case .hour:
-            return 5
+            return 6
         }
     }
 }
