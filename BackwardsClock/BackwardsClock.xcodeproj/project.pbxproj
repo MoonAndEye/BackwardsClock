@@ -19,6 +19,10 @@
 		9B4251482842705A006D908C /* ClockContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4251462842705A006D908C /* ClockContainerView.swift */; };
 		9B42514A28431768006D908C /* SecondHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42514928431768006D908C /* SecondHandView.swift */; };
 		9B42514B28431768006D908C /* SecondHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42514928431768006D908C /* SecondHandView.swift */; };
+		9B42514E28431997006D908C /* BCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42514D28431997006D908C /* BCColor.swift */; };
+		9B42514F28431997006D908C /* BCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42514D28431997006D908C /* BCColor.swift */; };
+		9B4251542843245A006D908C /* HandShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4251532843245A006D908C /* HandShape.swift */; };
+		9B4251552843245A006D908C /* HandShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4251532843245A006D908C /* HandShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,8 @@
 		9B42512F28426E5D006D908C /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		9B4251462842705A006D908C /* ClockContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockContainerView.swift; sourceTree = "<group>"; };
 		9B42514928431768006D908C /* SecondHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHandView.swift; sourceTree = "<group>"; };
+		9B42514D28431997006D908C /* BCColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCColor.swift; sourceTree = "<group>"; };
+		9B4251532843245A006D908C /* HandShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				9B42510928426E5C006D908C /* BackwardsClockApp.swift */,
+				9B42514C28431989006D908C /* Style */,
 				9B42514528427032006D908C /* Views */,
 				9B42510B28426E5D006D908C /* Assets.xcassets */,
 			);
@@ -149,8 +156,17 @@
 			children = (
 				9B4251462842705A006D908C /* ClockContainerView.swift */,
 				9B42514928431768006D908C /* SecondHandView.swift */,
+				9B4251532843245A006D908C /* HandShape.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9B42514C28431989006D908C /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				9B42514D28431997006D908C /* BCColor.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +327,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B4251542843245A006D908C /* HandShape.swift in Sources */,
+				9B42514E28431997006D908C /* BCColor.swift in Sources */,
 				9B42513128426E5D006D908C /* BackwardsClockApp.swift in Sources */,
 				9B42514A28431768006D908C /* SecondHandView.swift in Sources */,
 				9B4251472842705A006D908C /* ClockContainerView.swift in Sources */,
@@ -321,6 +339,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B4251552843245A006D908C /* HandShape.swift in Sources */,
+				9B42514F28431997006D908C /* BCColor.swift in Sources */,
 				9B42513228426E5D006D908C /* BackwardsClockApp.swift in Sources */,
 				9B42514B28431768006D908C /* SecondHandView.swift in Sources */,
 				9B4251482842705A006D908C /* ClockContainerView.swift in Sources */,
@@ -487,7 +507,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,7 +537,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

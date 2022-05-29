@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ClockContainerView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        // Backgorund // 1 ~ 12
+        // HourHandView
+        // MinuteHandView()
+        SecondHandView()
     }
 }
 
