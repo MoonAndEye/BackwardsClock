@@ -13,10 +13,12 @@
 		9B42513028426E5D006D908C /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42512F28426E5D006D908C /* Tests_macOSLaunchTests.swift */; };
 		9B42513128426E5D006D908C /* BackwardsClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42510928426E5C006D908C /* BackwardsClockApp.swift */; };
 		9B42513228426E5D006D908C /* BackwardsClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42510928426E5C006D908C /* BackwardsClockApp.swift */; };
-		9B42513328426E5D006D908C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42510A28426E5C006D908C /* ContentView.swift */; };
-		9B42513428426E5D006D908C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42510A28426E5C006D908C /* ContentView.swift */; };
 		9B42513528426E5D006D908C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B42510B28426E5D006D908C /* Assets.xcassets */; };
 		9B42513628426E5D006D908C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B42510B28426E5D006D908C /* Assets.xcassets */; };
+		9B4251472842705A006D908C /* ClockContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4251462842705A006D908C /* ClockContainerView.swift */; };
+		9B4251482842705A006D908C /* ClockContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4251462842705A006D908C /* ClockContainerView.swift */; };
+		9B42514A28431768006D908C /* SecondHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42514928431768006D908C /* SecondHandView.swift */; };
+		9B42514B28431768006D908C /* SecondHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42514928431768006D908C /* SecondHandView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 
 /* Begin PBXFileReference section */
 		9B42510928426E5C006D908C /* BackwardsClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackwardsClockApp.swift; sourceTree = "<group>"; };
-		9B42510A28426E5C006D908C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9B42510B28426E5D006D908C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B42511028426E5D006D908C /* BackwardsClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackwardsClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B42511628426E5D006D908C /* BackwardsClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackwardsClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +50,8 @@
 		9B42512928426E5D006D908C /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B42512D28426E5D006D908C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		9B42512F28426E5D006D908C /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		9B4251462842705A006D908C /* ClockContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockContainerView.swift; sourceTree = "<group>"; };
+		9B42514928431768006D908C /* SecondHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHandView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				9B42510928426E5C006D908C /* BackwardsClockApp.swift */,
-				9B42510A28426E5C006D908C /* ContentView.swift */,
+				9B42514528427032006D908C /* Views */,
 				9B42510B28426E5D006D908C /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -139,6 +142,15 @@
 				9B42512F28426E5D006D908C /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		9B42514528427032006D908C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B4251462842705A006D908C /* ClockContainerView.swift */,
+				9B42514928431768006D908C /* SecondHandView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +311,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B42513328426E5D006D908C /* ContentView.swift in Sources */,
 				9B42513128426E5D006D908C /* BackwardsClockApp.swift in Sources */,
+				9B42514A28431768006D908C /* SecondHandView.swift in Sources */,
+				9B4251472842705A006D908C /* ClockContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B42513428426E5D006D908C /* ContentView.swift in Sources */,
 				9B42513228426E5D006D908C /* BackwardsClockApp.swift in Sources */,
+				9B42514B28431768006D908C /* SecondHandView.swift in Sources */,
+				9B4251482842705A006D908C /* ClockContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +487,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,7 +517,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -537,7 +551,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.marvinLin.BackwardsClock;
 				PRODUCT_NAME = BackwardsClock;
@@ -565,7 +579,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.marvinLin.BackwardsClock;
 				PRODUCT_NAME = BackwardsClock;
