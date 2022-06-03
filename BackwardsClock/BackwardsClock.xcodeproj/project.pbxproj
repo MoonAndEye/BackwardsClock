@@ -11,8 +11,8 @@
 		9B4228D1284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D62843691400DA29D2 /* HourHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228D52843691400DA29D2 /* HourHandView.swift */; };
 		9B4228D72843691400DA29D2 /* HourHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228D52843691400DA29D2 /* HourHandView.swift */; };
-		9B4228DA28436ADA00DA29D2 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228D928436ADA00DA29D2 /* Movement.swift */; };
-		9B4228DB28436ADA00DA29D2 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228D928436ADA00DA29D2 /* Movement.swift */; };
+		9B4228DA28436ADA00DA29D2 /* Clockwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228D928436ADA00DA29D2 /* Clockwork.swift */; };
+		9B4228DB28436ADA00DA29D2 /* Clockwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228D928436ADA00DA29D2 /* Clockwork.swift */; };
 		9B4228DE2843901300DA29D2 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228DD2843901300DA29D2 /* DateUtility.swift */; };
 		9B4228DF2843905600DA29D2 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228DD2843901300DA29D2 /* DateUtility.swift */; };
 		9B4228E02843905600DA29D2 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228DD2843901300DA29D2 /* DateUtility.swift */; };
@@ -69,7 +69,7 @@
 /* Begin PBXFileReference section */
 		9B4228CF284368D000DA29D2 /* MinuteHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteHandView.swift; sourceTree = "<group>"; };
 		9B4228D52843691400DA29D2 /* HourHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourHandView.swift; sourceTree = "<group>"; };
-		9B4228D928436ADA00DA29D2 /* Movement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movement.swift; sourceTree = "<group>"; };
+		9B4228D928436ADA00DA29D2 /* Clockwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clockwork.swift; sourceTree = "<group>"; };
 		9B4228DD2843901300DA29D2 /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
 		9B4228E22843909900DA29D2 /* DateUtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilityTests.swift; sourceTree = "<group>"; };
 		9B4228E42843A09800DA29D2 /* AngleUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleUtility.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		9B4228D828436AC900DA29D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9B4228D928436ADA00DA29D2 /* Movement.swift */,
+				9B4228D928436ADA00DA29D2 /* Clockwork.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -399,7 +399,7 @@
 				9B42513128426E5D006D908C /* BackwardsClockApp.swift in Sources */,
 				9B42514A28431768006D908C /* SecondHandView.swift in Sources */,
 				9B42515A28434176006D908C /* ArcView.swift in Sources */,
-				9B4228DA28436ADA00DA29D2 /* Movement.swift in Sources */,
+				9B4228DA28436ADA00DA29D2 /* Clockwork.swift in Sources */,
 				9B4251472842705A006D908C /* ClockContainerView.swift in Sources */,
 				9B42516028434A05006D908C /* BackwardsClockNumberView.swift in Sources */,
 				9B42515D2843438B006D908C /* ClockTicksView.swift in Sources */,
@@ -420,7 +420,7 @@
 				9B42513228426E5D006D908C /* BackwardsClockApp.swift in Sources */,
 				9B42514B28431768006D908C /* SecondHandView.swift in Sources */,
 				9B42515B28434176006D908C /* ArcView.swift in Sources */,
-				9B4228DB28436ADA00DA29D2 /* Movement.swift in Sources */,
+				9B4228DB28436ADA00DA29D2 /* Clockwork.swift in Sources */,
 				9B4251482842705A006D908C /* ClockContainerView.swift in Sources */,
 				9B42516128434A05006D908C /* BackwardsClockNumberView.swift in Sources */,
 				9B42515E2843438B006D908C /* ClockTicksView.swift in Sources */,

@@ -9,43 +9,31 @@ import SwiftUI
 import Combine
 
 struct ClockContainerView: View {
-    
-    private let timer = Timer.publish(every: 0.1, tolerance: nil, on: .main, in: .common).autoconnect()
-    
-    @State var secondAngle: Angle = .zero
-    
-    @State var minuteAngle: Angle = .zero
-    
-    @State var hourAngle: Angle = .zero
-    
-    private var angleUtility: AngleUtility = .init()
+
+    @StateObject var clockwork: Clockwork = .init()
     
     var body: some View {
-        
-        ZStack {
-            ClockDialView()
-            HourHandView()
-                .rotationEffect(hourAngle)
-            MinuteHandView()
-                .rotationEffect(minuteAngle)
-            SecondHandView()
-                .rotationEffect(secondAngle)
-        }
-        .frame(width: 300, height: 300)
-        .onReceive(timer) { value in
+        VStack {
+            ZStack {
+                ClockDialView()
+                HourHandView()
+                    .rotationEffect(Angle(radians: clockwork.hourAngle))
+                MinuteHandView()
+                    .rotationEffect(Angle(radians: clockwork.minuteAngle))
+                SecondHandView()
+                    .rotationEffect(Angle(radians: clockwork.secondAngle))
+            }
+            .frame(width: 300, height: 300)
             
-            print("Timer published value: \(value.timeIntervalSince1970)")
-            calculateAngle(from: value.timeIntervalSince1970)
+            Button("Start timer") {
+                clockwork.startTimer()
+            }
+            
+            Button("Stop timer") {
+                clockwork.stopTimer()
+            }
         }
     }
-    
-    private func calculateAngle(from timeInterval: TimeInterval) {
-        
-        secondAngle = Angle(radians: angleUtility.getBackwardsSecondHandRadius(from: timeInterval))
-        minuteAngle = Angle(radians: angleUtility.getBackwardsMinuteHandRadius(from: timeInterval))
-        hourAngle = Angle(radians: angleUtility.getBackwardsHourHandRadius(from: timeInterval))
-    }
-    
 }
 
 struct ClockContainerView_Previews: PreviewProvider {
