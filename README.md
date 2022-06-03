@@ -9,6 +9,10 @@
 
 為了致敬葛麗絲，並提醒自己不要用常理思考，我用 SwiftUI 寫了一個反方向走的時鐘。
 
+## 來源
+<img width="881" alt="截圖 2022-06-03 上午8 21 02" src="https://user-images.githubusercontent.com/9646258/171761098-cc0fd05b-ff57-4868-90e3-1a4b29b61609.png">
+
+
 ScreenShot:
 
 ![iPhoneScreenShot](https://user-images.githubusercontent.com/9646258/170884163-cb6d2a7d-65a9-45b2-a83a-a5686a0e142b.png)
