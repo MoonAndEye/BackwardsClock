@@ -10,20 +10,29 @@ import Combine
 
 struct ClockContainerView: View {
 
-    @StateObject var movement: Movement = .init()
+    @StateObject var clockwork: Clockwork = .init()
     
     var body: some View {
-        
-        ZStack {
-            ClockDialView()
-            HourHandView()
-                .rotationEffect(movement.hourAngle)
-            MinuteHandView()
-                .rotationEffect(movement.minuteAngle)
-            SecondHandView()
-                .rotationEffect(movement.secondAngle)
+        VStack {
+            ZStack {
+                ClockDialView()
+                HourHandView()
+                    .rotationEffect(Angle(radians: clockwork.hourAngle))
+                MinuteHandView()
+                    .rotationEffect(Angle(radians: clockwork.minuteAngle))
+                SecondHandView()
+                    .rotationEffect(Angle(radians: clockwork.secondAngle))
+            }
+            .frame(width: 300, height: 300)
+            
+            Button("Start timer") {
+                clockwork.startTimer()
+            }
+            
+            Button("Stop timer") {
+                clockwork.stopTimer()
+            }
         }
-        .frame(width: 300, height: 300)
     }
 }
 
