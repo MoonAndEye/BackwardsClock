@@ -9,43 +9,22 @@ import SwiftUI
 import Combine
 
 struct ClockContainerView: View {
-    
-    private let timer = Timer.publish(every: 0.1, tolerance: nil, on: .main, in: .common).autoconnect()
-    
-    @State var secondAngle: Angle = .zero
-    
-    @State var minuteAngle: Angle = .zero
-    
-    @State var hourAngle: Angle = .zero
-    
-    private var angleUtility: AngleUtility = .init()
+
+    @StateObject var movement: Movement = .init()
     
     var body: some View {
         
         ZStack {
             ClockDialView()
             HourHandView()
-                .rotationEffect(hourAngle)
+                .rotationEffect(movement.hourAngle)
             MinuteHandView()
-                .rotationEffect(minuteAngle)
+                .rotationEffect(movement.minuteAngle)
             SecondHandView()
-                .rotationEffect(secondAngle)
+                .rotationEffect(movement.secondAngle)
         }
         .frame(width: 300, height: 300)
-        .onReceive(timer) { value in
-            
-            print("Timer published value: \(value.timeIntervalSince1970)")
-            calculateAngle(from: value.timeIntervalSince1970)
-        }
     }
-    
-    private func calculateAngle(from timeInterval: TimeInterval) {
-        
-        secondAngle = Angle(radians: angleUtility.getBackwardsSecondHandRadius(from: timeInterval))
-        minuteAngle = Angle(radians: angleUtility.getBackwardsMinuteHandRadius(from: timeInterval))
-        hourAngle = Angle(radians: angleUtility.getBackwardsHourHandRadius(from: timeInterval))
-    }
-    
 }
 
 struct ClockContainerView_Previews: PreviewProvider {

@@ -5,26 +5,77 @@
 //  Created by cm0679 on 2022/5/29.
 //
 
-import Foundation
+import SwiftUI
 import Combine
 
 // 機芯
-// 先用 peter pan 的方法
-// https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94%E9%9B%86/%E5%88%A9%E7%94%A8-combine-%E8%A7%A3%E6%B1%BA-swiftui-timer-notificationcenter-%E7%9A%84%E8%A8%98%E6%86%B6%E9%AB%94%E5%95%8F%E9%A1%8C-653aac155fc5
+
+//Connect to external reference model data that conforms to the ObservableObject protocol using the ObservedObject property wrapper. Gain access to an observable object stored in the environment using the EnvironmentObject property wrapper. Instantiate an observable object directly in a view using a StateObject.
+
+//var cancellable: Cancellable?
+//override func viewDidLoad() {
+//    super.viewDidLoad()
+//    cancellable = Timer.publish(every: 1, on: .main, in: .default)
+//        .autoconnect()
+//        .receive(on: myDispatchQueue)
+//        .assign(to: \.lastUpdated, on: myDataModel)
+//}
+
+//cancellable = Timer.publish(every: 1, on: .main, in: .common)
+//    .autoconnect()
+//    .sink() {
+//        print ("timer fired: \($0)")
+//}
+
 class Movement: ObservableObject {
     
-    @Published var timeInterval: TimeInterval = Date().timeIntervalSince1970
+//    lazy var cancellable: Cancellable = Timer
+//        .publish(every: 0.1, on: .main, in: .common)
+//        .autoconnect()
+//        .sink { value in
+//            let timestamp = value.timeIntervalSince1970
+//            self.timestamp = timestamp
+//        }
+    
+    var oldTimer: Timer?
+    
+    @Published var timestamp: TimeInterval = 0
+    
+    @Published var secondAngle: Angle = .zero
+    
+    @Published var minuteAngle: Angle = .zero
+    
+    @Published var hourAngle: Angle = .zero
+    
+    private var angleUtility: AngleUtility = .init()
     
     init() {
         startTimer()
     }
     
     private func startTimer() {
-        
+        oldTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { [weak self] timer in
+            guard let self = self else { return }
+            self.updateTime()
+        })
+        oldTimer?.fire()
     }
     
-    func updateTime() {
+    private func updateTime() {
+        let timestamp = Date().timeIntervalSince1970
+        calculateAngle(from: timestamp)
+        self.timestamp = timestamp
+    }
+    
+    private func calculateAngle(from timeInterval: TimeInterval) {
         
-        let date = Date().timeIntervalSince1970
+        secondAngle = Angle(radians: angleUtility.getBackwardsSecondHandRadius(from: timeInterval))
+        minuteAngle = Angle(radians: angleUtility.getBackwardsMinuteHandRadius(from: timeInterval))
+        hourAngle = Angle(radians: angleUtility.getBackwardsHourHandRadius(from: timeInterval))
+    }
+    
+    private func update(timeInterval: TimeInterval) {
+        timestamp = timeInterval
+        print("timestamp updated: \(timestamp)")
     }
 }
