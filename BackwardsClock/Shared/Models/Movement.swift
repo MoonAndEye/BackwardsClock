@@ -11,32 +11,8 @@ import Combine
 // 機芯
 
 //Connect to external reference model data that conforms to the ObservableObject protocol using the ObservedObject property wrapper. Gain access to an observable object stored in the environment using the EnvironmentObject property wrapper. Instantiate an observable object directly in a view using a StateObject.
-
-//var cancellable: Cancellable?
-//override func viewDidLoad() {
-//    super.viewDidLoad()
-//    cancellable = Timer.publish(every: 1, on: .main, in: .default)
-//        .autoconnect()
-//        .receive(on: myDispatchQueue)
-//        .assign(to: \.lastUpdated, on: myDataModel)
-//}
-
-//cancellable = Timer.publish(every: 1, on: .main, in: .common)
-//    .autoconnect()
-//    .sink() {
-//        print ("timer fired: \($0)")
-//}
-
 class Movement: ObservableObject {
-    
-//    lazy var cancellable: Cancellable = Timer
-//        .publish(every: 0.1, on: .main, in: .common)
-//        .autoconnect()
-//        .sink { value in
-//            let timestamp = value.timeIntervalSince1970
-//            self.timestamp = timestamp
-//        }
-    
+
     var oldTimer: Timer?
     
     @Published var timestamp: TimeInterval = 0
