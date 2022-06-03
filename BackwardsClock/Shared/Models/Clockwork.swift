@@ -10,8 +10,8 @@ import Combine
 
 // 機芯
 class Clockwork: ObservableObject {
-
-    var oldTimer: Timer?
+    
+    var timer: Cancellable?
     
     @Published var timestamp: TimeInterval = 0
     
@@ -28,15 +28,16 @@ class Clockwork: ObservableObject {
     }
     
     func stopTimer() {
-        oldTimer?.invalidate()
+        timer?.cancel()
     }
     
     func startTimer() {
-        oldTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { [weak self] timer in
-            guard let self = self else { return }
-            self.updateTime()
-        })
-        oldTimer?.fire()
+        timer = Timer
+            .publish(every: 0.1, on: .main, in: .common)
+            .autoconnect()
+            .sink { [weak self] _ in
+                self?.updateTime()
+            }
     }
     
     private func updateTime() {
