@@ -20,27 +20,30 @@ struct DayCalendarView: View {
                 .fill(BCColor.calendarBackground)
                 .cornerRadius(20)
                 .padding(10)
-            ZStack(alignment: .top) {
-                CalendarUpperBarV2()
-                    .fill(.red)
-                Text("\(month)")
-                    .font(.system(size: 30, weight: .medium, design: .monospaced))
-                    .padding(.top, 20)
-                    .foregroundColor(.white)
+            
+            CalendarUpperBarContainer(month: month)
+            
+            GeometryReader { geo in
+                Text("\(day)")
+                    .font(.system(size: getFontSize(size: geo.size), weight: .bold))
+                    .frame(width: geo.size.width, height: geo.size.height * 0.6, alignment: .bottom)
+                    .padding(.top, geo.size.height * 0.28)
             }
-            Text("\(day)")
-                .font(.system(size: 150, weight: .bold, design: .default))
-                .multilineTextAlignment(.center)
-                .lineLimit(1)
-                .padding(.top, 50)
         }
         .padding()
         .aspectRatio(1.binade, contentMode: .fit)
+    }
+    
+    private func getFontSize(size: CGSize) -> CGFloat {
+        
+        let shortSide = min(size.width, size.height)
+        return shortSide / 2
     }
 }
 
 struct DayCalendarView_Previews: PreviewProvider {
     static var previews: some View {
         DayCalendarView(month: "July", day: "4")
+            .frame(width: 300, height: 300, alignment: .center)
     }
 }

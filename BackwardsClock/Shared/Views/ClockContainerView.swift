@@ -16,7 +16,7 @@ struct ClockContainerView: View {
         VStack {
             
             DayCalendarView(month: clockwork.month, day: clockwork.day)
-                .padding(.bottom, 80)
+                .padding(.bottom, 40)
             
             ZStack {
                 ClockDialView()
@@ -29,13 +29,19 @@ struct ClockContainerView: View {
             }
             .aspectRatio(1, contentMode: .fit)
             
+            Spacer()
+            
             Button("Start timer") {
                 clockwork.startTimer()
             }
-
+            
+            Spacer()
+            
             Button("Stop timer") {
                 clockwork.stopTimer()
             }
+            
+            Spacer()
         }
     }
 }

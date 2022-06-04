@@ -68,12 +68,40 @@ struct CalendarUpperBarV2: Shape {
     }
 }
 
+struct CalendarUpperBarContainer: View {
+    
+    let month: String
+    
+    var body: some View {
+        
+        ZStack {
+            CalendarUpperBarV2()
+                .fill(.red)
+
+            GeometryReader { geo in
+                
+                Text("\(month)")
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                    .frame(width: geo.size.width, height: geo.size.height * 0.25, alignment: .center)
+            }
+        }
+    }
+}
+
 struct CalendarUpperBar_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarUpperBarV2()
-            .fill(.red)
-            .frame(width: 200, height: 200, alignment: .center)
-            .background(.green)
-            .previewLayout(.sizeThatFits)
+        
+//        CalendarUpperBarV2()
+//            .fill(.red)
+//            .frame(width: 200, height: 200, alignment: .center)
+//            .background(.green)
+//            .previewLayout(.sizeThatFits)
+        
+        CalendarUpperBarContainer(month: "July")
+            .aspectRatio(1.0, contentMode: .fit)
+            .padding()
     }
 }

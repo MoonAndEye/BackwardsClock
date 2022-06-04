@@ -11,8 +11,7 @@ import SwiftUI
 struct BackwardsClockApp: App {
     var body: some Scene {
         WindowGroup {
-            DayCalendarView(month: "July", day: "4")
-//            ClockContainerView()
+            ClockContainerView()
         }
     }
 }
