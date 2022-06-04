@@ -39,4 +39,16 @@ class DateUtilityTests: XCTestCase {
         let hour = dateUtility?.getHour(from: date.timeIntervalSince1970)
         XCTAssertEqual(hour, 19)
     }
+    
+    func test_getMonth() {
+        
+        let month = dateUtility?.getMonth(from: date.timeIntervalSince1970)
+        XCTAssertEqual(month, "May")
+    }
+    
+    func test_getDay() {
+        
+        let day = dateUtility?.getDay(from: date.timeIntervalSince1970)
+        XCTAssertEqual(day, "29")
+    }
 }

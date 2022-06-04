@@ -14,6 +14,10 @@ struct ClockContainerView: View {
     
     var body: some View {
         VStack {
+            
+            DayCalendarView(month: clockwork.month, day: clockwork.day)
+                .padding(.bottom, 80)
+            
             ZStack {
                 ClockDialView()
                 HourHandView()

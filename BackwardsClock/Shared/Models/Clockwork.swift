@@ -13,6 +13,10 @@ class Clockwork: ObservableObject {
     
     var timer: Cancellable?
     
+    @Published var month: String = ""
+    
+    @Published var day: String = ""
+    
     @Published var timestamp: TimeInterval = 0
     
     @Published var secondAngle: Double = .zero
@@ -22,6 +26,8 @@ class Clockwork: ObservableObject {
     @Published var hourAngle: Double = .zero
     
     private var angleUtility: AngleUtility = .init()
+    
+    private var dateUtility: DateUtility = .init()
     
     init() {
         startTimer()
@@ -43,6 +49,7 @@ class Clockwork: ObservableObject {
     private func updateTime() {
         let timestamp = Date().timeIntervalSince1970
         calculateAngle(from: timestamp)
+        calculateDateString(from: timestamp)
         self.timestamp = timestamp
     }
     
@@ -51,6 +58,12 @@ class Clockwork: ObservableObject {
         secondAngle = angleUtility.getBackwardsSecondHandRadius(from: timeInterval)
         minuteAngle = angleUtility.getBackwardsMinuteHandRadius(from: timeInterval)
         hourAngle = angleUtility.getBackwardsHourHandRadius(from: timeInterval)
+    }
+    
+    private func calculateDateString(from timeInterval: TimeInterval) {
+        
+        month = dateUtility.getMonth(from: timeInterval)
+        day = dateUtility.getDay(from: timeInterval)
     }
     
     private func update(timeInterval: TimeInterval) {

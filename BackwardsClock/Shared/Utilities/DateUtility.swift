@@ -34,5 +34,21 @@ struct DateUtility {
         let date = Date(timeIntervalSince1970: timeInterval)
         return calendar.dateComponents(components, from: date)
     }
+}
+// MARK: - Day, Month
+extension DateUtility {
     
+    func getMonth(from timeInterval: TimeInterval) -> String {
+        
+        DateUtility.dateFormatter.dateFormat = "MMMM"
+        let date = Date(timeIntervalSince1970: timeInterval)
+        return DateUtility.dateFormatter.string(from: date)
+    }
+    
+    func getDay(from timeInterval: TimeInterval) -> String {
+        
+        DateUtility.dateFormatter.dateFormat = "d"
+        let date = Date(timeIntervalSince1970: timeInterval)
+        return DateUtility.dateFormatter.string(from: date)
+    }
 }
