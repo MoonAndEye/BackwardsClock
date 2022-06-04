@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B18A1B62849D704001F1EA2 /* DayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A1B52849D704001F1EA2 /* DayCalendarView.swift */; };
+		9B18A1B72849D704001F1EA2 /* DayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A1B52849D704001F1EA2 /* DayCalendarView.swift */; };
+		9B18A1B92849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A1B82849DA0A001F1EA2 /* CalendarUpperBar.swift */; };
+		9B18A1BA2849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A1B82849DA0A001F1EA2 /* CalendarUpperBar.swift */; };
+		9B18A1BC2849E139001F1EA2 /* DrawArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A1BB2849E139001F1EA2 /* DrawArc.swift */; };
+		9B18A1BD2849E139001F1EA2 /* DrawArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A1BB2849E139001F1EA2 /* DrawArc.swift */; };
+		9B31C2A7284A56EC00D5092F /* CalendarMetalRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2A6284A56EC00D5092F /* CalendarMetalRing.swift */; };
+		9B31C2A8284A56EC00D5092F /* CalendarMetalRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2A6284A56EC00D5092F /* CalendarMetalRing.swift */; };
 		9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D1284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D62843691400DA29D2 /* HourHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228D52843691400DA29D2 /* HourHandView.swift */; };
@@ -67,6 +75,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B18A1B52849D704001F1EA2 /* DayCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCalendarView.swift; sourceTree = "<group>"; };
+		9B18A1B82849DA0A001F1EA2 /* CalendarUpperBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUpperBar.swift; sourceTree = "<group>"; };
+		9B18A1BB2849E139001F1EA2 /* DrawArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawArc.swift; sourceTree = "<group>"; };
+		9B31C2A6284A56EC00D5092F /* CalendarMetalRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMetalRing.swift; sourceTree = "<group>"; };
 		9B4228CF284368D000DA29D2 /* MinuteHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteHandView.swift; sourceTree = "<group>"; };
 		9B4228D52843691400DA29D2 /* HourHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourHandView.swift; sourceTree = "<group>"; };
 		9B4228D928436ADA00DA29D2 /* Clockwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clockwork.swift; sourceTree = "<group>"; };
@@ -127,6 +139,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B18A1B42849D6F4001F1EA2 /* DayCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				9B18A1B52849D704001F1EA2 /* DayCalendarView.swift */,
+				9B18A1B82849DA0A001F1EA2 /* CalendarUpperBar.swift */,
+				9B18A1BB2849E139001F1EA2 /* DrawArc.swift */,
+				9B31C2A6284A56EC00D5092F /* CalendarMetalRing.swift */,
+			);
+			path = DayCalendar;
+			sourceTree = "<group>";
+		};
 		9B4228D828436AC900DA29D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +233,7 @@
 		9B42514528427032006D908C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9B18A1B42849D6F4001F1EA2 /* DayCalendar */,
 				9B4251462842705A006D908C /* ClockContainerView.swift */,
 				9B42515C2843438B006D908C /* ClockTicksView.swift */,
 				9B42515928434175006D908C /* ArcView.swift */,
@@ -393,13 +417,17 @@
 				9B4251542843245A006D908C /* HandShape.swift in Sources */,
 				9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */,
 				9B42515728433C29006D908C /* ClockDialView.swift in Sources */,
+				9B18A1BC2849E139001F1EA2 /* DrawArc.swift in Sources */,
 				9B4228D62843691400DA29D2 /* HourHandView.swift in Sources */,
 				9B42514E28431997006D908C /* BCColor.swift in Sources */,
 				9B4228E52843A09800DA29D2 /* AngleUtility.swift in Sources */,
+				9B18A1B62849D704001F1EA2 /* DayCalendarView.swift in Sources */,
+				9B31C2A7284A56EC00D5092F /* CalendarMetalRing.swift in Sources */,
 				9B42513128426E5D006D908C /* BackwardsClockApp.swift in Sources */,
 				9B42514A28431768006D908C /* SecondHandView.swift in Sources */,
 				9B42515A28434176006D908C /* ArcView.swift in Sources */,
 				9B4228DA28436ADA00DA29D2 /* Clockwork.swift in Sources */,
+				9B18A1B92849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
 				9B4251472842705A006D908C /* ClockContainerView.swift in Sources */,
 				9B42516028434A05006D908C /* BackwardsClockNumberView.swift in Sources */,
 				9B42515D2843438B006D908C /* ClockTicksView.swift in Sources */,
@@ -414,13 +442,17 @@
 				9B4251552843245A006D908C /* HandShape.swift in Sources */,
 				9B4228D1284368D000DA29D2 /* MinuteHandView.swift in Sources */,
 				9B42515828433C29006D908C /* ClockDialView.swift in Sources */,
+				9B18A1BD2849E139001F1EA2 /* DrawArc.swift in Sources */,
 				9B4228D72843691400DA29D2 /* HourHandView.swift in Sources */,
 				9B42514F28431997006D908C /* BCColor.swift in Sources */,
 				9B4228E62843A09800DA29D2 /* AngleUtility.swift in Sources */,
+				9B18A1B72849D704001F1EA2 /* DayCalendarView.swift in Sources */,
+				9B31C2A8284A56EC00D5092F /* CalendarMetalRing.swift in Sources */,
 				9B42513228426E5D006D908C /* BackwardsClockApp.swift in Sources */,
 				9B42514B28431768006D908C /* SecondHandView.swift in Sources */,
 				9B42515B28434176006D908C /* ArcView.swift in Sources */,
 				9B4228DB28436ADA00DA29D2 /* Clockwork.swift in Sources */,
+				9B18A1BA2849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
 				9B4251482842705A006D908C /* ClockContainerView.swift in Sources */,
 				9B42516128434A05006D908C /* BackwardsClockNumberView.swift in Sources */,
 				9B42515E2843438B006D908C /* ClockTicksView.swift in Sources */,
