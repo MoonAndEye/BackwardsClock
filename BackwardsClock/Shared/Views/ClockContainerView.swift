@@ -23,12 +23,12 @@ struct ClockContainerView: View {
                 SecondHandView()
                     .rotationEffect(Angle(radians: clockwork.secondAngle))
             }
-            .frame(width: 300, height: 300)
+            .aspectRatio(1, contentMode: .fit)
             
             Button("Start timer") {
                 clockwork.startTimer()
             }
-            
+
             Button("Stop timer") {
                 clockwork.stopTimer()
             }
