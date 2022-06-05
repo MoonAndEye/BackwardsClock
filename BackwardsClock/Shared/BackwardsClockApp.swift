@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct BackwardsClockApp: App {
+    
+    @StateObject var router = Router.shared
+    
     var body: some Scene {
         WindowGroup {
-            ClockContainerView()
+            router.getView(from: router.currentState)
         }
     }
 }
