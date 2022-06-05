@@ -16,6 +16,8 @@
 		9B31C2A7284A56EC00D5092F /* CalendarMetalRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2A6284A56EC00D5092F /* CalendarMetalRing.swift */; };
 		9B31C2A8284A56EC00D5092F /* CalendarMetalRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2A6284A56EC00D5092F /* CalendarMetalRing.swift */; };
 		9B31C2AC284C5BEB00D5092F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B31C2AB284C5BEB00D5092F /* Launch Screen.storyboard */; };
+		9B31C2AF284C645500D5092F /* LaunchQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2AE284C645500D5092F /* LaunchQuoteView.swift */; };
+		9B31C2B0284C645500D5092F /* LaunchQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2AE284C645500D5092F /* LaunchQuoteView.swift */; };
 		9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D1284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D62843691400DA29D2 /* HourHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228D52843691400DA29D2 /* HourHandView.swift */; };
@@ -82,6 +84,7 @@
 		9B31C2A6284A56EC00D5092F /* CalendarMetalRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMetalRing.swift; sourceTree = "<group>"; };
 		9B31C2A9284C5AA700D5092F /* BackwardsClock--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BackwardsClock--iOS--Info.plist"; sourceTree = "<group>"; };
 		9B31C2AB284C5BEB00D5092F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		9B31C2AE284C645500D5092F /* LaunchQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchQuoteView.swift; sourceTree = "<group>"; };
 		9B4228CF284368D000DA29D2 /* MinuteHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteHandView.swift; sourceTree = "<group>"; };
 		9B4228D52843691400DA29D2 /* HourHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourHandView.swift; sourceTree = "<group>"; };
 		9B4228D928436ADA00DA29D2 /* Clockwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clockwork.swift; sourceTree = "<group>"; };
@@ -159,6 +162,14 @@
 				9B31C2AB284C5BEB00D5092F /* Launch Screen.storyboard */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		9B31C2AD284C643900D5092F /* LaunchQuote */ = {
+			isa = PBXGroup;
+			children = (
+				9B31C2AE284C645500D5092F /* LaunchQuoteView.swift */,
+			);
+			path = LaunchQuote;
 			sourceTree = "<group>";
 		};
 		9B4228D828436AC900DA29D2 /* Models */ = {
@@ -246,6 +257,7 @@
 		9B42514528427032006D908C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9B31C2AD284C643900D5092F /* LaunchQuote */,
 				9B18A1B42849D6F4001F1EA2 /* DayCalendar */,
 				9B4251462842705A006D908C /* ClockContainerView.swift */,
 				9B42515C2843438B006D908C /* ClockTicksView.swift */,
@@ -444,6 +456,7 @@
 				9B18A1B92849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
 				9B4251472842705A006D908C /* ClockContainerView.swift in Sources */,
 				9B42516028434A05006D908C /* BackwardsClockNumberView.swift in Sources */,
+				9B31C2AF284C645500D5092F /* LaunchQuoteView.swift in Sources */,
 				9B42515D2843438B006D908C /* ClockTicksView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +482,7 @@
 				9B18A1BA2849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
 				9B4251482842705A006D908C /* ClockContainerView.swift in Sources */,
 				9B42516128434A05006D908C /* BackwardsClockNumberView.swift in Sources */,
+				9B31C2B0284C645500D5092F /* LaunchQuoteView.swift in Sources */,
 				9B42515E2843438B006D908C /* ClockTicksView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

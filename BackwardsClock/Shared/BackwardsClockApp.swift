@@ -11,7 +11,8 @@ import SwiftUI
 struct BackwardsClockApp: App {
     var body: some Scene {
         WindowGroup {
-            ClockContainerView()
+//            ClockContainerView()
+            QuoteMessageView()
         }
     }
 }

@@ -33,3 +33,18 @@ class BCColor {
         return .green
     }
 }
+// MARK: - Launch Screen Quote Message
+extension BCColor {
+    
+    static var launchScreenBackground: Color {
+        return Color(.init(gray: 0.9808, alpha: 1.0))
+    }
+    
+    static var launchQuoteRectBackground: Color {
+        return Color(.init(gray: 0.9098, alpha: 1.0))
+    }
+    
+    static var launchCounterClockTextColor: Color {
+        return Color(red: 61 / 255, green: 50 / 255, blue: 26 / 255)
+    }
+}
