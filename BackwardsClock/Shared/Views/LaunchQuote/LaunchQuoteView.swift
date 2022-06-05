@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct LaunchQuoteView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        QuoteMessageView()
+            .onAppear {
+                switchToMainView()
+            }
+    }
+    
+    private func switchToMainView() {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            Router.shared.currentState = .backwardsClock
+        }
     }
 }
 
