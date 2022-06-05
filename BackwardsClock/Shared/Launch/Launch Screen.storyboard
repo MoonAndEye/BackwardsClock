@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
+                                <rect key="frame" x="0.0" y="876" width="414" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75S-ni-7f7">
+                                <rect key="frame" x="62" y="134.5" width="290" height="597"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGh-Ub-1nZ">
+                                        <rect key="frame" x="15" y="60" width="260" height="328.5"/>
+                                        <string key="text">Humans are allergic to change. 
+They love to say, 'We've always done it this way.' I try to fight that. 
+
+That's why I have a clock on my wall that runs counter-clockwise.</string>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock.arrow.circlepath" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="88P-6g-AMP">
+                                        <rect key="frame" x="50" y="424" width="190" height="97"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="98" id="LDM-mN-wYa"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gGh-Ub-1nZ" firstAttribute="top" secondItem="75S-ni-7f7" secondAttribute="top" constant="60" id="cZt-E4-SX6"/>
+                                    <constraint firstItem="88P-6g-AMP" firstAttribute="top" secondItem="gGh-Ub-1nZ" secondAttribute="bottom" constant="35" id="l4T-OP-hEn"/>
+                                    <constraint firstItem="88P-6g-AMP" firstAttribute="leading" secondItem="75S-ni-7f7" secondAttribute="leading" constant="50" id="qbo-Rd-slD"/>
+                                    <constraint firstAttribute="trailing" secondItem="88P-6g-AMP" secondAttribute="trailing" constant="50" id="qrP-Mt-mlP"/>
+                                    <constraint firstItem="gGh-Ub-1nZ" firstAttribute="leading" secondItem="75S-ni-7f7" secondAttribute="leading" constant="15" id="tAi-XF-e5N"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gGh-Ub-1nZ" secondAttribute="bottom" constant="20" id="u6q-a0-u3N"/>
+                                    <constraint firstAttribute="trailing" secondItem="gGh-Ub-1nZ" secondAttribute="trailing" constant="15" id="z9E-J7-J9s"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S5I-Bp-YZ8">
+                                <rect key="frame" x="167" y="97.5" width="80" height="74"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="MNv-Pj-t2o"/>
+                                    <constraint firstAttribute="height" constant="80" id="h2U-j5-qn5"/>
+                                </constraints>
+                                <imageReference key="image" image="quote.opening" catalog="system" symbolScale="default"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-  Grace Hopper  -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kse-9m-7Mz">
+                                <rect key="frame" x="0.0" y="799" width="414" height="30"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="75S-ni-7f7" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.7" id="4Ee-Cm-xdS"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
+                            <constraint firstItem="S5I-Bp-YZ8" firstAttribute="top" secondItem="75S-ni-7f7" secondAttribute="top" constant="-40" id="FPu-9R-gab"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="kse-9m-7Mz" secondAttribute="bottom" constant="33" id="Gnn-cj-WQN"/>
+                            <constraint firstItem="75S-ni-7f7" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="QVY-JV-chw"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
+                            <constraint firstItem="kse-9m-7Mz" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="Vg3-7J-qLk"/>
+                            <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
+                            <constraint firstItem="75S-ni-7f7" firstAttribute="centerY" secondItem="Bcu-3y-fUS" secondAttribute="centerY" constant="-20" id="fSO-rs-Vys"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="kse-9m-7Mz" secondAttribute="trailing" id="jaG-iU-M7f"/>
+                            <constraint firstItem="75S-ni-7f7" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.6666" id="vTI-eZ-CA1"/>
+                            <constraint firstItem="S5I-Bp-YZ8" firstAttribute="centerX" secondItem="Bcu-3y-fUS" secondAttribute="centerX" id="xdA-NX-EqD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
+        <image name="quote.opening" catalog="system" width="128" height="79"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
