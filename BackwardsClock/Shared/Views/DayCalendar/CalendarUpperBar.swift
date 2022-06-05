@@ -81,9 +81,9 @@ struct CalendarUpperBarContainer: View {
             GeometryReader { geo in
                 
                 Text("\(month)")
-                    .fontWeight(.semibold)
                     .foregroundColor(.white)
-                    .font(.largeTitle)
+                    .font(.system(size: 100, weight: .semibold, design: .default))
+                    .minimumScaleFactor(0.1)
                     .multilineTextAlignment(.center)
                     .frame(width: geo.size.width, height: geo.size.height * 0.25, alignment: .center)
             }
