@@ -25,13 +25,15 @@ struct DayCalendarView: View {
             
             GeometryReader { geo in
                 Text("\(day)")
-                    .font(.system(size: getFontSize(size: geo.size), weight: .bold))
+                    .font(.system(size: 200, weight: .bold))
+                    .minimumScaleFactor(0.1)
                     .frame(width: geo.size.width, height: geo.size.height * 0.6, alignment: .bottom)
                     .padding(.top, geo.size.height * 0.28)
             }
         }
         .padding()
-        .aspectRatio(1.binade, contentMode: .fit)
+        .frame(minWidth: 200)
+        .aspectRatio(1.0, contentMode: .fit)
     }
     
     private func getFontSize(size: CGSize) -> CGFloat {
@@ -44,6 +46,6 @@ struct DayCalendarView: View {
 struct DayCalendarView_Previews: PreviewProvider {
     static var previews: some View {
         DayCalendarView(month: "July", day: "4")
-            .frame(width: 300, height: 300, alignment: .center)
+            .frame(width: 200, height: 200, alignment: .center)
     }
 }
