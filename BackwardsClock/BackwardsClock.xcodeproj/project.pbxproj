@@ -24,6 +24,10 @@
 		9B31C2BA284DC43300D5092F /* BCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2B8284DC43300D5092F /* BCWebView.swift */; };
 		9B31C2BD284DC5E500D5092F /* SettingBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2BC284DC5E500D5092F /* SettingBarView.swift */; };
 		9B31C2BE284DC5E500D5092F /* SettingBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2BC284DC5E500D5092F /* SettingBarView.swift */; };
+		9B31C2CA284E407400D5092F /* SettingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2C9284E407400D5092F /* SettingList.swift */; };
+		9B31C2CB284E407400D5092F /* SettingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2C9284E407400D5092F /* SettingList.swift */; };
+		9B31C2CF284E423A00D5092F /* SettingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2CE284E423A00D5092F /* SettingListViewModel.swift */; };
+		9B31C2D0284E423A00D5092F /* SettingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2CE284E423A00D5092F /* SettingListViewModel.swift */; };
 		9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D1284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D62843691400DA29D2 /* HourHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228D52843691400DA29D2 /* HourHandView.swift */; };
@@ -94,6 +98,8 @@
 		9B31C2B2284CF32700D5092F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		9B31C2B8284DC43300D5092F /* BCWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCWebView.swift; sourceTree = "<group>"; };
 		9B31C2BC284DC5E500D5092F /* SettingBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBarView.swift; sourceTree = "<group>"; };
+		9B31C2C9284E407400D5092F /* SettingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingList.swift; sourceTree = "<group>"; };
+		9B31C2CE284E423A00D5092F /* SettingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListViewModel.swift; sourceTree = "<group>"; };
 		9B4228CF284368D000DA29D2 /* MinuteHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteHandView.swift; sourceTree = "<group>"; };
 		9B4228D52843691400DA29D2 /* HourHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourHandView.swift; sourceTree = "<group>"; };
 		9B4228D928436ADA00DA29D2 /* Clockwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clockwork.swift; sourceTree = "<group>"; };
@@ -205,6 +211,30 @@
 			path = SettingBar;
 			sourceTree = "<group>";
 		};
+		9B31C2C5284E404100D5092F /* SettingList */ = {
+			isa = PBXGroup;
+			children = (
+				9B31C2C9284E407400D5092F /* SettingList.swift */,
+			);
+			path = SettingList;
+			sourceTree = "<group>";
+		};
+		9B31C2CC284E422500D5092F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9B31C2CD284E422D00D5092F /* SettingList */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9B31C2CD284E422D00D5092F /* SettingList */ = {
+			isa = PBXGroup;
+			children = (
+				9B31C2CE284E423A00D5092F /* SettingListViewModel.swift */,
+			);
+			path = SettingList;
+			sourceTree = "<group>";
+		};
 		9B4228D828436AC900DA29D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +274,7 @@
 				9B4228DC2843900000DA29D2 /* Utilities */,
 				9B4228D828436AC900DA29D2 /* Models */,
 				9B42514528427032006D908C /* Views */,
+				9B31C2CC284E422500D5092F /* ViewModels */,
 				9B42510B28426E5D006D908C /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -294,6 +325,7 @@
 				9B31C2AD284C643900D5092F /* LaunchQuote */,
 				9B31C2B7284DC41600D5092F /* WebView */,
 				9B31C2BB284DC5D700D5092F /* SettingBar */,
+				9B31C2C5284E404100D5092F /* SettingList */,
 				9B18A1B42849D6F4001F1EA2 /* DayCalendar */,
 				9B4251462842705A006D908C /* ClockContainerView.swift */,
 				9B42515C2843438B006D908C /* ClockTicksView.swift */,
@@ -478,7 +510,9 @@
 				9B4228DE2843901300DA29D2 /* DateUtility.swift in Sources */,
 				9B4251542843245A006D908C /* HandShape.swift in Sources */,
 				9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */,
+				9B31C2CF284E423A00D5092F /* SettingListViewModel.swift in Sources */,
 				9B42515728433C29006D908C /* ClockDialView.swift in Sources */,
+				9B31C2CA284E407400D5092F /* SettingList.swift in Sources */,
 				9B18A1BC2849E139001F1EA2 /* DrawArc.swift in Sources */,
 				9B4228D62843691400DA29D2 /* HourHandView.swift in Sources */,
 				9B31C2B9284DC43300D5092F /* BCWebView.swift in Sources */,
@@ -507,7 +541,9 @@
 				9B4228E02843905600DA29D2 /* DateUtility.swift in Sources */,
 				9B4251552843245A006D908C /* HandShape.swift in Sources */,
 				9B4228D1284368D000DA29D2 /* MinuteHandView.swift in Sources */,
+				9B31C2D0284E423A00D5092F /* SettingListViewModel.swift in Sources */,
 				9B42515828433C29006D908C /* ClockDialView.swift in Sources */,
+				9B31C2CB284E407400D5092F /* SettingList.swift in Sources */,
 				9B18A1BD2849E139001F1EA2 /* DrawArc.swift in Sources */,
 				9B4228D72843691400DA29D2 /* HourHandView.swift in Sources */,
 				9B31C2BA284DC43300D5092F /* BCWebView.swift in Sources */,

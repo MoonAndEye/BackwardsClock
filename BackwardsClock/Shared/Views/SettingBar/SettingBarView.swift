@@ -9,11 +9,14 @@ import SwiftUI
 
 extension SettingBarView {
     enum Icon {
+        case quotePage
         case graceWikiProfile
         case settings
         
         func getImageName() -> String {
             switch self {
+            case .quotePage:
+                return "quote.bubble"
             case .graceWikiProfile:
                 return "person.crop.circle"
             case .settings:
@@ -22,8 +25,10 @@ extension SettingBarView {
         }
     }
 }
-
+// TODO: - This view can be refactor later. Currently, just use view can done the jobs. Need research SwiftUI Binding mechanism
 struct SettingBarView: View {
+    
+    var quotePageTapHandler: (() -> Void)?
     
     var graceProfileTapHandler: (() -> Void)?
     
@@ -36,14 +41,18 @@ struct SettingBarView: View {
             Spacer()
             
             Button {
-                print("person.crop.circle, did tap")
+                quotePageTapHandler?()
+            } label: {
+                Image(systemName: Icon.quotePage.getImageName())
+            }
+            
+            Button {
                 graceProfileTapHandler?()
             } label: {
                 Image(systemName: Icon.graceWikiProfile.getImageName())
             }
 
             Button {
-                print("gearshape, did tap")
                 gearshapeTapHandler?()
             } label: {
                 Image(systemName: Icon.settings.getImageName())

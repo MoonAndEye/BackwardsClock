@@ -12,6 +12,8 @@ struct ClockContainerView: View {
 
     @StateObject private var clockwork: Clockwork = .init()
     
+    @State private var isShowingQuotePageSheet = false
+    
     @State private var isShowingGraceWikiSheet = false
     
     @State private var isShowingSettingSheet = false
@@ -26,6 +28,15 @@ struct ClockContainerView: View {
             HStack {
                 
                 Spacer()
+                
+                Button {
+                    isShowingQuotePageSheet.toggle()
+                } label: {
+                    Image(systemName: SettingBarView.Icon.quotePage.getImageName())
+                }
+                .sheet(isPresented: $isShowingQuotePageSheet) {
+                    QuoteMessageContainer()
+                }
                 
                 Button {
                     isShowingGraceWikiSheet.toggle()
