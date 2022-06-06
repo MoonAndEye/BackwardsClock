@@ -28,6 +28,8 @@
 		9B31C2CB284E407400D5092F /* SettingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2C9284E407400D5092F /* SettingList.swift */; };
 		9B31C2CF284E423A00D5092F /* SettingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2CE284E423A00D5092F /* SettingListViewModel.swift */; };
 		9B31C2D0284E423A00D5092F /* SettingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2CE284E423A00D5092F /* SettingListViewModel.swift */; };
+		9B31C2D3284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2D2284E47DB00D5092F /* DismissButtonBuilder.swift */; };
+		9B31C2D4284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2D2284E47DB00D5092F /* DismissButtonBuilder.swift */; };
 		9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D1284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D62843691400DA29D2 /* HourHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228D52843691400DA29D2 /* HourHandView.swift */; };
@@ -100,6 +102,7 @@
 		9B31C2BC284DC5E500D5092F /* SettingBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBarView.swift; sourceTree = "<group>"; };
 		9B31C2C9284E407400D5092F /* SettingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingList.swift; sourceTree = "<group>"; };
 		9B31C2CE284E423A00D5092F /* SettingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListViewModel.swift; sourceTree = "<group>"; };
+		9B31C2D2284E47DB00D5092F /* DismissButtonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButtonBuilder.swift; sourceTree = "<group>"; };
 		9B4228CF284368D000DA29D2 /* MinuteHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteHandView.swift; sourceTree = "<group>"; };
 		9B4228D52843691400DA29D2 /* HourHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourHandView.swift; sourceTree = "<group>"; };
 		9B4228D928436ADA00DA29D2 /* Clockwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clockwork.swift; sourceTree = "<group>"; };
@@ -235,6 +238,14 @@
 			path = SettingList;
 			sourceTree = "<group>";
 		};
+		9B31C2D1284E47BF00D5092F /* ViewBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				9B31C2D2284E47DB00D5092F /* DismissButtonBuilder.swift */,
+			);
+			path = ViewBuilders;
+			sourceTree = "<group>";
+		};
 		9B4228D828436AC900DA29D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +333,7 @@
 		9B42514528427032006D908C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9B31C2D1284E47BF00D5092F /* ViewBuilders */,
 				9B31C2AD284C643900D5092F /* LaunchQuote */,
 				9B31C2B7284DC41600D5092F /* WebView */,
 				9B31C2BB284DC5D700D5092F /* SettingBar */,
@@ -527,6 +539,7 @@
 				9B31C2BD284DC5E500D5092F /* SettingBarView.swift in Sources */,
 				9B4228DA28436ADA00DA29D2 /* Clockwork.swift in Sources */,
 				9B18A1B92849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
+				9B31C2D3284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */,
 				9B4251472842705A006D908C /* ClockContainerView.swift in Sources */,
 				9B42516028434A05006D908C /* BackwardsClockNumberView.swift in Sources */,
 				9B31C2AF284C645500D5092F /* LaunchQuoteView.swift in Sources */,
@@ -558,6 +571,7 @@
 				9B31C2BE284DC5E500D5092F /* SettingBarView.swift in Sources */,
 				9B4228DB28436ADA00DA29D2 /* Clockwork.swift in Sources */,
 				9B18A1BA2849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
+				9B31C2D4284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */,
 				9B4251482842705A006D908C /* ClockContainerView.swift in Sources */,
 				9B42516128434A05006D908C /* BackwardsClockNumberView.swift in Sources */,
 				9B31C2B0284C645500D5092F /* LaunchQuoteView.swift in Sources */,
