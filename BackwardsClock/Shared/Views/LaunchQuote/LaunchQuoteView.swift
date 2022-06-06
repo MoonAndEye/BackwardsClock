@@ -24,6 +24,30 @@ struct LaunchQuoteView: View {
     }
 }
 
+struct QuoteMessageContainer: View {
+    
+    @Environment(\.dismiss) var dismiss
+    
+    var body: some View {
+            
+        VStack {
+            HStack {
+                Spacer()
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "x.circle")
+                }
+                .font(.system(size: 44))
+                .tint(.black)
+                .padding([.top, .trailing])
+                
+            }
+            QuoteMessageView()
+        }
+    }
+}
+
 struct QuoteMessageView: View {
     
     var body: some View {
@@ -95,5 +119,6 @@ counter-clockwise.
 struct LaunchQuoteView_Previews: PreviewProvider {
     static var previews: some View {
         QuoteMessageView()
+        QuoteMessageContainer()
     }
 }
