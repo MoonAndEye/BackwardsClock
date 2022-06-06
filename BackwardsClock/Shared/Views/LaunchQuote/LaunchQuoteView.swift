@@ -28,19 +28,20 @@ struct QuoteMessageContainer: View {
     
     @Environment(\.dismiss) var dismiss
     
+    var dismissButton: some View {
+        return DismissButtonBuilder
+            .getDismissButton(action: dismiss, image: Image(systemName: "x.circle"))
+    }
+    
     var body: some View {
             
         VStack {
             HStack {
                 Spacer()
-                Button {
-                    dismiss()
-                } label: {
-                    Image(systemName: "x.circle")
-                }
-                .font(.system(size: 44))
-                .tint(.black)
-                .padding([.top, .trailing])
+                dismissButton
+                    .font(.system(size: 44))
+                    .tint(.black)
+                    .padding([.top, .trailing])
                 
             }
             QuoteMessageView()

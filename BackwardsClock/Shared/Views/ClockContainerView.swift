@@ -52,8 +52,8 @@ struct ClockContainerView: View {
                 } label: {
                     Image(systemName: SettingBarView.Icon.settings.getImageName())
                 }
-                .sheet(isPresented: $isShowingSettingSheet) {
-                    
+                .fullScreenCover(isPresented: $isShowingSettingSheet) {
+                    SettingList()
                 }
             }
             .tint(.black)

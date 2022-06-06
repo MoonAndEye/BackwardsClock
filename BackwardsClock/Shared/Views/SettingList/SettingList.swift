@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct SettingList: View {
+    
+    @Environment(\.dismiss) var dismiss
+    
+    @Environment(\.presentationMode) var presentationMode
+    
+    @StateObject var settingListViewModel: SettingListViewModel = .init()
+    
+    var dismissButton: some View {
+        HStack {
+            Spacer()
+            Button {
+                presentationMode.wrappedValue.dismiss()
+            } label: {
+                Image(systemName: "x.circle")
+            }
+            .font(.system(size: 40))
+            .tint(.black)
+            .padding([.trailing, .top])
+        }
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            dismissButton
+            Text("This is setting list")
+        }
     }
 }
 
