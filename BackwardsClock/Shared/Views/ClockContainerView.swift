@@ -15,6 +15,8 @@ struct ClockContainerView: View {
     var body: some View {
         VStack {
             
+            SettingBarView()
+            
             DayCalendarView(month: clockwork.month, day: clockwork.day)
                 .padding(.bottom, 40)
             

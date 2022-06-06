@@ -22,6 +22,8 @@
 		9B31C2B4284CF32700D5092F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2B2284CF32700D5092F /* Router.swift */; };
 		9B31C2B9284DC43300D5092F /* BCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2B8284DC43300D5092F /* BCWebView.swift */; };
 		9B31C2BA284DC43300D5092F /* BCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2B8284DC43300D5092F /* BCWebView.swift */; };
+		9B31C2BD284DC5E500D5092F /* SettingBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2BC284DC5E500D5092F /* SettingBarView.swift */; };
+		9B31C2BE284DC5E500D5092F /* SettingBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2BC284DC5E500D5092F /* SettingBarView.swift */; };
 		9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D1284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D62843691400DA29D2 /* HourHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228D52843691400DA29D2 /* HourHandView.swift */; };
@@ -91,6 +93,7 @@
 		9B31C2AE284C645500D5092F /* LaunchQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchQuoteView.swift; sourceTree = "<group>"; };
 		9B31C2B2284CF32700D5092F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		9B31C2B8284DC43300D5092F /* BCWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCWebView.swift; sourceTree = "<group>"; };
+		9B31C2BC284DC5E500D5092F /* SettingBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingBarView.swift; sourceTree = "<group>"; };
 		9B4228CF284368D000DA29D2 /* MinuteHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteHandView.swift; sourceTree = "<group>"; };
 		9B4228D52843691400DA29D2 /* HourHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourHandView.swift; sourceTree = "<group>"; };
 		9B4228D928436ADA00DA29D2 /* Clockwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clockwork.swift; sourceTree = "<group>"; };
@@ -194,6 +197,14 @@
 			path = WebView;
 			sourceTree = "<group>";
 		};
+		9B31C2BB284DC5D700D5092F /* SettingBar */ = {
+			isa = PBXGroup;
+			children = (
+				9B31C2BC284DC5E500D5092F /* SettingBarView.swift */,
+			);
+			path = SettingBar;
+			sourceTree = "<group>";
+		};
 		9B4228D828436AC900DA29D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +293,7 @@
 			children = (
 				9B31C2AD284C643900D5092F /* LaunchQuote */,
 				9B31C2B7284DC41600D5092F /* WebView */,
+				9B31C2BB284DC5D700D5092F /* SettingBar */,
 				9B18A1B42849D6F4001F1EA2 /* DayCalendar */,
 				9B4251462842705A006D908C /* ClockContainerView.swift */,
 				9B42515C2843438B006D908C /* ClockTicksView.swift */,
@@ -478,6 +490,7 @@
 				9B42514A28431768006D908C /* SecondHandView.swift in Sources */,
 				9B31C2B3284CF32700D5092F /* Router.swift in Sources */,
 				9B42515A28434176006D908C /* ArcView.swift in Sources */,
+				9B31C2BD284DC5E500D5092F /* SettingBarView.swift in Sources */,
 				9B4228DA28436ADA00DA29D2 /* Clockwork.swift in Sources */,
 				9B18A1B92849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
 				9B4251472842705A006D908C /* ClockContainerView.swift in Sources */,
@@ -506,6 +519,7 @@
 				9B42514B28431768006D908C /* SecondHandView.swift in Sources */,
 				9B31C2B4284CF32700D5092F /* Router.swift in Sources */,
 				9B42515B28434176006D908C /* ArcView.swift in Sources */,
+				9B31C2BE284DC5E500D5092F /* SettingBarView.swift in Sources */,
 				9B4228DB28436ADA00DA29D2 /* Clockwork.swift in Sources */,
 				9B18A1BA2849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
 				9B4251482842705A006D908C /* ClockContainerView.swift in Sources */,
