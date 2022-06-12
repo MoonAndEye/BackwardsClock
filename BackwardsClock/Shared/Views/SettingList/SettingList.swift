@@ -31,9 +31,55 @@ struct SettingList: View {
     
     var body: some View {
         VStack {
-            dismissButton
-            Text("This is setting list")
+            getDismissView()
+            getSettingView()
+            Spacer()
         }
+        .background(Color(uiColor: .systemGroupedBackground))
+    }
+    
+    /// Dismiss, this button will be presented from clock dial view
+    @ViewBuilder
+    func getDismissView() -> some View {
+        HStack {
+            Spacer()
+            Button {
+                presentationMode.wrappedValue.dismiss()
+            } label: {
+                Image(systemName: "x.circle")
+            }
+            .font(.system(size: 40))
+            .tint(.black)
+            .padding([.trailing, .top])
+        }
+    }
+    
+    @ViewBuilder
+    func getSettingView() -> some View {
+        
+        NavigationView {
+            
+            VStack {
+                Button {
+                    print("Navigation to about")
+                } label: {
+                    NavigationLink("About This App") {
+                        AboutPage()
+                    }
+                }
+                .padding()
+                
+                Form {
+                    
+                    Section("Second") {
+                        Text("Bar")
+                    }
+                }
+                .navigationTitle("Settings")
+            }
+            .background(Color(uiColor: .systemGroupedBackground))
+        }
+        
     }
 }
 

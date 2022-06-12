@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B153C842856239400D19E74 /* AboutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153C832856239400D19E74 /* AboutPage.swift */; };
+		9B153C852856239400D19E74 /* AboutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153C832856239400D19E74 /* AboutPage.swift */; };
 		9B18A1B62849D704001F1EA2 /* DayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A1B52849D704001F1EA2 /* DayCalendarView.swift */; };
 		9B18A1B72849D704001F1EA2 /* DayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A1B52849D704001F1EA2 /* DayCalendarView.swift */; };
 		9B18A1B92849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A1B82849DA0A001F1EA2 /* CalendarUpperBar.swift */; };
@@ -90,6 +92,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B153C832856239400D19E74 /* AboutPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPage.swift; sourceTree = "<group>"; };
 		9B18A1B52849D704001F1EA2 /* DayCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCalendarView.swift; sourceTree = "<group>"; };
 		9B18A1B82849DA0A001F1EA2 /* CalendarUpperBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUpperBar.swift; sourceTree = "<group>"; };
 		9B18A1BB2849E139001F1EA2 /* DrawArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawArc.swift; sourceTree = "<group>"; };
@@ -163,6 +166,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B153C822856238400D19E74 /* AboutPage */ = {
+			isa = PBXGroup;
+			children = (
+				9B153C832856239400D19E74 /* AboutPage.swift */,
+			);
+			path = AboutPage;
+			sourceTree = "<group>";
+		};
 		9B18A1B42849D6F4001F1EA2 /* DayCalendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,6 +344,7 @@
 		9B42514528427032006D908C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9B153C822856238400D19E74 /* AboutPage */,
 				9B31C2D1284E47BF00D5092F /* ViewBuilders */,
 				9B31C2AD284C643900D5092F /* LaunchQuote */,
 				9B31C2B7284DC41600D5092F /* WebView */,
@@ -519,6 +531,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B153C842856239400D19E74 /* AboutPage.swift in Sources */,
 				9B4228DE2843901300DA29D2 /* DateUtility.swift in Sources */,
 				9B4251542843245A006D908C /* HandShape.swift in Sources */,
 				9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */,
@@ -551,6 +564,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B153C852856239400D19E74 /* AboutPage.swift in Sources */,
 				9B4228E02843905600DA29D2 /* DateUtility.swift in Sources */,
 				9B4251552843245A006D908C /* HandShape.swift in Sources */,
 				9B4228D1284368D000DA29D2 /* MinuteHandView.swift in Sources */,
