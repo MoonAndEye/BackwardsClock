@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9B153C842856239400D19E74 /* AboutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153C832856239400D19E74 /* AboutPage.swift */; };
 		9B153C852856239400D19E74 /* AboutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153C832856239400D19E74 /* AboutPage.swift */; };
+		9B153D8D285C468800D19E74 /* HandsColorThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153D8C285C468800D19E74 /* HandsColorThemeView.swift */; };
+		9B153D8E285C468800D19E74 /* HandsColorThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B153D8C285C468800D19E74 /* HandsColorThemeView.swift */; };
 		9B18A1B62849D704001F1EA2 /* DayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A1B52849D704001F1EA2 /* DayCalendarView.swift */; };
 		9B18A1B72849D704001F1EA2 /* DayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A1B52849D704001F1EA2 /* DayCalendarView.swift */; };
 		9B18A1B92849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B18A1B82849DA0A001F1EA2 /* CalendarUpperBar.swift */; };
@@ -49,7 +51,6 @@
 		9B4228E82843A09800DA29D2 /* AngleUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228E42843A09800DA29D2 /* AngleUtility.swift */; };
 		9B4228EA2843A0C800DA29D2 /* AngleUtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228E92843A0C800DA29D2 /* AngleUtilityTests.swift */; };
 		9B42512228426E5D006D908C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42512128426E5D006D908C /* Tests_iOS.swift */; };
-		9B42512428426E5D006D908C /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42512328426E5D006D908C /* Tests_iOSLaunchTests.swift */; };
 		9B42512E28426E5D006D908C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42512D28426E5D006D908C /* Tests_macOS.swift */; };
 		9B42513028426E5D006D908C /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42512F28426E5D006D908C /* Tests_macOSLaunchTests.swift */; };
 		9B42513128426E5D006D908C /* BackwardsClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42510928426E5C006D908C /* BackwardsClockApp.swift */; };
@@ -72,6 +73,8 @@
 		9B42515E2843438B006D908C /* ClockTicksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42515C2843438B006D908C /* ClockTicksView.swift */; };
 		9B42516028434A05006D908C /* BackwardsClockNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42515F28434A05006D908C /* BackwardsClockNumberView.swift */; };
 		9B42516128434A05006D908C /* BackwardsClockNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42515F28434A05006D908C /* BackwardsClockNumberView.swift */; };
+		9B6DD6EF286211E100C86EF8 /* ShipQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */; };
+		9B6DD6F0286211E100C86EF8 /* ShipQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,11 +96,11 @@
 
 /* Begin PBXFileReference section */
 		9B153C832856239400D19E74 /* AboutPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPage.swift; sourceTree = "<group>"; };
+		9B153D8C285C468800D19E74 /* HandsColorThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandsColorThemeView.swift; sourceTree = "<group>"; };
 		9B18A1B52849D704001F1EA2 /* DayCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCalendarView.swift; sourceTree = "<group>"; };
 		9B18A1B82849DA0A001F1EA2 /* CalendarUpperBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarUpperBar.swift; sourceTree = "<group>"; };
 		9B18A1BB2849E139001F1EA2 /* DrawArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawArc.swift; sourceTree = "<group>"; };
 		9B31C2A6284A56EC00D5092F /* CalendarMetalRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMetalRing.swift; sourceTree = "<group>"; };
-		9B31C2A9284C5AA700D5092F /* BackwardsClock--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "BackwardsClock--iOS--Info.plist"; sourceTree = "<group>"; };
 		9B31C2AB284C5BEB00D5092F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9B31C2AE284C645500D5092F /* LaunchQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchQuoteView.swift; sourceTree = "<group>"; };
 		9B31C2B2284CF32700D5092F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -120,7 +123,6 @@
 		9B42511828426E5D006D908C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		9B42511D28426E5D006D908C /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B42512128426E5D006D908C /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		9B42512328426E5D006D908C /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		9B42512928426E5D006D908C /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B42512D28426E5D006D908C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		9B42512F28426E5D006D908C /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		9B42515928434175006D908C /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
 		9B42515C2843438B006D908C /* ClockTicksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTicksView.swift; sourceTree = "<group>"; };
 		9B42515F28434A05006D908C /* BackwardsClockNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackwardsClockNumberView.swift; sourceTree = "<group>"; };
+		9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipQuoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,14 @@
 				9B153C832856239400D19E74 /* AboutPage.swift */,
 			);
 			path = AboutPage;
+			sourceTree = "<group>";
+		};
+		9B153D8B285C467300D19E74 /* HandsColorTheme */ = {
+			isa = PBXGroup;
+			children = (
+				9B153D8C285C468800D19E74 /* HandsColorThemeView.swift */,
+			);
+			path = HandsColorTheme;
 			sourceTree = "<group>";
 		};
 		9B18A1B42849D6F4001F1EA2 /* DayCalendar */ = {
@@ -277,7 +288,6 @@
 		9B42510328426E5C006D908C = {
 			isa = PBXGroup;
 			children = (
-				9B31C2A9284C5AA700D5092F /* BackwardsClock--iOS--Info.plist */,
 				9B42510828426E5C006D908C /* Shared */,
 				9B42511728426E5D006D908C /* macOS */,
 				9B42512028426E5D006D908C /* Tests iOS */,
@@ -326,7 +336,6 @@
 			children = (
 				9B42512128426E5D006D908C /* Tests_iOS.swift */,
 				9B4228E22843909900DA29D2 /* DateUtilityTests.swift */,
-				9B42512328426E5D006D908C /* Tests_iOSLaunchTests.swift */,
 				9B4228E92843A0C800DA29D2 /* AngleUtilityTests.swift */,
 			);
 			path = "Tests iOS";
@@ -345,8 +354,10 @@
 			isa = PBXGroup;
 			children = (
 				9B153C822856238400D19E74 /* AboutPage */,
+				9B153D8B285C467300D19E74 /* HandsColorTheme */,
 				9B31C2D1284E47BF00D5092F /* ViewBuilders */,
 				9B31C2AD284C643900D5092F /* LaunchQuote */,
+				9B6DD6ED286211BF00C86EF8 /* ShipQuote */,
 				9B31C2B7284DC41600D5092F /* WebView */,
 				9B31C2BB284DC5D700D5092F /* SettingBar */,
 				9B31C2C5284E404100D5092F /* SettingList */,
@@ -370,6 +381,14 @@
 				9B42514D28431997006D908C /* BCColor.swift */,
 			);
 			path = Style;
+			sourceTree = "<group>";
+		};
+		9B6DD6ED286211BF00C86EF8 /* ShipQuote */ = {
+			isa = PBXGroup;
+			children = (
+				9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */,
+			);
+			path = ShipQuote;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,10 +557,12 @@
 				9B31C2CF284E423A00D5092F /* SettingListViewModel.swift in Sources */,
 				9B42515728433C29006D908C /* ClockDialView.swift in Sources */,
 				9B31C2CA284E407400D5092F /* SettingList.swift in Sources */,
+				9B6DD6EF286211E100C86EF8 /* ShipQuoteView.swift in Sources */,
 				9B18A1BC2849E139001F1EA2 /* DrawArc.swift in Sources */,
 				9B4228D62843691400DA29D2 /* HourHandView.swift in Sources */,
 				9B31C2B9284DC43300D5092F /* BCWebView.swift in Sources */,
 				9B42514E28431997006D908C /* BCColor.swift in Sources */,
+				9B153D8D285C468800D19E74 /* HandsColorThemeView.swift in Sources */,
 				9B4228E52843A09800DA29D2 /* AngleUtility.swift in Sources */,
 				9B18A1B62849D704001F1EA2 /* DayCalendarView.swift in Sources */,
 				9B31C2A7284A56EC00D5092F /* CalendarMetalRing.swift in Sources */,
@@ -571,10 +592,12 @@
 				9B31C2D0284E423A00D5092F /* SettingListViewModel.swift in Sources */,
 				9B42515828433C29006D908C /* ClockDialView.swift in Sources */,
 				9B31C2CB284E407400D5092F /* SettingList.swift in Sources */,
+				9B6DD6F0286211E100C86EF8 /* ShipQuoteView.swift in Sources */,
 				9B18A1BD2849E139001F1EA2 /* DrawArc.swift in Sources */,
 				9B4228D72843691400DA29D2 /* HourHandView.swift in Sources */,
 				9B31C2BA284DC43300D5092F /* BCWebView.swift in Sources */,
 				9B42514F28431997006D908C /* BCColor.swift in Sources */,
+				9B153D8E285C468800D19E74 /* HandsColorThemeView.swift in Sources */,
 				9B4228E62843A09800DA29D2 /* AngleUtility.swift in Sources */,
 				9B18A1B72849D704001F1EA2 /* DayCalendarView.swift in Sources */,
 				9B31C2A8284A56EC00D5092F /* CalendarMetalRing.swift in Sources */,
@@ -598,7 +621,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B4228EA2843A0C800DA29D2 /* AngleUtilityTests.swift in Sources */,
-				9B42512428426E5D006D908C /* Tests_iOSLaunchTests.swift in Sources */,
 				9B4228E72843A09800DA29D2 /* AngleUtility.swift in Sources */,
 				9B4228DF2843905600DA29D2 /* DateUtility.swift in Sources */,
 				9B4228E32843909900DA29D2 /* DateUtilityTests.swift in Sources */,
@@ -750,7 +772,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2022062101;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -761,12 +783,13 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.marvinLin.BackwardsClock;
 				PRODUCT_NAME = BackwardsClock;
 				SDKROOT = iphoneos;
@@ -782,7 +805,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2022062101;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -793,12 +816,13 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.marvinLin.BackwardsClock;
 				PRODUCT_NAME = BackwardsClock;
 				SDKROOT = iphoneos;
