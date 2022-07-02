@@ -75,6 +75,8 @@
 		9B42516128434A05006D908C /* BackwardsClockNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42515F28434A05006D908C /* BackwardsClockNumberView.swift */; };
 		9B6DD6EF286211E100C86EF8 /* ShipQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */; };
 		9B6DD6F0286211E100C86EF8 /* ShipQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */; };
+		9BA79749287039630064C526 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA79748287039630064C526 /* ThemeManager.swift */; };
+		9BA7974A287039630064C526 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA79748287039630064C526 /* ThemeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +137,7 @@
 		9B42515C2843438B006D908C /* ClockTicksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTicksView.swift; sourceTree = "<group>"; };
 		9B42515F28434A05006D908C /* BackwardsClockNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackwardsClockNumberView.swift; sourceTree = "<group>"; };
 		9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipQuoteView.swift; sourceTree = "<group>"; };
+		9BA79748287039630064C526 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +304,7 @@
 			children = (
 				9B42510928426E5C006D908C /* BackwardsClockApp.swift */,
 				9B31C2AA284C5BE100D5092F /* Launch */,
+				9BA797472870394C0064C526 /* Managers */,
 				9B42514C28431989006D908C /* Style */,
 				9B31C2B1284CF31100D5092F /* Router */,
 				9B4228DC2843900000DA29D2 /* Utilities */,
@@ -389,6 +393,14 @@
 				9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */,
 			);
 			path = ShipQuote;
+			sourceTree = "<group>";
+		};
+		9BA797472870394C0064C526 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9BA79748287039630064C526 /* ThemeManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,6 +590,7 @@
 				9B42516028434A05006D908C /* BackwardsClockNumberView.swift in Sources */,
 				9B31C2AF284C645500D5092F /* LaunchQuoteView.swift in Sources */,
 				9B42515D2843438B006D908C /* ClockTicksView.swift in Sources */,
+				9BA79749287039630064C526 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +626,7 @@
 				9B42516128434A05006D908C /* BackwardsClockNumberView.swift in Sources */,
 				9B31C2B0284C645500D5092F /* LaunchQuoteView.swift in Sources */,
 				9B42515E2843438B006D908C /* ClockTicksView.swift in Sources */,
+				9BA7974A287039630064C526 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

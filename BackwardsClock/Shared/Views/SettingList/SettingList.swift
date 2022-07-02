@@ -59,27 +59,22 @@ struct SettingList: View {
         
         NavigationView {
             
-            VStack {
-                Button {
-                    print("Navigation to about")
-                } label: {
-                    NavigationLink("About This App") {
-                        AboutPage()
+                List {
+                    Section("About") {
+                        NavigationLink("About This App") {
+                            AboutPage()
+                        }
                     }
-                }
-                .padding()
-                
-                Form {
                     
-                    Section("Second") {
-                        Text("Bar")
+                    Section("Style") {
+                        NavigationLink("Hands Color Adjust") {
+                            HandsColorThemeView()
+                        }
                     }
                 }
                 .navigationTitle("Settings")
-            }
-            .background(Color(uiColor: .systemGroupedBackground))
         }
-        
+        .background(Color(uiColor: .systemGroupedBackground))
     }
 }
 
