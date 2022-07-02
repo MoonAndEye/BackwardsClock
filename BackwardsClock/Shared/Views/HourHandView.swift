@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct HourHandView: View {
+    
+    @State var color = ThemeManager.shared.hourHandColor
+    
     var body: some View {
         HandShape(handLength: .hour)
-            .fill(BCColor.hourHandColor)
+            .fill(color)
     }
 }
 

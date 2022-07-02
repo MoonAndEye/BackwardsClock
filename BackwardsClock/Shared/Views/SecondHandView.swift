@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct SecondHandView: View {
+    
+    @StateObject var themeManager = ThemeManager.shared
+    
     var body: some View {
         HandShape(handLength: .second)
-            .fill(BCColor.secondHandColor)
+            .fill(themeManager.secondHandColor)
     }
 }
 
