@@ -77,6 +77,10 @@
 		9B6DD6F0286211E100C86EF8 /* ShipQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */; };
 		9BA79749287039630064C526 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA79748287039630064C526 /* ThemeManager.swift */; };
 		9BA7974A287039630064C526 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA79748287039630064C526 /* ThemeManager.swift */; };
+		9BA7974C28703EF80064C526 /* ThemeManager+UISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7974B28703EF80064C526 /* ThemeManager+UISettings.swift */; };
+		9BA7974D28703EF80064C526 /* ThemeManager+UISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7974B28703EF80064C526 /* ThemeManager+UISettings.swift */; };
+		9BA7975028703FE70064C526 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */; };
+		9BA7975128703FE70064C526 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +142,8 @@
 		9B42515F28434A05006D908C /* BackwardsClockNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackwardsClockNumberView.swift; sourceTree = "<group>"; };
 		9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipQuoteView.swift; sourceTree = "<group>"; };
 		9BA79748287039630064C526 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		9BA7974B28703EF80064C526 /* ThemeManager+UISettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeManager+UISettings.swift"; sourceTree = "<group>"; };
+		9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +310,7 @@
 			children = (
 				9B42510928426E5C006D908C /* BackwardsClockApp.swift */,
 				9B31C2AA284C5BE100D5092F /* Launch */,
+				9BA7974E28703FD70064C526 /* Constants */,
 				9BA797472870394C0064C526 /* Managers */,
 				9B42514C28431989006D908C /* Style */,
 				9B31C2B1284CF31100D5092F /* Router */,
@@ -399,8 +406,17 @@
 			isa = PBXGroup;
 			children = (
 				9BA79748287039630064C526 /* ThemeManager.swift */,
+				9BA7974B28703EF80064C526 /* ThemeManager+UISettings.swift */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		9BA7974E28703FD70064C526 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -570,10 +586,12 @@
 				9B42515728433C29006D908C /* ClockDialView.swift in Sources */,
 				9B31C2CA284E407400D5092F /* SettingList.swift in Sources */,
 				9B6DD6EF286211E100C86EF8 /* ShipQuoteView.swift in Sources */,
+				9BA7974C28703EF80064C526 /* ThemeManager+UISettings.swift in Sources */,
 				9B18A1BC2849E139001F1EA2 /* DrawArc.swift in Sources */,
 				9B4228D62843691400DA29D2 /* HourHandView.swift in Sources */,
 				9B31C2B9284DC43300D5092F /* BCWebView.swift in Sources */,
 				9B42514E28431997006D908C /* BCColor.swift in Sources */,
+				9BA7975028703FE70064C526 /* UserDefaultsKeys.swift in Sources */,
 				9B153D8D285C468800D19E74 /* HandsColorThemeView.swift in Sources */,
 				9B4228E52843A09800DA29D2 /* AngleUtility.swift in Sources */,
 				9B18A1B62849D704001F1EA2 /* DayCalendarView.swift in Sources */,
@@ -606,10 +624,12 @@
 				9B42515828433C29006D908C /* ClockDialView.swift in Sources */,
 				9B31C2CB284E407400D5092F /* SettingList.swift in Sources */,
 				9B6DD6F0286211E100C86EF8 /* ShipQuoteView.swift in Sources */,
+				9BA7974D28703EF80064C526 /* ThemeManager+UISettings.swift in Sources */,
 				9B18A1BD2849E139001F1EA2 /* DrawArc.swift in Sources */,
 				9B4228D72843691400DA29D2 /* HourHandView.swift in Sources */,
 				9B31C2BA284DC43300D5092F /* BCWebView.swift in Sources */,
 				9B42514F28431997006D908C /* BCColor.swift in Sources */,
+				9BA7975128703FE70064C526 /* UserDefaultsKeys.swift in Sources */,
 				9B153D8E285C468800D19E74 /* HandsColorThemeView.swift in Sources */,
 				9B4228E62843A09800DA29D2 /* AngleUtility.swift in Sources */,
 				9B18A1B72849D704001F1EA2 /* DayCalendarView.swift in Sources */,
