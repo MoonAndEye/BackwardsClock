@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct MinuteHandView: View {
+    
+    @StateObject var themeManager = ThemeManager.shared
+    
     var body: some View {
         HandShape(handLength: .minute)
-            .fill(BCColor.minuteHandColor)
+            .fill(themeManager.minuteHandColor)
     }
 }
 

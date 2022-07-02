@@ -12,7 +12,9 @@ struct ClockContainerView: View {
 
     @StateObject private var clockwork: Clockwork = .init()
     
-    @State private var isShowingQuotePageSheet = false
+    @State private var isShowingShipQuotePageSheet = false
+    
+    @State private var isShowingClockQuotePageSheet = false
     
     @State private var isShowingGraceWikiSheet = false
     
@@ -30,11 +32,21 @@ struct ClockContainerView: View {
                 Spacer()
                 
                 Button {
-                    isShowingQuotePageSheet.toggle()
+                    isShowingShipQuotePageSheet.toggle()
+                } label: {
+                    Text("⛵️")
+                }
+                .sheet(isPresented: $isShowingShipQuotePageSheet) {
+                    ShipQuoteContainerView()
+                }
+
+                
+                Button {
+                    isShowingClockQuotePageSheet.toggle()
                 } label: {
                     Image(systemName: SettingBarView.Icon.quotePage.getImageName())
                 }
-                .sheet(isPresented: $isShowingQuotePageSheet) {
+                .sheet(isPresented: $isShowingClockQuotePageSheet) {
                     QuoteMessageContainer()
                 }
                 
@@ -52,8 +64,8 @@ struct ClockContainerView: View {
                 } label: {
                     Image(systemName: SettingBarView.Icon.settings.getImageName())
                 }
-                .sheet(isPresented: $isShowingSettingSheet) {
-                    
+                .fullScreenCover(isPresented: $isShowingSettingSheet) {
+                    SettingList()
                 }
             }
             .tint(.black)

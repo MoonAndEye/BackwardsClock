@@ -14,19 +14,20 @@ struct BCWebView: View {
     
     let urlString: String
     
+    var dismissButton: some View {
+        return DismissButtonBuilder
+            .getDismissButton(action: dismiss, image: Image(systemName: "x.circle"))
+    }
+    
     var body: some View {
         
         VStack(spacing: 0) {
             HStack {
                 Spacer()
-                Button {
-                    dismiss()
-                } label: {
-                    Image(systemName: "x.circle")
-                }
-                .font(.system(size: 44))
-                .tint(.black)
-                .padding([.top, .trailing])
+                dismissButton
+                    .font(.system(size: 44))
+                    .tint(.black)
+                    .padding([.top, .trailing])
             }
             
             if let url = getURL(string: urlString) {

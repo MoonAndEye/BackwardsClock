@@ -1,30 +1,13 @@
 //
-//  LaunchQuoteView.swift
+//  ShipQuoteView.swift
 //  BackwardsClock
 //
-//  Created by cm0679 on 2022/6/5.
+//  Created by cm0679 on 2022/6/21.
 //
 
 import SwiftUI
 
-struct LaunchQuoteView: View {
-    
-    var body: some View {
-        QuoteMessageView()
-            .onAppear {
-                switchToMainView()
-            }
-    }
-    
-    private func switchToMainView() {
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            Router.shared.currentState = .backwardsClock
-        }
-    }
-}
-
-struct QuoteMessageContainer: View {
+struct ShipQuoteContainerView: View {
     
     @Environment(\.dismiss) var dismiss
     
@@ -34,7 +17,6 @@ struct QuoteMessageContainer: View {
     }
     
     var body: some View {
-            
         VStack {
             HStack {
                 Spacer()
@@ -44,20 +26,21 @@ struct QuoteMessageContainer: View {
                     .padding([.top, .trailing])
                 
             }
-            QuoteMessageView()
+            ShipQuoteView()
+            Spacer()
         }
     }
 }
 
-struct QuoteMessageView: View {
+struct ShipQuoteView: View {
     
     var body: some View {
         
         VStack {
             Text(getQuote())
                 .multilineTextAlignment(.center)
-                .padding(.top, 100)
-                .padding(.bottom, 150)
+                .padding(.top, 50)
+                .padding(.bottom, 100)
                 .padding([.leading, .trailing], 20)
             .overlay(alignment: .top) {
                 Image(systemName: "quote.opening")
@@ -65,8 +48,8 @@ struct QuoteMessageView: View {
                     .offset(y: -25)
             }
             .overlay(alignment: .bottom) {
-                Image(systemName: "clock.arrow.circlepath")
-                    .font(.system(size: 80))
+                Text("⛵️")
+                    .font(.system(size: 66))
                     .minimumScaleFactor(0.2)
                     .offset(y: -20)
             }
@@ -88,27 +71,19 @@ struct QuoteMessageView: View {
     private func getQuote() -> AttributedString {
         
         let quote =  #"""
-Humans are allergic to change.
-They love to say, 'We've always done it this way.' I try to fight that.
+A ship in port is safe, but that is not what ships are built for.
 
-That's why I have a clock on my wall that runs
-
-counter-clockwise.
+Sail out to sea and do new things.
 """#
+        
         var attributedString = AttributedString(quote)
         
         let allRange: Range = attributedString.startIndex..<attributedString.endIndex
         attributedString[allRange].font = .system(size: 24)
         
-        let rangeItalic = attributedString.range(of: "We've always done it this way.")!
-        attributedString[rangeItalic].font = .system(size: 24).italic()
-        
-        let rangeSemibold = attributedString.range(of: "That's why I have a clock on my wall that runs")!
+        let rangeSemibold = attributedString.range(of: "Sail out to sea and do new things.")!
         attributedString[rangeSemibold].font = .system(size: 24, weight: .semibold, design: .default)
         
-        let rangeBold = attributedString.range(of: "counter-clockwise.")!
-        attributedString[rangeBold].font = .system(size: 32, weight: .bold, design: .default)
-        attributedString[rangeBold].foregroundColor = BCColor.launchCounterClockTextColor
         return attributedString
     }
     
@@ -117,9 +92,9 @@ counter-clockwise.
     }
 }
 
-struct LaunchQuoteView_Previews: PreviewProvider {
+struct ShipQuoteView_Previews: PreviewProvider {
     static var previews: some View {
-        QuoteMessageView()
-        QuoteMessageContainer()
+        ShipQuoteView()
+        ShipQuoteContainerView()
     }
 }

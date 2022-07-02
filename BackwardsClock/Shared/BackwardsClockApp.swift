@@ -15,6 +15,7 @@ struct BackwardsClockApp: App {
     var body: some Scene {
         WindowGroup {
             router.getView(from: router.currentState)
+//            SettingList()
         }
     }
 }
