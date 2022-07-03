@@ -19,16 +19,7 @@ struct Provider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate)
-            entries.append(entry)
-        }
-
+        var entries: [SimpleEntry] = [SimpleEntry(date: Date())]
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
@@ -52,7 +43,20 @@ struct CounterClockQuoteEntryView : View {
     }
 }
 
-@main
+struct ShipStayPortEntryView: View {
+    var entry: Provider.Entry
+    
+    var body: some View {
+        ShipQuoteView(
+            quoteTopPadding: 10,
+            quoteBottomPadding: 10,
+            quoteOpenImageFont: 33,
+            shipImageFont: 1,
+            authorFont: 25)
+            .padding()
+    }
+}
+
 struct CounterClockQuote: Widget {
     let kind: String = "CounterClockQuote"
 
@@ -60,14 +64,37 @@ struct CounterClockQuote: Widget {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             CounterClockQuoteEntryView(entry: entry)
         }
-        .configurationDisplayName("Quotes")
-        .description("Quotes from Grace Hopper")
+        .configurationDisplayName("Grace Quotes")
+        .description("Counter clock quote")
         .supportedFamilies([.systemLarge, .systemExtraLarge])
+    }
+}
+
+struct ShipStayPortQuote: Widget {
+    let kind: String = "ShipStayPortQuote"
+    
+    var body: some WidgetConfiguration {
+        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+            ShipStayPortEntryView(entry: entry)
+        }
+        .configurationDisplayName("Grace Quotes")
+        .description("Sail out to sea quote")
+        .supportedFamilies([.systemLarge, .systemExtraLarge])
+    }
+}
+
+@main
+struct WidgetsBudle: WidgetBundle {
+    var body: some Widget {
+        CounterClockQuote()
+        ShipStayPortQuote()
     }
 }
 
 struct CounterClockQuote_Previews: PreviewProvider {
     static var previews: some View {
+        ShipStayPortEntryView(entry: SimpleEntry(date: Date()))
+            .previewContext(WidgetPreviewContext(family: .systemLarge))
         CounterClockQuoteEntryView(entry: SimpleEntry(date: Date()))
             .previewContext(WidgetPreviewContext(family: .systemLarge))
     }

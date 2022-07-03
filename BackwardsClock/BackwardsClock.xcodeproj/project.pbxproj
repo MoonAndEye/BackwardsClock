@@ -43,6 +43,9 @@
 		9B3C350F2871E481009D0DB7 /* CounterClockQuoteExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9B3C35042871E47F009D0DB7 /* CounterClockQuoteExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9B3C35132871E4C4009D0DB7 /* CounterClockwiseQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */; };
 		9B3C35142871E51C009D0DB7 /* BCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42514D28431997006D908C /* BCColor.swift */; };
+		9B3C35152871EEEC009D0DB7 /* ShipQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */; };
+		9B3C35172871EF37009D0DB7 /* ShipQuoteContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C35162871EF37009D0DB7 /* ShipQuoteContainerView.swift */; };
+		9B3C35182871EF37009D0DB7 /* ShipQuoteContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C35162871EF37009D0DB7 /* ShipQuoteContainerView.swift */; };
 		9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D1284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D62843691400DA29D2 /* HourHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228D52843691400DA29D2 /* HourHandView.swift */; };
@@ -150,6 +153,7 @@
 		9B3C35082871E47F009D0DB7 /* CounterClockQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterClockQuote.swift; sourceTree = "<group>"; };
 		9B3C350A2871E481009D0DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B3C350C2871E481009D0DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B3C35162871EF37009D0DB7 /* ShipQuoteContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipQuoteContainerView.swift; sourceTree = "<group>"; };
 		9B4228CF284368D000DA29D2 /* MinuteHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteHandView.swift; sourceTree = "<group>"; };
 		9B4228D52843691400DA29D2 /* HourHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourHandView.swift; sourceTree = "<group>"; };
 		9B4228D928436ADA00DA29D2 /* Clockwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clockwork.swift; sourceTree = "<group>"; };
@@ -471,6 +475,7 @@
 		9B6DD6ED286211BF00C86EF8 /* ShipQuote */ = {
 			isa = PBXGroup;
 			children = (
+				9B3C35162871EF37009D0DB7 /* ShipQuoteContainerView.swift */,
 				9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */,
 			);
 			path = ShipQuote;
@@ -685,6 +690,7 @@
 				9B3C35132871E4C4009D0DB7 /* CounterClockwiseQuote.swift in Sources */,
 				9B3C35092871E47F009D0DB7 /* CounterClockQuote.swift in Sources */,
 				9B3C35142871E51C009D0DB7 /* BCColor.swift in Sources */,
+				9B3C35152871EEEC009D0DB7 /* ShipQuoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,6 +721,7 @@
 				9B31C2B3284CF32700D5092F /* Router.swift in Sources */,
 				9B42515A28434176006D908C /* ArcView.swift in Sources */,
 				9B31C2BD284DC5E500D5092F /* SettingBarView.swift in Sources */,
+				9B3C35172871EF37009D0DB7 /* ShipQuoteContainerView.swift in Sources */,
 				9B4228DA28436ADA00DA29D2 /* Clockwork.swift in Sources */,
 				9B18A1B92849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
 				9B31C2D3284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */,
@@ -753,6 +760,7 @@
 				9B31C2B4284CF32700D5092F /* Router.swift in Sources */,
 				9B42515B28434176006D908C /* ArcView.swift in Sources */,
 				9B31C2BE284DC5E500D5092F /* SettingBarView.swift in Sources */,
+				9B3C35182871EF37009D0DB7 /* ShipQuoteContainerView.swift in Sources */,
 				9B4228DB28436ADA00DA29D2 /* Clockwork.swift in Sources */,
 				9B18A1BA2849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
 				9B31C2D4284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */,

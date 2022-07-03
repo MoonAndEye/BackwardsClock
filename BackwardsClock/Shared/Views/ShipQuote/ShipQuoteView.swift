@@ -7,49 +7,30 @@
 
 import SwiftUI
 
-struct ShipQuoteContainerView: View {
-    
-    @Environment(\.dismiss) var dismiss
-    
-    var dismissButton: some View {
-        return DismissButtonBuilder
-            .getDismissButton(action: dismiss, image: Image(systemName: "x.circle"))
-    }
-    
-    var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                dismissButton
-                    .font(.system(size: 44))
-                    .tint(.black)
-                    .padding([.top, .trailing])
-                
-            }
-            ShipQuoteView()
-            Spacer()
-        }
-    }
-}
-
 struct ShipQuoteView: View {
+    
+    @State var quoteTopPadding: CGFloat = 50
+    @State var quoteBottomPadding: CGFloat = 100
+    @State var quoteOpenImageFont: CGFloat = 50
+    @State var shipImageFont: CGFloat = 66
+    @State var authorFont: CGFloat = 50
     
     var body: some View {
         
         VStack {
             Text(getQuote())
                 .multilineTextAlignment(.center)
-                .padding(.top, 50)
-                .padding(.bottom, 100)
-                .padding([.leading, .trailing], 20)
+                .padding(.top, quoteTopPadding)
+                .padding(.bottom, quoteBottomPadding)
+                .padding([.leading, .trailing])
             .overlay(alignment: .top) {
                 Image(systemName: "quote.opening")
-                    .font(.system(size: 50, weight: .black, design: .default))
+                    .font(.system(size: quoteOpenImageFont, weight: .black, design: .default))
                     .offset(y: -25)
             }
             .overlay(alignment: .bottom) {
                 Text("⛵️")
-                    .font(.system(size: 66))
+                    .font(.system(size: shipImageFont))
                     .minimumScaleFactor(0.2)
                     .offset(y: -20)
             }
@@ -59,10 +40,10 @@ struct ShipQuoteView: View {
             HStack {
                 Text("- \(getAuthor()) -")
                     .lineLimit(1)
-                    .font(.custom("SnellRoundhand-Black", size: 50))
+                    .font(.custom("SnellRoundhand-Black", size: authorFont))
                     .minimumScaleFactor(0.2)
             }
-            .padding(.top, 50)
+            .padding(.top)
             .padding([.leading, .trailing])
             
         }
@@ -95,6 +76,5 @@ Sail out to sea and do new things.
 struct ShipQuoteView_Previews: PreviewProvider {
     static var previews: some View {
         ShipQuoteView()
-        ShipQuoteContainerView()
     }
 }
