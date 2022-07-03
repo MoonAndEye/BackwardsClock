@@ -34,6 +34,15 @@
 		9B31C2D0284E423A00D5092F /* SettingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2CE284E423A00D5092F /* SettingListViewModel.swift */; };
 		9B31C2D3284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2D2284E47DB00D5092F /* DismissButtonBuilder.swift */; };
 		9B31C2D4284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2D2284E47DB00D5092F /* DismissButtonBuilder.swift */; };
+		9B3C34E9287142CF009D0DB7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3C34E8287142CF009D0DB7 /* WidgetKit.framework */; platformFilter = maccatalyst; };
+		9B3C34EB287142CF009D0DB7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3C34EA287142CF009D0DB7 /* SwiftUI.framework */; platformFilter = maccatalyst; };
+		9B3C34EE287142CF009D0DB7 /* QuoteMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C34ED287142CF009D0DB7 /* QuoteMessage.swift */; };
+		9B3C34F0287142D0009D0DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3C34EF287142D0009D0DB7 /* Assets.xcassets */; };
+		9B3C34F4287142D0009D0DB7 /* QuoteMessageExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9B3C34E6287142CF009D0DB7 /* QuoteMessageExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9B3C34FC287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */; };
+		9B3C34FD287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */; };
+		9B3C34FE287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */; };
+		9B3C34FF287145F7009D0DB7 /* BCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42514D28431997006D908C /* BCColor.swift */; };
 		9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D1284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D62843691400DA29D2 /* HourHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228D52843691400DA29D2 /* HourHandView.swift */; };
@@ -82,6 +91,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9B3C34F2287142D0009D0DB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B42510428426E5C006D908C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B3C34E5287142CF009D0DB7;
+			remoteInfo = QuoteMessageExtension;
+		};
 		9B42511E28426E5D006D908C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9B42510428426E5C006D908C /* Project object */;
@@ -98,6 +114,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9B3C34F5287142D0009D0DB7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9B3C34F4287142D0009D0DB7 /* QuoteMessageExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9B153C832856239400D19E74 /* AboutPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPage.swift; sourceTree = "<group>"; };
 		9B153D8C285C468800D19E74 /* HandsColorThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandsColorThemeView.swift; sourceTree = "<group>"; };
@@ -113,6 +143,13 @@
 		9B31C2C9284E407400D5092F /* SettingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingList.swift; sourceTree = "<group>"; };
 		9B31C2CE284E423A00D5092F /* SettingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListViewModel.swift; sourceTree = "<group>"; };
 		9B31C2D2284E47DB00D5092F /* DismissButtonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButtonBuilder.swift; sourceTree = "<group>"; };
+		9B3C34E6287142CF009D0DB7 /* QuoteMessageExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuoteMessageExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B3C34E8287142CF009D0DB7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9B3C34EA287142CF009D0DB7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9B3C34ED287142CF009D0DB7 /* QuoteMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteMessage.swift; sourceTree = "<group>"; };
+		9B3C34EF287142D0009D0DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B3C34F1287142D0009D0DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterClockwiseQuote.swift; sourceTree = "<group>"; };
 		9B4228CF284368D000DA29D2 /* MinuteHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteHandView.swift; sourceTree = "<group>"; };
 		9B4228D52843691400DA29D2 /* HourHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourHandView.swift; sourceTree = "<group>"; };
 		9B4228D928436ADA00DA29D2 /* Clockwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clockwork.swift; sourceTree = "<group>"; };
@@ -144,6 +181,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9B3C34E3287142CF009D0DB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B3C34EB287142CF009D0DB7 /* SwiftUI.framework in Frameworks */,
+				9B3C34E9287142CF009D0DB7 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9B42510D28426E5D006D908C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,6 +320,33 @@
 			path = ViewBuilders;
 			sourceTree = "<group>";
 		};
+		9B3C34E7287142CF009D0DB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B3C34E8287142CF009D0DB7 /* WidgetKit.framework */,
+				9B3C34EA287142CF009D0DB7 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B3C34EC287142CF009D0DB7 /* QuoteMessage */ = {
+			isa = PBXGroup;
+			children = (
+				9B3C34ED287142CF009D0DB7 /* QuoteMessage.swift */,
+				9B3C34EF287142D0009D0DB7 /* Assets.xcassets */,
+				9B3C34F1287142D0009D0DB7 /* Info.plist */,
+			);
+			path = QuoteMessage;
+			sourceTree = "<group>";
+		};
+		9B3C34FA28714596009D0DB7 /* CounterClockwiseQuote */ = {
+			isa = PBXGroup;
+			children = (
+				9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */,
+			);
+			path = CounterClockwiseQuote;
+			sourceTree = "<group>";
+		};
 		9B4228D828436AC900DA29D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +371,8 @@
 				9B42511728426E5D006D908C /* macOS */,
 				9B42512028426E5D006D908C /* Tests iOS */,
 				9B42512C28426E5D006D908C /* Tests macOS */,
+				9B3C34EC287142CF009D0DB7 /* QuoteMessage */,
+				9B3C34E7287142CF009D0DB7 /* Frameworks */,
 				9B42511128426E5D006D908C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -327,6 +402,7 @@
 				9B42511628426E5D006D908C /* BackwardsClock.app */,
 				9B42511D28426E5D006D908C /* Tests iOS.xctest */,
 				9B42512928426E5D006D908C /* Tests macOS.xctest */,
+				9B3C34E6287142CF009D0DB7 /* QuoteMessageExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -365,6 +441,7 @@
 				9B153D8B285C467300D19E74 /* HandsColorTheme */,
 				9B31C2D1284E47BF00D5092F /* ViewBuilders */,
 				9B31C2AD284C643900D5092F /* LaunchQuote */,
+				9B3C34FA28714596009D0DB7 /* CounterClockwiseQuote */,
 				9B6DD6ED286211BF00C86EF8 /* ShipQuote */,
 				9B31C2B7284DC41600D5092F /* WebView */,
 				9B31C2BB284DC5D700D5092F /* SettingBar */,
@@ -418,6 +495,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9B3C34E5287142CF009D0DB7 /* QuoteMessageExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B3C34F8287142D0009D0DB7 /* Build configuration list for PBXNativeTarget "QuoteMessageExtension" */;
+			buildPhases = (
+				9B3C34E2287142CF009D0DB7 /* Sources */,
+				9B3C34E3287142CF009D0DB7 /* Frameworks */,
+				9B3C34E4287142CF009D0DB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuoteMessageExtension;
+			productName = QuoteMessageExtension;
+			productReference = 9B3C34E6287142CF009D0DB7 /* QuoteMessageExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9B42510F28426E5D006D908C /* BackwardsClock (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B42513928426E5D006D908C /* Build configuration list for PBXNativeTarget "BackwardsClock (iOS)" */;
@@ -425,10 +519,12 @@
 				9B42510C28426E5D006D908C /* Sources */,
 				9B42510D28426E5D006D908C /* Frameworks */,
 				9B42510E28426E5D006D908C /* Resources */,
+				9B3C34F5287142D0009D0DB7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9B3C34F3287142D0009D0DB7 /* PBXTargetDependency */,
 			);
 			name = "BackwardsClock (iOS)";
 			productName = "BackwardsClock (iOS)";
@@ -498,6 +594,9 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					9B3C34E5287142CF009D0DB7 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					9B42510F28426E5D006D908C = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -531,11 +630,20 @@
 				9B42511528426E5D006D908C /* BackwardsClock (macOS) */,
 				9B42511C28426E5D006D908C /* Tests iOS */,
 				9B42512828426E5D006D908C /* Tests macOS */,
+				9B3C34E5287142CF009D0DB7 /* QuoteMessageExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9B3C34E4287142CF009D0DB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B3C34F0287142D0009D0DB7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9B42510E28426E5D006D908C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -570,6 +678,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9B3C34E2287142CF009D0DB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B3C34FE287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */,
+				9B3C34EE287142CF009D0DB7 /* QuoteMessage.swift in Sources */,
+				9B3C34FF287145F7009D0DB7 /* BCColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9B42510C28426E5D006D908C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -580,6 +698,7 @@
 				9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */,
 				9B31C2CF284E423A00D5092F /* SettingListViewModel.swift in Sources */,
 				9B42515728433C29006D908C /* ClockDialView.swift in Sources */,
+				9B3C34FC287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */,
 				9B31C2CA284E407400D5092F /* SettingList.swift in Sources */,
 				9B6DD6EF286211E100C86EF8 /* ShipQuoteView.swift in Sources */,
 				9B18A1BC2849E139001F1EA2 /* DrawArc.swift in Sources */,
@@ -617,6 +736,7 @@
 				9B4228D1284368D000DA29D2 /* MinuteHandView.swift in Sources */,
 				9B31C2D0284E423A00D5092F /* SettingListViewModel.swift in Sources */,
 				9B42515828433C29006D908C /* ClockDialView.swift in Sources */,
+				9B3C34FD287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */,
 				9B31C2CB284E407400D5092F /* SettingList.swift in Sources */,
 				9B6DD6F0286211E100C86EF8 /* ShipQuoteView.swift in Sources */,
 				9B18A1BD2849E139001F1EA2 /* DrawArc.swift in Sources */,
@@ -670,6 +790,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9B3C34F3287142D0009D0DB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B3C34E5287142CF009D0DB7 /* QuoteMessageExtension */;
+			targetProxy = 9B3C34F2287142D0009D0DB7 /* PBXContainerItemProxy */;
+		};
 		9B42511F28426E5D006D908C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9B42510F28426E5D006D908C /* BackwardsClock (iOS) */;
@@ -683,6 +808,65 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		9B3C34F6287142D0009D0DB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJPD95M4QP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuoteMessage/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QuoteMessage;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.marvinLin.BackwardsClock.QuoteMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B3C34F7287142D0009D0DB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PJPD95M4QP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuoteMessage/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QuoteMessage;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.marvinLin.BackwardsClock.QuoteMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		9B42513728426E5D006D908C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -797,6 +981,7 @@
 		9B42513A28426E5D006D908C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -830,6 +1015,7 @@
 		9B42513B28426E5D006D908C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -999,6 +1185,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9B3C34F8287142D0009D0DB7 /* Build configuration list for PBXNativeTarget "QuoteMessageExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B3C34F6287142D0009D0DB7 /* Debug */,
+				9B3C34F7287142D0009D0DB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9B42510728426E5C006D908C /* Build configuration list for PBXProject "BackwardsClock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
