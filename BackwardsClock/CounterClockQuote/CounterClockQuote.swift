@@ -1,6 +1,6 @@
 //
-//  QuoteMessage.swift
-//  QuoteMessage
+//  CounterClockQuote.swift
+//  CounterClockQuote
 //
 //  Created by cm0679 on 2022/7/3.
 //
@@ -38,7 +38,7 @@ struct SimpleEntry: TimelineEntry {
     let date: Date
 }
 
-struct QuoteMessageEntryView : View {
+struct CounterClockQuoteEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
@@ -53,12 +53,12 @@ struct QuoteMessageEntryView : View {
 }
 
 @main
-struct QuoteMessage: Widget {
-    let kind: String = "QuoteMessage"
+struct CounterClockQuote: Widget {
+    let kind: String = "CounterClockQuote"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            QuoteMessageEntryView(entry: entry)
+            CounterClockQuoteEntryView(entry: entry)
         }
         .configurationDisplayName("Quotes")
         .description("Quotes from Grace Hopper")
@@ -66,9 +66,9 @@ struct QuoteMessage: Widget {
     }
 }
 
-struct QuoteMessage_Previews: PreviewProvider {
+struct CounterClockQuote_Previews: PreviewProvider {
     static var previews: some View {
-        QuoteMessageEntryView(entry: SimpleEntry(date: Date()))
+        CounterClockQuoteEntryView(entry: SimpleEntry(date: Date()))
             .previewContext(WidgetPreviewContext(family: .systemLarge))
     }
 }

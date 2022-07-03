@@ -34,15 +34,15 @@
 		9B31C2D0284E423A00D5092F /* SettingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2CE284E423A00D5092F /* SettingListViewModel.swift */; };
 		9B31C2D3284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2D2284E47DB00D5092F /* DismissButtonBuilder.swift */; };
 		9B31C2D4284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2D2284E47DB00D5092F /* DismissButtonBuilder.swift */; };
-		9B3C34E9287142CF009D0DB7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3C34E8287142CF009D0DB7 /* WidgetKit.framework */; platformFilter = maccatalyst; };
-		9B3C34EB287142CF009D0DB7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3C34EA287142CF009D0DB7 /* SwiftUI.framework */; platformFilter = maccatalyst; };
-		9B3C34EE287142CF009D0DB7 /* QuoteMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C34ED287142CF009D0DB7 /* QuoteMessage.swift */; };
-		9B3C34F0287142D0009D0DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3C34EF287142D0009D0DB7 /* Assets.xcassets */; };
-		9B3C34F4287142D0009D0DB7 /* QuoteMessageExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9B3C34E6287142CF009D0DB7 /* QuoteMessageExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9B3C34FC287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */; };
 		9B3C34FD287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */; };
-		9B3C34FE287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */; };
-		9B3C34FF287145F7009D0DB7 /* BCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42514D28431997006D908C /* BCColor.swift */; };
+		9B3C35052871E47F009D0DB7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3C34E8287142CF009D0DB7 /* WidgetKit.framework */; platformFilter = maccatalyst; };
+		9B3C35062871E47F009D0DB7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3C34EA287142CF009D0DB7 /* SwiftUI.framework */; platformFilter = maccatalyst; };
+		9B3C35092871E47F009D0DB7 /* CounterClockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C35082871E47F009D0DB7 /* CounterClockQuote.swift */; };
+		9B3C350B2871E481009D0DB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3C350A2871E481009D0DB7 /* Assets.xcassets */; };
+		9B3C350F2871E481009D0DB7 /* CounterClockQuoteExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9B3C35042871E47F009D0DB7 /* CounterClockQuoteExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9B3C35132871E4C4009D0DB7 /* CounterClockwiseQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */; };
+		9B3C35142871E51C009D0DB7 /* BCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B42514D28431997006D908C /* BCColor.swift */; };
 		9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D1284368D000DA29D2 /* MinuteHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228CF284368D000DA29D2 /* MinuteHandView.swift */; };
 		9B4228D62843691400DA29D2 /* HourHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4228D52843691400DA29D2 /* HourHandView.swift */; };
@@ -91,12 +91,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9B3C34F2287142D0009D0DB7 /* PBXContainerItemProxy */ = {
+		9B3C350D2871E481009D0DB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9B42510428426E5C006D908C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9B3C34E5287142CF009D0DB7;
-			remoteInfo = QuoteMessageExtension;
+			remoteGlobalIDString = 9B3C35032871E47F009D0DB7;
+			remoteInfo = CounterClockQuoteExtension;
 		};
 		9B42511E28426E5D006D908C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -121,7 +121,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9B3C34F4287142D0009D0DB7 /* QuoteMessageExtension.appex in Embed App Extensions */,
+				9B3C350F2871E481009D0DB7 /* CounterClockQuoteExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,13 +143,13 @@
 		9B31C2C9284E407400D5092F /* SettingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingList.swift; sourceTree = "<group>"; };
 		9B31C2CE284E423A00D5092F /* SettingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListViewModel.swift; sourceTree = "<group>"; };
 		9B31C2D2284E47DB00D5092F /* DismissButtonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButtonBuilder.swift; sourceTree = "<group>"; };
-		9B3C34E6287142CF009D0DB7 /* QuoteMessageExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuoteMessageExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3C34E8287142CF009D0DB7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		9B3C34EA287142CF009D0DB7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		9B3C34ED287142CF009D0DB7 /* QuoteMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteMessage.swift; sourceTree = "<group>"; };
-		9B3C34EF287142D0009D0DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9B3C34F1287142D0009D0DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterClockwiseQuote.swift; sourceTree = "<group>"; };
+		9B3C35042871E47F009D0DB7 /* CounterClockQuoteExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CounterClockQuoteExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B3C35082871E47F009D0DB7 /* CounterClockQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterClockQuote.swift; sourceTree = "<group>"; };
+		9B3C350A2871E481009D0DB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B3C350C2871E481009D0DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4228CF284368D000DA29D2 /* MinuteHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteHandView.swift; sourceTree = "<group>"; };
 		9B4228D52843691400DA29D2 /* HourHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourHandView.swift; sourceTree = "<group>"; };
 		9B4228D928436ADA00DA29D2 /* Clockwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clockwork.swift; sourceTree = "<group>"; };
@@ -181,12 +181,12 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9B3C34E3287142CF009D0DB7 /* Frameworks */ = {
+		9B3C35012871E47F009D0DB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B3C34EB287142CF009D0DB7 /* SwiftUI.framework in Frameworks */,
-				9B3C34E9287142CF009D0DB7 /* WidgetKit.framework in Frameworks */,
+				9B3C35062871E47F009D0DB7 /* SwiftUI.framework in Frameworks */,
+				9B3C35052871E47F009D0DB7 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,22 +329,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9B3C34EC287142CF009D0DB7 /* QuoteMessage */ = {
-			isa = PBXGroup;
-			children = (
-				9B3C34ED287142CF009D0DB7 /* QuoteMessage.swift */,
-				9B3C34EF287142D0009D0DB7 /* Assets.xcassets */,
-				9B3C34F1287142D0009D0DB7 /* Info.plist */,
-			);
-			path = QuoteMessage;
-			sourceTree = "<group>";
-		};
 		9B3C34FA28714596009D0DB7 /* CounterClockwiseQuote */ = {
 			isa = PBXGroup;
 			children = (
 				9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */,
 			);
 			path = CounterClockwiseQuote;
+			sourceTree = "<group>";
+		};
+		9B3C35072871E47F009D0DB7 /* CounterClockQuote */ = {
+			isa = PBXGroup;
+			children = (
+				9B3C35082871E47F009D0DB7 /* CounterClockQuote.swift */,
+				9B3C350A2871E481009D0DB7 /* Assets.xcassets */,
+				9B3C350C2871E481009D0DB7 /* Info.plist */,
+			);
+			path = CounterClockQuote;
 			sourceTree = "<group>";
 		};
 		9B4228D828436AC900DA29D2 /* Models */ = {
@@ -371,7 +371,7 @@
 				9B42511728426E5D006D908C /* macOS */,
 				9B42512028426E5D006D908C /* Tests iOS */,
 				9B42512C28426E5D006D908C /* Tests macOS */,
-				9B3C34EC287142CF009D0DB7 /* QuoteMessage */,
+				9B3C35072871E47F009D0DB7 /* CounterClockQuote */,
 				9B3C34E7287142CF009D0DB7 /* Frameworks */,
 				9B42511128426E5D006D908C /* Products */,
 			);
@@ -402,7 +402,7 @@
 				9B42511628426E5D006D908C /* BackwardsClock.app */,
 				9B42511D28426E5D006D908C /* Tests iOS.xctest */,
 				9B42512928426E5D006D908C /* Tests macOS.xctest */,
-				9B3C34E6287142CF009D0DB7 /* QuoteMessageExtension.appex */,
+				9B3C35042871E47F009D0DB7 /* CounterClockQuoteExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -495,21 +495,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B3C34E5287142CF009D0DB7 /* QuoteMessageExtension */ = {
+		9B3C35032871E47F009D0DB7 /* CounterClockQuoteExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B3C34F8287142D0009D0DB7 /* Build configuration list for PBXNativeTarget "QuoteMessageExtension" */;
+			buildConfigurationList = 9B3C35102871E481009D0DB7 /* Build configuration list for PBXNativeTarget "CounterClockQuoteExtension" */;
 			buildPhases = (
-				9B3C34E2287142CF009D0DB7 /* Sources */,
-				9B3C34E3287142CF009D0DB7 /* Frameworks */,
-				9B3C34E4287142CF009D0DB7 /* Resources */,
+				9B3C35002871E47F009D0DB7 /* Sources */,
+				9B3C35012871E47F009D0DB7 /* Frameworks */,
+				9B3C35022871E47F009D0DB7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = QuoteMessageExtension;
-			productName = QuoteMessageExtension;
-			productReference = 9B3C34E6287142CF009D0DB7 /* QuoteMessageExtension.appex */;
+			name = CounterClockQuoteExtension;
+			productName = CounterClockQuoteExtension;
+			productReference = 9B3C35042871E47F009D0DB7 /* CounterClockQuoteExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		9B42510F28426E5D006D908C /* BackwardsClock (iOS) */ = {
@@ -524,7 +524,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				9B3C34F3287142D0009D0DB7 /* PBXTargetDependency */,
+				9B3C350E2871E481009D0DB7 /* PBXTargetDependency */,
 			);
 			name = "BackwardsClock (iOS)";
 			productName = "BackwardsClock (iOS)";
@@ -594,7 +594,7 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					9B3C34E5287142CF009D0DB7 = {
+					9B3C35032871E47F009D0DB7 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					9B42510F28426E5D006D908C = {
@@ -630,17 +630,17 @@
 				9B42511528426E5D006D908C /* BackwardsClock (macOS) */,
 				9B42511C28426E5D006D908C /* Tests iOS */,
 				9B42512828426E5D006D908C /* Tests macOS */,
-				9B3C34E5287142CF009D0DB7 /* QuoteMessageExtension */,
+				9B3C35032871E47F009D0DB7 /* CounterClockQuoteExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9B3C34E4287142CF009D0DB7 /* Resources */ = {
+		9B3C35022871E47F009D0DB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B3C34F0287142D0009D0DB7 /* Assets.xcassets in Resources */,
+				9B3C350B2871E481009D0DB7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,13 +678,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9B3C34E2287142CF009D0DB7 /* Sources */ = {
+		9B3C35002871E47F009D0DB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B3C34FE287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */,
-				9B3C34EE287142CF009D0DB7 /* QuoteMessage.swift in Sources */,
-				9B3C34FF287145F7009D0DB7 /* BCColor.swift in Sources */,
+				9B3C35132871E4C4009D0DB7 /* CounterClockwiseQuote.swift in Sources */,
+				9B3C35092871E47F009D0DB7 /* CounterClockQuote.swift in Sources */,
+				9B3C35142871E51C009D0DB7 /* BCColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,10 +790,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9B3C34F3287142D0009D0DB7 /* PBXTargetDependency */ = {
+		9B3C350E2871E481009D0DB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9B3C34E5287142CF009D0DB7 /* QuoteMessageExtension */;
-			targetProxy = 9B3C34F2287142D0009D0DB7 /* PBXContainerItemProxy */;
+			target = 9B3C35032871E47F009D0DB7 /* CounterClockQuoteExtension */;
+			targetProxy = 9B3C350D2871E481009D0DB7 /* PBXContainerItemProxy */;
 		};
 		9B42511F28426E5D006D908C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -808,7 +808,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		9B3C34F6287142D0009D0DB7 /* Debug */ = {
+		9B3C35112871E481009D0DB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -817,17 +817,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = QuoteMessage/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = QuoteMessage;
+				INFOPLIST_FILE = CounterClockQuote/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CounterClockQuote;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.marvinLin.BackwardsClock.QuoteMessage;
+				PRODUCT_BUNDLE_IDENTIFIER = io.marvinLin.BackwardsClock.CounterClockQuote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -837,7 +837,7 @@
 			};
 			name = Debug;
 		};
-		9B3C34F7287142D0009D0DB7 /* Release */ = {
+		9B3C35122871E481009D0DB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -846,17 +846,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = QuoteMessage/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = QuoteMessage;
+				INFOPLIST_FILE = CounterClockQuote/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CounterClockQuote;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.marvinLin.BackwardsClock.QuoteMessage;
+				PRODUCT_BUNDLE_IDENTIFIER = io.marvinLin.BackwardsClock.CounterClockQuote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1008,7 +1008,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1042,7 +1042,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1185,11 +1185,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B3C34F8287142D0009D0DB7 /* Build configuration list for PBXNativeTarget "QuoteMessageExtension" */ = {
+		9B3C35102871E481009D0DB7 /* Build configuration list for PBXNativeTarget "CounterClockQuoteExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B3C34F6287142D0009D0DB7 /* Debug */,
-				9B3C34F7287142D0009D0DB7 /* Release */,
+				9B3C35112871E481009D0DB7 /* Debug */,
+				9B3C35122871E481009D0DB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
