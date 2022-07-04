@@ -91,6 +91,9 @@
 		9BA7974A287039630064C526 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA79748287039630064C526 /* ThemeManager.swift */; };
 		9BA7975028703FE70064C526 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */; };
 		9BA7975128703FE70064C526 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */; };
+		9BB3349B287343B2007C4A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */; };
+		9BB3349C287343B2007C4A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */; };
+		9BB334A128734629007C4A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB334A028734629007C4A6E /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +185,8 @@
 		9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipQuoteView.swift; sourceTree = "<group>"; };
 		9BA79748287039630064C526 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9BB334A028734629007C4A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,6 +389,8 @@
 		9B42510828426E5C006D908C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */,
+				9BB334A028734629007C4A6E /* AppDelegate.swift */,
 				9B42510928426E5C006D908C /* BackwardsClockApp.swift */,
 				9B31C2AA284C5BE100D5092F /* Launch */,
 				9BA7974E28703FD70064C526 /* Constants */,
@@ -532,6 +539,8 @@
 				9B3C350E2871E481009D0DB7 /* PBXTargetDependency */,
 			);
 			name = "BackwardsClock (iOS)";
+			packageProductDependencies = (
+			);
 			productName = "BackwardsClock (iOS)";
 			productReference = 9B42511028426E5D006D908C /* BackwardsClock.app */;
 			productType = "com.apple.product-type.application";
@@ -627,6 +636,8 @@
 				Base,
 			);
 			mainGroup = 9B42510328426E5C006D908C;
+			packageReferences = (
+			);
 			productRefGroup = 9B42511128426E5D006D908C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -655,6 +666,7 @@
 			files = (
 				9B31C2AC284C5BEB00D5092F /* Launch Screen.storyboard in Resources */,
 				9B42513528426E5D006D908C /* Assets.xcassets in Resources */,
+				9BB3349B287343B2007C4A6E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +675,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B42513628426E5D006D908C /* Assets.xcassets in Resources */,
+				9BB3349C287343B2007C4A6E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,6 +711,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB334A128734629007C4A6E /* AppDelegate.swift in Sources */,
 				9B153C842856239400D19E74 /* AboutPage.swift in Sources */,
 				9B4228DE2843901300DA29D2 /* DateUtility.swift in Sources */,
 				9B4251542843245A006D908C /* HandShape.swift in Sources */,
@@ -841,7 +855,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -870,7 +884,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
