@@ -33,6 +33,7 @@ struct ClockContainerView: View {
                 
                 Button {
                     isShowingShipQuotePageSheet.toggle()
+                    AnalyticsManager.logShipQuoteButtonDidTap()
                 } label: {
                     Text("⛵️")
                 }
@@ -43,6 +44,7 @@ struct ClockContainerView: View {
                 
                 Button {
                     isShowingClockQuotePageSheet.toggle()
+                    AnalyticsManager.logCounterClockQuoteButtonDidTap()
                 } label: {
                     Image(systemName: SettingBarView.Icon.quotePage.getImageName())
                 }
@@ -52,6 +54,7 @@ struct ClockContainerView: View {
                 
                 Button {
                     isShowingGraceWikiSheet.toggle()
+                    AnalyticsManager.logGraceHopperWikiPageDidTap()
                 } label: {
                     Image(systemName: SettingBarView.Icon.graceWikiProfile.getImageName())
                 }
@@ -61,6 +64,7 @@ struct ClockContainerView: View {
 
                 Button {
                     isShowingSettingSheet.toggle()
+                    AnalyticsManager.logSettingPageDidTap()
                 } label: {
                     Image(systemName: SettingBarView.Icon.settings.getImageName())
                 }

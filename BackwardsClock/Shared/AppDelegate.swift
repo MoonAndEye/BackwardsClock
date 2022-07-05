@@ -4,9 +4,9 @@
 //
 //  Created by cm0679 on 2022/7/5.
 //
-
+#if os(iOS)
 import UIKit
-import FirebaseCore
+import Firebase
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
@@ -16,3 +16,4 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     return true
   }
 }
+#endif
