@@ -94,6 +94,8 @@
 		9BAAAF272873F0790015CC65 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9BAAAF262873F0790015CC65 /* FirebaseCrashlytics */; };
 		9BAAAF292873F0790015CC65 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 9BAAAF282873F0790015CC65 /* FirebaseMessaging */; };
 		9BAAAF2D287414A80015CC65 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 9BAAAF2C287414A80015CC65 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		9BAAAF332874931E0015CC65 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF322874931D0015CC65 /* Logger.swift */; };
+		9BAAAF342874931E0015CC65 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF322874931D0015CC65 /* Logger.swift */; };
 		9BB3349B287343B2007C4A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */; };
 		9BB3349C287343B2007C4A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */; };
 		9BB334A128734629007C4A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB334A028734629007C4A6E /* AppDelegate.swift */; };
@@ -189,6 +191,8 @@
 		9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipQuoteView.swift; sourceTree = "<group>"; };
 		9BA79748287039630064C526 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		9BAAAF30287490150015CC65 /* BackwardsClock (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BackwardsClock (iOS).entitlements"; sourceTree = "<group>"; };
+		9BAAAF322874931D0015CC65 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9BB334A028734629007C4A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB334AB2873BBA1007C4A6E /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
@@ -384,6 +388,7 @@
 		9B42510328426E5C006D908C = {
 			isa = PBXGroup;
 			children = (
+				9BAAAF30287490150015CC65 /* BackwardsClock (iOS).entitlements */,
 				9B42510828426E5C006D908C /* Shared */,
 				9B42511728426E5D006D908C /* macOS */,
 				9B42512028426E5D006D908C /* Tests iOS */,
@@ -400,6 +405,7 @@
 				9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */,
 				9BB334A028734629007C4A6E /* AppDelegate.swift */,
 				9B42510928426E5C006D908C /* BackwardsClockApp.swift */,
+				9BAAAF312874930E0015CC65 /* Logger */,
 				9B31C2AA284C5BE100D5092F /* Launch */,
 				9BA7974E28703FD70064C526 /* Constants */,
 				9BA797472870394C0064C526 /* Managers */,
@@ -511,6 +517,14 @@
 				9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		9BAAAF312874930E0015CC65 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				9BAAAF322874931D0015CC65 /* Logger.swift */,
+			);
+			path = Logger;
 			sourceTree = "<group>";
 		};
 		9BB334A92873BB89007C4A6E /* Theme */ = {
@@ -789,6 +803,7 @@
 				9B42515A28434176006D908C /* ArcView.swift in Sources */,
 				9B31C2BD284DC5E500D5092F /* SettingBarView.swift in Sources */,
 				9B3C35172871EF37009D0DB7 /* ShipQuoteContainerView.swift in Sources */,
+				9BAAAF332874931E0015CC65 /* Logger.swift in Sources */,
 				9B4228DA28436ADA00DA29D2 /* Clockwork.swift in Sources */,
 				9B18A1B92849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
 				9B31C2D3284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */,
@@ -806,6 +821,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B153C852856239400D19E74 /* AboutPage.swift in Sources */,
+				9BAAAF342874931E0015CC65 /* Logger.swift in Sources */,
 				9B4228E02843905600DA29D2 /* DateUtility.swift in Sources */,
 				9B4251552843245A006D908C /* HandShape.swift in Sources */,
 				9B4228D1284368D000DA29D2 /* MinuteHandView.swift in Sources */,
@@ -1060,6 +1076,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BackwardsClock (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2022070401;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1097,6 +1114,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BackwardsClock (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2022070401;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
