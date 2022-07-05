@@ -32,6 +32,10 @@ class BCColor {
     static var hourHandColor: Color {
         return .green
     }
+    
+    static var clockContainerBackground: Color {
+        return Color(.sRGB, red: 255 / 255, green: 250 / 255, blue: 245 / 255, opacity: 1.0)
+    }
 }
 // MARK: - Launch Screen Quote Message
 extension BCColor {

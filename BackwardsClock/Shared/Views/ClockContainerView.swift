@@ -104,6 +104,7 @@ struct ClockContainerView: View {
             
             Spacer()
         }
+        .background(BCColor.clockContainerBackground)
     }
     
     private func showGraceWikiProfile() {
