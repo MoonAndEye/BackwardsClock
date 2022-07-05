@@ -94,6 +94,10 @@
 		9BB3349B287343B2007C4A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */; };
 		9BB3349C287343B2007C4A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */; };
 		9BB334A128734629007C4A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB334A028734629007C4A6E /* AppDelegate.swift */; };
+		9BB334A428734ADE007C4A6E /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 9BB334A328734ADE007C4A6E /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		9BB334A628734ADE007C4A6E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9BB334A528734ADE007C4A6E /* FirebaseAuth */; };
+		9BB334A828734ADE007C4A6E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 9BB334A728734ADE007C4A6E /* FirebaseMessaging */; };
+		9BB334AC2873BBA1007C4A6E /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB334AB2873BBA1007C4A6E /* AnalyticsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +191,7 @@
 		9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9BB334A028734629007C4A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BB334AB2873BBA1007C4A6E /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +208,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB334A828734ADE007C4A6E /* FirebaseMessaging in Frameworks */,
+				9BB334A428734ADE007C4A6E /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				9BB334A628734ADE007C4A6E /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +499,8 @@
 		9BA797472870394C0064C526 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				9BA79748287039630064C526 /* ThemeManager.swift */,
+				9BB334AA2873BB92007C4A6E /* Analytics */,
+				9BB334A92873BB89007C4A6E /* Theme */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -502,6 +511,22 @@
 				9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		9BB334A92873BB89007C4A6E /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				9BA79748287039630064C526 /* ThemeManager.swift */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
+		9BB334AA2873BB92007C4A6E /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				9BB334AB2873BBA1007C4A6E /* AnalyticsManager.swift */,
+			);
+			name = Analytics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,6 +557,7 @@
 				9B42510D28426E5D006D908C /* Frameworks */,
 				9B42510E28426E5D006D908C /* Resources */,
 				9B3C34F5287142D0009D0DB7 /* Embed App Extensions */,
+				9BB334AD2873BC48007C4A6E /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -540,6 +566,9 @@
 			);
 			name = "BackwardsClock (iOS)";
 			packageProductDependencies = (
+				9BB334A328734ADE007C4A6E /* FirebaseAnalyticsWithoutAdIdSupport */,
+				9BB334A528734ADE007C4A6E /* FirebaseAuth */,
+				9BB334A728734ADE007C4A6E /* FirebaseMessaging */,
 			);
 			productName = "BackwardsClock (iOS)";
 			productReference = 9B42511028426E5D006D908C /* BackwardsClock.app */;
@@ -637,6 +666,7 @@
 			);
 			mainGroup = 9B42510328426E5C006D908C;
 			packageReferences = (
+				9BB334A228734ADE007C4A6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 9B42511128426E5D006D908C /* Products */;
 			projectDirPath = "";
@@ -695,6 +725,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9BB334AD2873BC48007C4A6E /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B3C35002871E47F009D0DB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -739,6 +792,7 @@
 				9B4228DA28436ADA00DA29D2 /* Clockwork.swift in Sources */,
 				9B18A1B92849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
 				9B31C2D3284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */,
+				9BB334AC2873BBA1007C4A6E /* AnalyticsManager.swift in Sources */,
 				9B4251472842705A006D908C /* ClockContainerView.swift in Sources */,
 				9B42516028434A05006D908C /* BackwardsClockNumberView.swift in Sources */,
 				9B31C2AF284C645500D5092F /* LaunchQuoteView.swift in Sources */,
@@ -1012,6 +1066,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BackwardsClock--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Backwards Clock";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
@@ -1042,10 +1097,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2022070401;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BackwardsClock--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Backwards Clock";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
@@ -1262,6 +1319,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9BB334A228734ADE007C4A6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9BB334A328734ADE007C4A6E /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BB334A228734ADE007C4A6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		9BB334A528734ADE007C4A6E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BB334A228734ADE007C4A6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9BB334A728734ADE007C4A6E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BB334A228734ADE007C4A6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B42510428426E5C006D908C /* Project object */;
 }
