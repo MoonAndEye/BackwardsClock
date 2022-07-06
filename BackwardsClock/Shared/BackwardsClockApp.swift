@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct BackwardsClockApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     @StateObject var router = Router.shared
     

@@ -12,15 +12,27 @@ struct LaunchQuoteView: View {
     var body: some View {
         CounterClockwiseQuote()
             .onAppear {
-                switchToMainView()
+                switchToMainOrAppleSignIn()
             }
     }
     
-    private func switchToMainView() {
+    private func switchToMainOrAppleSignIn() {
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            Router.shared.currentState = .backwardsClock
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
+            if RemoteConfigManager.shared.appStatus == .underReviewing {
+                switchToAppleSignInView()
+            } else {
+                switchToMainView()
+            }
         }
+    }
+    
+    private func switchToAppleSignInView() {
+        Router.shared.currentState = .appleSignIn
+    }
+    
+    private func switchToMainView() {
+        Router.shared.currentState = .backwardsClock
     }
 }
 

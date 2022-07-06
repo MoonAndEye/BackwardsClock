@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-struct CalendarMetalRingSahpe: Shape {
-    
-    func path(in rect: CGRect) -> Path {
-        var p = Path()
-        
-        return p
-    }
-}
-
 struct CalendarMetalRing: View {
     
     var body: some View {
