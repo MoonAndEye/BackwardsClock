@@ -15,7 +15,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         FirebaseApp.configure()
         registerPushNotification(application)
         activateMessaging()
-        
+        activateRemoteConfig()
         return true
   }
 }
@@ -49,6 +49,10 @@ extension AppDelegate: UNUserNotificationCenterDelegate, MessagingDelegate {
                 Logger.log("Remote FCM registration token: \(token)")
             }
         }
+    }
+    
+    func activateRemoteConfig() {
+        RemoteConfigManager.shared.fetchRemoteConfig()
     }
 }
 #endif
