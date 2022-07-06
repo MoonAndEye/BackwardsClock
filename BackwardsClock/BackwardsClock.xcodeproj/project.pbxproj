@@ -101,8 +101,10 @@
 		9BAAAF3A287495A00015CC65 /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF38287495A00015CC65 /* RemoteConfigManager.swift */; };
 		9BAAAF3C287590C50015CC65 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3B287590C50015CC65 /* remote_config_defaults.plist */; };
 		9BAAAF3D287590C50015CC65 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3B287590C50015CC65 /* remote_config_defaults.plist */; };
-		9BAAAF402875C0660015CC65 /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3F2875C0660015CC65 /* AppleSignIn.swift */; };
-		9BAAAF412875C0660015CC65 /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3F2875C0660015CC65 /* AppleSignIn.swift */; };
+		9BAAAF402875C0660015CC65 /* AppleSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3F2875C0660015CC65 /* AppleSignInView.swift */; };
+		9BAAAF412875C0660015CC65 /* AppleSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3F2875C0660015CC65 /* AppleSignInView.swift */; };
+		9BAAAF442875C3170015CC65 /* AppleAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF432875C3170015CC65 /* AppleAuthManager.swift */; };
+		9BAAAF452875C3170015CC65 /* AppleAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF432875C3170015CC65 /* AppleAuthManager.swift */; };
 		9BB3349B287343B2007C4A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */; };
 		9BB3349C287343B2007C4A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */; };
 		9BB334A128734629007C4A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB334A028734629007C4A6E /* AppDelegate.swift */; };
@@ -202,7 +204,8 @@
 		9BAAAF322874931D0015CC65 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		9BAAAF38287495A00015CC65 /* RemoteConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
 		9BAAAF3B287590C50015CC65 /* remote_config_defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
-		9BAAAF3F2875C0660015CC65 /* AppleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignIn.swift; sourceTree = "<group>"; };
+		9BAAAF3F2875C0660015CC65 /* AppleSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInView.swift; sourceTree = "<group>"; };
+		9BAAAF432875C3170015CC65 /* AppleAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthManager.swift; sourceTree = "<group>"; };
 		9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9BB334A028734629007C4A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB334AB2873BBA1007C4A6E /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
@@ -518,6 +521,7 @@
 		9BA797472870394C0064C526 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				9BAAAF422875C3000015CC65 /* AppleAuthManager */,
 				9BAAAF37287495940015CC65 /* RemoteConfig */,
 				9BB334AA2873BB92007C4A6E /* Analytics */,
 				9BB334A92873BB89007C4A6E /* Theme */,
@@ -552,9 +556,17 @@
 		9BAAAF3E2875C04E0015CC65 /* AppleSignIn */ = {
 			isa = PBXGroup;
 			children = (
-				9BAAAF3F2875C0660015CC65 /* AppleSignIn.swift */,
+				9BAAAF3F2875C0660015CC65 /* AppleSignInView.swift */,
 			);
 			path = AppleSignIn;
+			sourceTree = "<group>";
+		};
+		9BAAAF422875C3000015CC65 /* AppleAuthManager */ = {
+			isa = PBXGroup;
+			children = (
+				9BAAAF432875C3170015CC65 /* AppleAuthManager.swift */,
+			);
+			name = AppleAuthManager;
 			sourceTree = "<group>";
 		};
 		9BB334A92873BB89007C4A6E /* Theme */ = {
@@ -818,7 +830,7 @@
 				9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */,
 				9BAAAF39287495A00015CC65 /* RemoteConfigManager.swift in Sources */,
 				9B31C2CF284E423A00D5092F /* SettingListViewModel.swift in Sources */,
-				9BAAAF402875C0660015CC65 /* AppleSignIn.swift in Sources */,
+				9BAAAF402875C0660015CC65 /* AppleSignInView.swift in Sources */,
 				9B42515728433C29006D908C /* ClockDialView.swift in Sources */,
 				9B3C34FC287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */,
 				9B31C2CA284E407400D5092F /* SettingList.swift in Sources */,
@@ -843,6 +855,7 @@
 				9B18A1B92849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
 				9B31C2D3284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */,
 				9BB334AC2873BBA1007C4A6E /* AnalyticsManager.swift in Sources */,
+				9BAAAF442875C3170015CC65 /* AppleAuthManager.swift in Sources */,
 				9B4251472842705A006D908C /* ClockContainerView.swift in Sources */,
 				9B42516028434A05006D908C /* BackwardsClockNumberView.swift in Sources */,
 				9B31C2AF284C645500D5092F /* LaunchQuoteView.swift in Sources */,
@@ -867,9 +880,10 @@
 				9BAAAF3A287495A00015CC65 /* RemoteConfigManager.swift in Sources */,
 				9B6DD6F0286211E100C86EF8 /* ShipQuoteView.swift in Sources */,
 				9B18A1BD2849E139001F1EA2 /* DrawArc.swift in Sources */,
+				9BAAAF452875C3170015CC65 /* AppleAuthManager.swift in Sources */,
 				9B4228D72843691400DA29D2 /* HourHandView.swift in Sources */,
 				9B31C2BA284DC43300D5092F /* BCWebView.swift in Sources */,
-				9BAAAF412875C0660015CC65 /* AppleSignIn.swift in Sources */,
+				9BAAAF412875C0660015CC65 /* AppleSignInView.swift in Sources */,
 				9B42514F28431997006D908C /* BCColor.swift in Sources */,
 				9BA7975128703FE70064C526 /* UserDefaultsKeys.swift in Sources */,
 				9B153D8E285C468800D19E74 /* HandsColorThemeView.swift in Sources */,
@@ -943,7 +957,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070601;
+				CURRENT_PROJECT_VERSION = 2022070602;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CounterClockQuote/Info.plist;
@@ -972,7 +986,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070601;
+				CURRENT_PROJECT_VERSION = 2022070602;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CounterClockQuote/Info.plist;
@@ -1115,7 +1129,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "BackwardsClock (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070601;
+				CURRENT_PROJECT_VERSION = 2022070602;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				ENABLE_PREVIEWS = YES;
@@ -1153,7 +1167,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "BackwardsClock (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070601;
+				CURRENT_PROJECT_VERSION = 2022070602;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				ENABLE_PREVIEWS = YES;
