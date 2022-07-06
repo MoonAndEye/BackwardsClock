@@ -20,6 +20,8 @@ class Router: ObservableObject {
         switch state {
         case .launch:
             LaunchQuoteView()
+        case .appleSignIn:
+            AppleSignIn()
         case .backwardsClock:
             ClockContainerView()
         }
@@ -30,6 +32,7 @@ extension Router {
     
     enum State {
         case launch
+        case appleSignIn
         case backwardsClock
     }
 }

@@ -101,6 +101,8 @@
 		9BAAAF3A287495A00015CC65 /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF38287495A00015CC65 /* RemoteConfigManager.swift */; };
 		9BAAAF3C287590C50015CC65 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3B287590C50015CC65 /* remote_config_defaults.plist */; };
 		9BAAAF3D287590C50015CC65 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3B287590C50015CC65 /* remote_config_defaults.plist */; };
+		9BAAAF402875C0660015CC65 /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3F2875C0660015CC65 /* AppleSignIn.swift */; };
+		9BAAAF412875C0660015CC65 /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3F2875C0660015CC65 /* AppleSignIn.swift */; };
 		9BB3349B287343B2007C4A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */; };
 		9BB3349C287343B2007C4A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */; };
 		9BB334A128734629007C4A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB334A028734629007C4A6E /* AppDelegate.swift */; };
@@ -200,6 +202,7 @@
 		9BAAAF322874931D0015CC65 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		9BAAAF38287495A00015CC65 /* RemoteConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
 		9BAAAF3B287590C50015CC65 /* remote_config_defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
+		9BAAAF3F2875C0660015CC65 /* AppleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignIn.swift; sourceTree = "<group>"; };
 		9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9BB334A028734629007C4A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB334AB2873BBA1007C4A6E /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
@@ -471,6 +474,7 @@
 		9B42514528427032006D908C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9BAAAF3E2875C04E0015CC65 /* AppleSignIn */,
 				9B153C822856238400D19E74 /* AboutPage */,
 				9B153D8B285C467300D19E74 /* HandsColorTheme */,
 				9B31C2D1284E47BF00D5092F /* ViewBuilders */,
@@ -543,6 +547,14 @@
 				9BAAAF38287495A00015CC65 /* RemoteConfigManager.swift */,
 			);
 			name = RemoteConfig;
+			sourceTree = "<group>";
+		};
+		9BAAAF3E2875C04E0015CC65 /* AppleSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				9BAAAF3F2875C0660015CC65 /* AppleSignIn.swift */,
+			);
+			path = AppleSignIn;
 			sourceTree = "<group>";
 		};
 		9BB334A92873BB89007C4A6E /* Theme */ = {
@@ -806,6 +818,7 @@
 				9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */,
 				9BAAAF39287495A00015CC65 /* RemoteConfigManager.swift in Sources */,
 				9B31C2CF284E423A00D5092F /* SettingListViewModel.swift in Sources */,
+				9BAAAF402875C0660015CC65 /* AppleSignIn.swift in Sources */,
 				9B42515728433C29006D908C /* ClockDialView.swift in Sources */,
 				9B3C34FC287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */,
 				9B31C2CA284E407400D5092F /* SettingList.swift in Sources */,
@@ -856,6 +869,7 @@
 				9B18A1BD2849E139001F1EA2 /* DrawArc.swift in Sources */,
 				9B4228D72843691400DA29D2 /* HourHandView.swift in Sources */,
 				9B31C2BA284DC43300D5092F /* BCWebView.swift in Sources */,
+				9BAAAF412875C0660015CC65 /* AppleSignIn.swift in Sources */,
 				9B42514F28431997006D908C /* BCColor.swift in Sources */,
 				9BA7975128703FE70064C526 /* UserDefaultsKeys.swift in Sources */,
 				9B153D8E285C468800D19E74 /* HandsColorThemeView.swift in Sources */,
