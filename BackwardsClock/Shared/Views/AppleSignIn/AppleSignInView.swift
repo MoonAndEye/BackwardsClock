@@ -28,18 +28,62 @@ struct AppleSignIn: View {
                 HStack {
                     Spacer(minLength: 40)
                     SignInWithAppleButton(.signIn) { request in
-                        
+                        request.requestedScopes = [.fullName, .email]
                     } onCompletion: { result in
-                        
+                        handleAppleSignIn(result: result)
                     }
                     .signInWithAppleButtonStyle(.whiteOutline)
                     .frame(height: 50)
                     Spacer(minLength: 40)
                 }
                 .padding(.top, 80)
+                .padding(.bottom, 10)
+                Text("This App was inspired from")
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.5)
+                    .font(.system(size: 20))
+                    .padding(.top, 40)
+                HStack {
+                    Text("- Grace Hopper -")
+                        .lineLimit(1)
+                        .font(.custom("SnellRoundhand-Black", size: 30))
+                        .minimumScaleFactor(0.2)
+                        .padding()
+                }
                 Spacer()
             }
             
+        }
+    }
+    
+    private func handleAppleSignIn(result: Result<ASAuthorization, Error>) {
+        
+        switch result {
+        case .success(let auth):
+            Logger.log("Apple sign in success: \(auth)")
+            Router.shared.currentState = .backwardsClock
+            handleCredential(credential: auth.credential)
+        case .failure(let error):
+            Logger.log("Apple auth got error: \(error), description: \(error.localizedDescription)")
+        }
+    }
+    
+    private func handleCredential(credential: ASAuthorizationCredential) {
+        
+        if let appleCredential = credential as? ASAuthorizationAppleIDCredential {
+            
+            let keychainAdapter = KeychainAdapter()
+            
+            let user = appleCredential.user
+            keychainAdapter.save(appleUser: user)
+            
+            if let familyName = appleCredential.fullName?.familyName {
+                keychainAdapter.save(familyName: familyName)
+            }
+            
+            if let givenName = appleCredential.fullName?.givenName {
+                keychainAdapter.save(givenName: givenName)
+            }
         }
     }
 }
