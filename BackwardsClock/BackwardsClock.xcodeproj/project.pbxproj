@@ -34,6 +34,9 @@
 		9B31C2D0284E423A00D5092F /* SettingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2CE284E423A00D5092F /* SettingListViewModel.swift */; };
 		9B31C2D3284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2D2284E47DB00D5092F /* DismissButtonBuilder.swift */; };
 		9B31C2D4284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31C2D2284E47DB00D5092F /* DismissButtonBuilder.swift */; };
+		9B3A7D492875DA6F00095441 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 9B3A7D482875DA6F00095441 /* KeychainAccess */; };
+		9B3A7D4D2875DA9000095441 /* KeychainAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3A7D4C2875DA9000095441 /* KeychainAdapter.swift */; };
+		9B3A7D4E2875DA9000095441 /* KeychainAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3A7D4C2875DA9000095441 /* KeychainAdapter.swift */; };
 		9B3C34FC287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */; };
 		9B3C34FD287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */; };
 		9B3C35052871E47F009D0DB7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3C34E8287142CF009D0DB7 /* WidgetKit.framework */; platformFilter = maccatalyst; };
@@ -101,8 +104,10 @@
 		9BAAAF3A287495A00015CC65 /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF38287495A00015CC65 /* RemoteConfigManager.swift */; };
 		9BAAAF3C287590C50015CC65 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3B287590C50015CC65 /* remote_config_defaults.plist */; };
 		9BAAAF3D287590C50015CC65 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3B287590C50015CC65 /* remote_config_defaults.plist */; };
-		9BAAAF402875C0660015CC65 /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3F2875C0660015CC65 /* AppleSignIn.swift */; };
-		9BAAAF412875C0660015CC65 /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3F2875C0660015CC65 /* AppleSignIn.swift */; };
+		9BAAAF402875C0660015CC65 /* AppleSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3F2875C0660015CC65 /* AppleSignInView.swift */; };
+		9BAAAF412875C0660015CC65 /* AppleSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF3F2875C0660015CC65 /* AppleSignInView.swift */; };
+		9BAAAF442875C3170015CC65 /* AppleAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF432875C3170015CC65 /* AppleAuthManager.swift */; };
+		9BAAAF452875C3170015CC65 /* AppleAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAAF432875C3170015CC65 /* AppleAuthManager.swift */; };
 		9BB3349B287343B2007C4A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */; };
 		9BB3349C287343B2007C4A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */; };
 		9BB334A128734629007C4A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB334A028734629007C4A6E /* AppDelegate.swift */; };
@@ -162,6 +167,7 @@
 		9B31C2C9284E407400D5092F /* SettingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingList.swift; sourceTree = "<group>"; };
 		9B31C2CE284E423A00D5092F /* SettingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListViewModel.swift; sourceTree = "<group>"; };
 		9B31C2D2284E47DB00D5092F /* DismissButtonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButtonBuilder.swift; sourceTree = "<group>"; };
+		9B3A7D4C2875DA9000095441 /* KeychainAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAdapter.swift; sourceTree = "<group>"; };
 		9B3C34E8287142CF009D0DB7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		9B3C34EA287142CF009D0DB7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterClockwiseQuote.swift; sourceTree = "<group>"; };
@@ -202,7 +208,8 @@
 		9BAAAF322874931D0015CC65 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		9BAAAF38287495A00015CC65 /* RemoteConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
 		9BAAAF3B287590C50015CC65 /* remote_config_defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
-		9BAAAF3F2875C0660015CC65 /* AppleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignIn.swift; sourceTree = "<group>"; };
+		9BAAAF3F2875C0660015CC65 /* AppleSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInView.swift; sourceTree = "<group>"; };
+		9BAAAF432875C3170015CC65 /* AppleAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthManager.swift; sourceTree = "<group>"; };
 		9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9BB334A028734629007C4A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB334AB2873BBA1007C4A6E /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
@@ -226,6 +233,7 @@
 				9BAAAF272873F0790015CC65 /* FirebaseCrashlytics in Frameworks */,
 				9BAAAF2D287414A80015CC65 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				9BAAAF36287495880015CC65 /* FirebaseRemoteConfig in Frameworks */,
+				9B3A7D492875DA6F00095441 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +360,22 @@
 			path = ViewBuilders;
 			sourceTree = "<group>";
 		};
+		9B3A7D4A2875DA7800095441 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				9B3A7D4B2875DA8300095441 /* Keychain */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		9B3A7D4B2875DA8300095441 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				9B3A7D4C2875DA9000095441 /* KeychainAdapter.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
 		9B3C34E7287142CF009D0DB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +443,7 @@
 				9B42510928426E5C006D908C /* BackwardsClockApp.swift */,
 				9BAAAF312874930E0015CC65 /* Logger */,
 				9B31C2AA284C5BE100D5092F /* Launch */,
+				9B3A7D4A2875DA7800095441 /* Adapters */,
 				9BA7974E28703FD70064C526 /* Constants */,
 				9BA797472870394C0064C526 /* Managers */,
 				9B42514C28431989006D908C /* Style */,
@@ -518,6 +543,7 @@
 		9BA797472870394C0064C526 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				9BAAAF422875C3000015CC65 /* AppleAuthManager */,
 				9BAAAF37287495940015CC65 /* RemoteConfig */,
 				9BB334AA2873BB92007C4A6E /* Analytics */,
 				9BB334A92873BB89007C4A6E /* Theme */,
@@ -552,9 +578,17 @@
 		9BAAAF3E2875C04E0015CC65 /* AppleSignIn */ = {
 			isa = PBXGroup;
 			children = (
-				9BAAAF3F2875C0660015CC65 /* AppleSignIn.swift */,
+				9BAAAF3F2875C0660015CC65 /* AppleSignInView.swift */,
 			);
 			path = AppleSignIn;
+			sourceTree = "<group>";
+		};
+		9BAAAF422875C3000015CC65 /* AppleAuthManager */ = {
+			isa = PBXGroup;
+			children = (
+				9BAAAF432875C3170015CC65 /* AppleAuthManager.swift */,
+			);
+			name = AppleAuthManager;
 			sourceTree = "<group>";
 		};
 		9BB334A92873BB89007C4A6E /* Theme */ = {
@@ -614,6 +648,7 @@
 				9BAAAF282873F0790015CC65 /* FirebaseMessaging */,
 				9BAAAF2C287414A80015CC65 /* FirebaseAnalyticsWithoutAdIdSupport */,
 				9BAAAF35287495880015CC65 /* FirebaseRemoteConfig */,
+				9B3A7D482875DA6F00095441 /* KeychainAccess */,
 			);
 			productName = "BackwardsClock (iOS)";
 			productReference = 9B42511028426E5D006D908C /* BackwardsClock.app */;
@@ -712,6 +747,7 @@
 			mainGroup = 9B42510328426E5C006D908C;
 			packageReferences = (
 				9BAAAF232873F0790015CC65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9B3A7D472875DA6F00095441 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 9B42511128426E5D006D908C /* Products */;
 			projectDirPath = "";
@@ -818,7 +854,7 @@
 				9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */,
 				9BAAAF39287495A00015CC65 /* RemoteConfigManager.swift in Sources */,
 				9B31C2CF284E423A00D5092F /* SettingListViewModel.swift in Sources */,
-				9BAAAF402875C0660015CC65 /* AppleSignIn.swift in Sources */,
+				9BAAAF402875C0660015CC65 /* AppleSignInView.swift in Sources */,
 				9B42515728433C29006D908C /* ClockDialView.swift in Sources */,
 				9B3C34FC287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */,
 				9B31C2CA284E407400D5092F /* SettingList.swift in Sources */,
@@ -827,6 +863,7 @@
 				9B4228D62843691400DA29D2 /* HourHandView.swift in Sources */,
 				9B31C2B9284DC43300D5092F /* BCWebView.swift in Sources */,
 				9B42514E28431997006D908C /* BCColor.swift in Sources */,
+				9B3A7D4D2875DA9000095441 /* KeychainAdapter.swift in Sources */,
 				9BA7975028703FE70064C526 /* UserDefaultsKeys.swift in Sources */,
 				9B153D8D285C468800D19E74 /* HandsColorThemeView.swift in Sources */,
 				9B4228E52843A09800DA29D2 /* AngleUtility.swift in Sources */,
@@ -843,6 +880,7 @@
 				9B18A1B92849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
 				9B31C2D3284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */,
 				9BB334AC2873BBA1007C4A6E /* AnalyticsManager.swift in Sources */,
+				9BAAAF442875C3170015CC65 /* AppleAuthManager.swift in Sources */,
 				9B4251472842705A006D908C /* ClockContainerView.swift in Sources */,
 				9B42516028434A05006D908C /* BackwardsClockNumberView.swift in Sources */,
 				9B31C2AF284C645500D5092F /* LaunchQuoteView.swift in Sources */,
@@ -867,12 +905,14 @@
 				9BAAAF3A287495A00015CC65 /* RemoteConfigManager.swift in Sources */,
 				9B6DD6F0286211E100C86EF8 /* ShipQuoteView.swift in Sources */,
 				9B18A1BD2849E139001F1EA2 /* DrawArc.swift in Sources */,
+				9BAAAF452875C3170015CC65 /* AppleAuthManager.swift in Sources */,
 				9B4228D72843691400DA29D2 /* HourHandView.swift in Sources */,
 				9B31C2BA284DC43300D5092F /* BCWebView.swift in Sources */,
-				9BAAAF412875C0660015CC65 /* AppleSignIn.swift in Sources */,
+				9BAAAF412875C0660015CC65 /* AppleSignInView.swift in Sources */,
 				9B42514F28431997006D908C /* BCColor.swift in Sources */,
 				9BA7975128703FE70064C526 /* UserDefaultsKeys.swift in Sources */,
 				9B153D8E285C468800D19E74 /* HandsColorThemeView.swift in Sources */,
+				9B3A7D4E2875DA9000095441 /* KeychainAdapter.swift in Sources */,
 				9B4228E62843A09800DA29D2 /* AngleUtility.swift in Sources */,
 				9B18A1B72849D704001F1EA2 /* DayCalendarView.swift in Sources */,
 				9B31C2A8284A56EC00D5092F /* CalendarMetalRing.swift in Sources */,
@@ -943,7 +983,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070601;
+				CURRENT_PROJECT_VERSION = 2022070602;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CounterClockQuote/Info.plist;
@@ -972,7 +1012,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070601;
+				CURRENT_PROJECT_VERSION = 2022070602;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CounterClockQuote/Info.plist;
@@ -1115,7 +1155,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "BackwardsClock (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070601;
+				CURRENT_PROJECT_VERSION = 2022070602;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				ENABLE_PREVIEWS = YES;
@@ -1153,7 +1193,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "BackwardsClock (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070601;
+				CURRENT_PROJECT_VERSION = 2022070602;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				ENABLE_PREVIEWS = YES;
@@ -1379,6 +1419,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9B3A7D472875DA6F00095441 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		9BAAAF232873F0790015CC65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -1390,6 +1438,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9B3A7D482875DA6F00095441 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B3A7D472875DA6F00095441 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
 		9BAAAF262873F0790015CC65 /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9BAAAF232873F0790015CC65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
