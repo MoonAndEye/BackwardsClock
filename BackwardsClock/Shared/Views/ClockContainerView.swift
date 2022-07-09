@@ -91,18 +91,6 @@ struct ClockContainerView: View {
             .aspectRatio(1, contentMode: .fit)
             
             Spacer()
-            
-            Button("Start timer") {
-                clockwork.startTimer()
-            }
-            
-            Spacer()
-            
-            Button("Stop timer") {
-                clockwork.stopTimer()
-            }
-            
-            Spacer()
         }
         .background(BCColor.clockContainerBackground)
     }

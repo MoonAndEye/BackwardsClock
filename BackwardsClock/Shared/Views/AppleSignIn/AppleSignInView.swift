@@ -7,6 +7,9 @@
 
 import SwiftUI
 import AuthenticationServices
+#if DEBUG
+import RevenueCat
+#endif
 
 struct AppleSignIn: View {
     
@@ -51,6 +54,9 @@ struct AppleSignIn: View {
                         .padding()
                 }
                 Spacer()
+                #if DEBUG
+                buildDebugButton()
+                #endif
             }
             
         }
@@ -86,6 +92,32 @@ struct AppleSignIn: View {
             }
         }
     }
+    
+    #if DEBUG
+    @ViewBuilder
+    private func buildDebugButton() -> some View {
+        
+        VStack {
+            Button("debug login") {
+                Router.shared.currentState = .backwardsClock
+            }
+            .padding()
+            Button("Test revenue") {
+                Purchases.shared.getOfferings { offering, error in
+                    
+                    if let error = error {
+                        Logger.log("revenu cata fetch offerings error: \(error), description: \(error.localizedDescription)")
+                        return
+                    }
+                    
+                    Logger.log(offering)
+                }
+            }
+            .padding()
+        }
+
+    }
+    #endif
 }
 
 struct AppleSignIn_Previews: PreviewProvider {
