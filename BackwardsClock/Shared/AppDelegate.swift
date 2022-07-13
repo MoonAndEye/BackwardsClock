@@ -16,6 +16,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         registerPushNotification(application)
         activateMessaging()
         activateRemoteConfig()
+        activateRevenuCat()
         return true
   }
 }
@@ -51,8 +52,12 @@ extension AppDelegate: UNUserNotificationCenterDelegate, MessagingDelegate {
         }
     }
     
-    func activateRemoteConfig() {
+    private func activateRemoteConfig() {
         RemoteConfigManager.shared.fetchRemoteConfig()
+    }
+    
+    private func activateRevenuCat() {
+        RevenueCatAdapter().activateRevenueCat()
     }
 }
 #endif

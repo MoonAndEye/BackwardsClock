@@ -110,7 +110,7 @@ struct AppleSignIn: View {
                         return
                     }
                     
-                    Logger.log(offering)
+                    Logger.log("Revenu Cat offering: \n\(String(describing: offering))")
                 }
             }
             .padding()

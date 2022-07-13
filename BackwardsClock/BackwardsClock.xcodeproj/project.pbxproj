@@ -98,6 +98,10 @@
 		9BA7975128703FE70064C526 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */; };
 		9BA93CA62879635800ED23AF /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA93CA52879635800ED23AF /* Secret.swift */; };
 		9BA93CA72879635800ED23AF /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA93CA52879635800ED23AF /* Secret.swift */; };
+		9BA93CAA287965E300ED23AF /* RevenueCatAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA93CA9287965E300ED23AF /* RevenueCatAdapter.swift */; };
+		9BA93CAB287965E300ED23AF /* RevenueCatAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA93CA9287965E300ED23AF /* RevenueCatAdapter.swift */; };
+		9BA93CAE28796E7800ED23AF /* BuyDeveloperCafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA93CAD28796E7800ED23AF /* BuyDeveloperCafe.swift */; };
+		9BA93CAF28796E7800ED23AF /* BuyDeveloperCafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA93CAD28796E7800ED23AF /* BuyDeveloperCafe.swift */; };
 		9BAAAF272873F0790015CC65 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9BAAAF262873F0790015CC65 /* FirebaseCrashlytics */; };
 		9BAAAF292873F0790015CC65 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 9BAAAF282873F0790015CC65 /* FirebaseMessaging */; };
 		9BAAAF2D287414A80015CC65 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 9BAAAF2C287414A80015CC65 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -210,6 +214,8 @@
 		9BA79748287039630064C526 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		9BA93CA52879635800ED23AF /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		9BA93CA9287965E300ED23AF /* RevenueCatAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCatAdapter.swift; sourceTree = "<group>"; };
+		9BA93CAD28796E7800ED23AF /* BuyDeveloperCafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyDeveloperCafe.swift; sourceTree = "<group>"; };
 		9BAAAF30287490150015CC65 /* BackwardsClock (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BackwardsClock (iOS).entitlements"; sourceTree = "<group>"; };
 		9BAAAF322874931D0015CC65 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		9BAAAF38287495A00015CC65 /* RemoteConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
@@ -371,6 +377,7 @@
 		9B3A7D4A2875DA7800095441 /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
+				9BA93CA8287965BF00ED23AF /* RevenueCat */,
 				9B3A7D4B2875DA8300095441 /* Keychain */,
 			);
 			path = Adapters;
@@ -509,6 +516,7 @@
 		9B42514528427032006D908C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9BA93CAC28796D7F00ED23AF /* BuyDeveloperCafe */,
 				9BAAAF3E2875C04E0015CC65 /* AppleSignIn */,
 				9B153C822856238400D19E74 /* AboutPage */,
 				9B153D8B285C467300D19E74 /* HandsColorTheme */,
@@ -567,6 +575,22 @@
 				9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		9BA93CA8287965BF00ED23AF /* RevenueCat */ = {
+			isa = PBXGroup;
+			children = (
+				9BA93CA9287965E300ED23AF /* RevenueCatAdapter.swift */,
+			);
+			path = RevenueCat;
+			sourceTree = "<group>";
+		};
+		9BA93CAC28796D7F00ED23AF /* BuyDeveloperCafe */ = {
+			isa = PBXGroup;
+			children = (
+				9BA93CAD28796E7800ED23AF /* BuyDeveloperCafe.swift */,
+			);
+			path = BuyDeveloperCafe;
 			sourceTree = "<group>";
 		};
 		9BAAAF312874930E0015CC65 /* Logger */ = {
@@ -879,6 +903,7 @@
 				9BA7975028703FE70064C526 /* UserDefaultsKeys.swift in Sources */,
 				9B153D8D285C468800D19E74 /* HandsColorThemeView.swift in Sources */,
 				9B4228E52843A09800DA29D2 /* AngleUtility.swift in Sources */,
+				9BA93CAE28796E7800ED23AF /* BuyDeveloperCafe.swift in Sources */,
 				9B18A1B62849D704001F1EA2 /* DayCalendarView.swift in Sources */,
 				9BA93CA62879635800ED23AF /* Secret.swift in Sources */,
 				9B31C2A7284A56EC00D5092F /* CalendarMetalRing.swift in Sources */,
@@ -892,6 +917,7 @@
 				9B4228DA28436ADA00DA29D2 /* Clockwork.swift in Sources */,
 				9B18A1B92849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
 				9B31C2D3284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */,
+				9BA93CAA287965E300ED23AF /* RevenueCatAdapter.swift in Sources */,
 				9BB334AC2873BBA1007C4A6E /* AnalyticsManager.swift in Sources */,
 				9BAAAF442875C3170015CC65 /* AppleAuthManager.swift in Sources */,
 				9B4251472842705A006D908C /* ClockContainerView.swift in Sources */,
@@ -920,9 +946,11 @@
 				9B6DD6F0286211E100C86EF8 /* ShipQuoteView.swift in Sources */,
 				9B18A1BD2849E139001F1EA2 /* DrawArc.swift in Sources */,
 				9BAAAF452875C3170015CC65 /* AppleAuthManager.swift in Sources */,
+				9BA93CAF28796E7800ED23AF /* BuyDeveloperCafe.swift in Sources */,
 				9B4228D72843691400DA29D2 /* HourHandView.swift in Sources */,
 				9B31C2BA284DC43300D5092F /* BCWebView.swift in Sources */,
 				9BAAAF412875C0660015CC65 /* AppleSignInView.swift in Sources */,
+				9BA93CAB287965E300ED23AF /* RevenueCatAdapter.swift in Sources */,
 				9B42514F28431997006D908C /* BCColor.swift in Sources */,
 				9BA7975128703FE70064C526 /* UserDefaultsKeys.swift in Sources */,
 				9B153D8E285C468800D19E74 /* HandsColorThemeView.swift in Sources */,
@@ -997,7 +1025,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070901;
+				CURRENT_PROJECT_VERSION = 2022071301;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CounterClockQuote/Info.plist;
@@ -1026,7 +1054,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070901;
+				CURRENT_PROJECT_VERSION = 2022071301;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CounterClockQuote/Info.plist;
@@ -1169,7 +1197,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "BackwardsClock (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070901;
+				CURRENT_PROJECT_VERSION = 2022071301;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				ENABLE_PREVIEWS = YES;
@@ -1207,7 +1235,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "BackwardsClock (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070901;
+				CURRENT_PROJECT_VERSION = 2022071301;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				ENABLE_PREVIEWS = YES;
