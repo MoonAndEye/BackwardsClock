@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseMessaging
+import RevenueCat
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication,
@@ -16,6 +17,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         registerPushNotification(application)
         activateMessaging()
         activateRemoteConfig()
+        activateRevenueCat()
+        setRevenueCatDelegate()
         return true
   }
 }
@@ -51,8 +54,22 @@ extension AppDelegate: UNUserNotificationCenterDelegate, MessagingDelegate {
         }
     }
     
-    func activateRemoteConfig() {
+    private func activateRemoteConfig() {
         RemoteConfigManager.shared.fetchRemoteConfig()
+    }
+    
+    private func activateRevenueCat() {
+        RevenueCatAdapter.shared.activateRevenueCat()
+    }
+}
+
+extension AppDelegate: PurchasesDelegate {
+    private func setRevenueCatDelegate() {
+        Purchases.shared.delegate = self
+    }
+    
+    func purchases(_ purchases: Purchases, receivedUpdated customerInfo: CustomerInfo) {
+        RevenueCatAdapter.shared.update(customerInfo: customerInfo)
     }
 }
 #endif

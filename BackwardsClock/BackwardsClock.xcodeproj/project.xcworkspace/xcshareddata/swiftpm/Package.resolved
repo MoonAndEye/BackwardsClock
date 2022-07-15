@@ -23,9 +23,9 @@
         "package": "Firebase",
         "repositoryURL": "https://github.com/firebase/firebase-ios-sdk",
         "state": {
-          "branch": "master",
-          "revision": "3862a56dd3735c84d746892648781f36984ff2ed",
-          "version": null
+          "branch": null,
+          "revision": "e8828e8efc813817b3c2cbfde8e965f7a7a26641",
+          "version": "9.2.0"
         }
       },
       {
@@ -77,9 +77,9 @@
         "package": "KeychainAccess",
         "repositoryURL": "https://github.com/kishikawakatsumi/KeychainAccess.git",
         "state": {
-          "branch": "master",
-          "revision": "6299daec1d74be12164fec090faf9ed14d0da9d6",
-          "version": null
+          "branch": null,
+          "revision": "84e546727d66f1adc5439debad16270d0fdd04e7",
+          "version": "4.2.2"
         }
       },
       {
@@ -107,6 +107,15 @@
           "branch": null,
           "revision": "3e4e743631e86c8c70dbc6efdc7beaa6e90fd3bb",
           "version": "2.1.1"
+        }
+      },
+      {
+        "package": "RevenueCat",
+        "repositoryURL": "https://github.com/RevenueCat/purchases-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "bb8687d51190e42cd48e6cdd8039392f208601c3",
+          "version": "4.7.0"
         }
       },
       {

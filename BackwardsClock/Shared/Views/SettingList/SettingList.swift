@@ -60,6 +60,11 @@ struct SettingList: View {
         NavigationView {
             
                 List {
+                    
+                    NavigationLink("Buy Developer a Cafe") {
+                        BuyDeveloperCafe()
+                    }
+                    
                     Section("About") {
                         NavigationLink("About This App") {
                             AboutPage()
@@ -67,8 +72,12 @@ struct SettingList: View {
                     }
                     
                     Section("Style") {
-                        NavigationLink("Hands Color Adjust") {
+                        NavigationLink("Hands Color Settings") {
                             HandsColorThemeView()
+                        }
+                        
+                        NavigationLink("Clock Dial Settings") {
+                            // TODO: - 這個不一定要過場，可以直接在右邊設定一個 color pad 就行了
                         }
                     }
                 }

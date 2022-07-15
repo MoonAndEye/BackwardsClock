@@ -37,6 +37,8 @@
 		9B3A7D492875DA6F00095441 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 9B3A7D482875DA6F00095441 /* KeychainAccess */; };
 		9B3A7D4D2875DA9000095441 /* KeychainAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3A7D4C2875DA9000095441 /* KeychainAdapter.swift */; };
 		9B3A7D4E2875DA9000095441 /* KeychainAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3A7D4C2875DA9000095441 /* KeychainAdapter.swift */; };
+		9B3A7D51287654D300095441 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 9B3A7D50287654D300095441 /* RevenueCat */; };
+		9B3A7D542876A72000095441 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3A7D532876A72000095441 /* StoreKit.framework */; };
 		9B3C34FC287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */; };
 		9B3C34FD287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */; };
 		9B3C35052871E47F009D0DB7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3C34E8287142CF009D0DB7 /* WidgetKit.framework */; platformFilter = maccatalyst; };
@@ -94,6 +96,12 @@
 		9BA7974A287039630064C526 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA79748287039630064C526 /* ThemeManager.swift */; };
 		9BA7975028703FE70064C526 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */; };
 		9BA7975128703FE70064C526 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */; };
+		9BA93CA62879635800ED23AF /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA93CA52879635800ED23AF /* Secret.swift */; };
+		9BA93CA72879635800ED23AF /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA93CA52879635800ED23AF /* Secret.swift */; };
+		9BA93CAA287965E300ED23AF /* RevenueCatAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA93CA9287965E300ED23AF /* RevenueCatAdapter.swift */; };
+		9BA93CAB287965E300ED23AF /* RevenueCatAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA93CA9287965E300ED23AF /* RevenueCatAdapter.swift */; };
+		9BA93CAE28796E7800ED23AF /* BuyDeveloperCafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA93CAD28796E7800ED23AF /* BuyDeveloperCafe.swift */; };
+		9BA93CAF28796E7800ED23AF /* BuyDeveloperCafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA93CAD28796E7800ED23AF /* BuyDeveloperCafe.swift */; };
 		9BAAAF272873F0790015CC65 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9BAAAF262873F0790015CC65 /* FirebaseCrashlytics */; };
 		9BAAAF292873F0790015CC65 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 9BAAAF282873F0790015CC65 /* FirebaseMessaging */; };
 		9BAAAF2D287414A80015CC65 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 9BAAAF2C287414A80015CC65 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -112,6 +120,8 @@
 		9BB3349C287343B2007C4A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */; };
 		9BB334A128734629007C4A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB334A028734629007C4A6E /* AppDelegate.swift */; };
 		9BB334AC2873BBA1007C4A6E /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB334AB2873BBA1007C4A6E /* AnalyticsManager.swift */; };
+		9BB6E46E2881624A0097B6CD /* VIPBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6E46D2881624A0097B6CD /* VIPBannerView.swift */; };
+		9BB6E46F2881624A0097B6CD /* VIPBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6E46D2881624A0097B6CD /* VIPBannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +178,7 @@
 		9B31C2CE284E423A00D5092F /* SettingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingListViewModel.swift; sourceTree = "<group>"; };
 		9B31C2D2284E47DB00D5092F /* DismissButtonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButtonBuilder.swift; sourceTree = "<group>"; };
 		9B3A7D4C2875DA9000095441 /* KeychainAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAdapter.swift; sourceTree = "<group>"; };
+		9B3A7D532876A72000095441 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
 		9B3C34E8287142CF009D0DB7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		9B3C34EA287142CF009D0DB7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		9B3C34FB287145BC009D0DB7 /* CounterClockwiseQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterClockwiseQuote.swift; sourceTree = "<group>"; };
@@ -204,6 +215,9 @@
 		9B6DD6EE286211E100C86EF8 /* ShipQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipQuoteView.swift; sourceTree = "<group>"; };
 		9BA79748287039630064C526 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		9BA7974F28703FE70064C526 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		9BA93CA52879635800ED23AF /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		9BA93CA9287965E300ED23AF /* RevenueCatAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCatAdapter.swift; sourceTree = "<group>"; };
+		9BA93CAD28796E7800ED23AF /* BuyDeveloperCafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyDeveloperCafe.swift; sourceTree = "<group>"; };
 		9BAAAF30287490150015CC65 /* BackwardsClock (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BackwardsClock (iOS).entitlements"; sourceTree = "<group>"; };
 		9BAAAF322874931D0015CC65 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		9BAAAF38287495A00015CC65 /* RemoteConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
@@ -213,6 +227,7 @@
 		9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9BB334A028734629007C4A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB334AB2873BBA1007C4A6E /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		9BB6E46D2881624A0097B6CD /* VIPBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPBannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,7 +245,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BAAAF292873F0790015CC65 /* FirebaseMessaging in Frameworks */,
+				9B3A7D542876A72000095441 /* StoreKit.framework in Frameworks */,
 				9BAAAF272873F0790015CC65 /* FirebaseCrashlytics in Frameworks */,
+				9B3A7D51287654D300095441 /* RevenueCat in Frameworks */,
 				9BAAAF2D287414A80015CC65 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				9BAAAF36287495880015CC65 /* FirebaseRemoteConfig in Frameworks */,
 				9B3A7D492875DA6F00095441 /* KeychainAccess in Frameworks */,
@@ -363,6 +380,7 @@
 		9B3A7D4A2875DA7800095441 /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
+				9BA93CA8287965BF00ED23AF /* RevenueCat */,
 				9B3A7D4B2875DA8300095441 /* Keychain */,
 			);
 			path = Adapters;
@@ -379,6 +397,7 @@
 		9B3C34E7287142CF009D0DB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B3A7D532876A72000095441 /* StoreKit.framework */,
 				9B3C34E8287142CF009D0DB7 /* WidgetKit.framework */,
 				9B3C34EA287142CF009D0DB7 /* SwiftUI.framework */,
 			);
@@ -437,6 +456,7 @@
 		9B42510828426E5C006D908C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9BA93CA52879635800ED23AF /* Secret.swift */,
 				9BAAAF3B287590C50015CC65 /* remote_config_defaults.plist */,
 				9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */,
 				9BB334A028734629007C4A6E /* AppDelegate.swift */,
@@ -499,6 +519,8 @@
 		9B42514528427032006D908C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9BB6E46C288162340097B6CD /* VIPBanner */,
+				9BA93CAC28796D7F00ED23AF /* BuyDeveloperCafe */,
 				9BAAAF3E2875C04E0015CC65 /* AppleSignIn */,
 				9B153C822856238400D19E74 /* AboutPage */,
 				9B153D8B285C467300D19E74 /* HandsColorTheme */,
@@ -559,6 +581,22 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		9BA93CA8287965BF00ED23AF /* RevenueCat */ = {
+			isa = PBXGroup;
+			children = (
+				9BA93CA9287965E300ED23AF /* RevenueCatAdapter.swift */,
+			);
+			path = RevenueCat;
+			sourceTree = "<group>";
+		};
+		9BA93CAC28796D7F00ED23AF /* BuyDeveloperCafe */ = {
+			isa = PBXGroup;
+			children = (
+				9BA93CAD28796E7800ED23AF /* BuyDeveloperCafe.swift */,
+			);
+			path = BuyDeveloperCafe;
+			sourceTree = "<group>";
+		};
 		9BAAAF312874930E0015CC65 /* Logger */ = {
 			isa = PBXGroup;
 			children = (
@@ -607,6 +645,14 @@
 			name = Analytics;
 			sourceTree = "<group>";
 		};
+		9BB6E46C288162340097B6CD /* VIPBanner */ = {
+			isa = PBXGroup;
+			children = (
+				9BB6E46D2881624A0097B6CD /* VIPBannerView.swift */,
+			);
+			path = VIPBanner;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -649,6 +695,7 @@
 				9BAAAF2C287414A80015CC65 /* FirebaseAnalyticsWithoutAdIdSupport */,
 				9BAAAF35287495880015CC65 /* FirebaseRemoteConfig */,
 				9B3A7D482875DA6F00095441 /* KeychainAccess */,
+				9B3A7D50287654D300095441 /* RevenueCat */,
 			);
 			productName = "BackwardsClock (iOS)";
 			productReference = 9B42511028426E5D006D908C /* BackwardsClock.app */;
@@ -748,6 +795,7 @@
 			packageReferences = (
 				9BAAAF232873F0790015CC65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				9B3A7D472875DA6F00095441 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				9B3A7D4F287654D200095441 /* XCRemoteSwiftPackageReference "purchases-ios" */,
 			);
 			productRefGroup = 9B42511128426E5D006D908C /* Products */;
 			projectDirPath = "";
@@ -852,6 +900,7 @@
 				9B4228DE2843901300DA29D2 /* DateUtility.swift in Sources */,
 				9B4251542843245A006D908C /* HandShape.swift in Sources */,
 				9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */,
+				9BB6E46E2881624A0097B6CD /* VIPBannerView.swift in Sources */,
 				9BAAAF39287495A00015CC65 /* RemoteConfigManager.swift in Sources */,
 				9B31C2CF284E423A00D5092F /* SettingListViewModel.swift in Sources */,
 				9BAAAF402875C0660015CC65 /* AppleSignInView.swift in Sources */,
@@ -867,7 +916,9 @@
 				9BA7975028703FE70064C526 /* UserDefaultsKeys.swift in Sources */,
 				9B153D8D285C468800D19E74 /* HandsColorThemeView.swift in Sources */,
 				9B4228E52843A09800DA29D2 /* AngleUtility.swift in Sources */,
+				9BA93CAE28796E7800ED23AF /* BuyDeveloperCafe.swift in Sources */,
 				9B18A1B62849D704001F1EA2 /* DayCalendarView.swift in Sources */,
+				9BA93CA62879635800ED23AF /* Secret.swift in Sources */,
 				9B31C2A7284A56EC00D5092F /* CalendarMetalRing.swift in Sources */,
 				9B42513128426E5D006D908C /* BackwardsClockApp.swift in Sources */,
 				9B42514A28431768006D908C /* SecondHandView.swift in Sources */,
@@ -879,6 +930,7 @@
 				9B4228DA28436ADA00DA29D2 /* Clockwork.swift in Sources */,
 				9B18A1B92849DA0A001F1EA2 /* CalendarUpperBar.swift in Sources */,
 				9B31C2D3284E47DB00D5092F /* DismissButtonBuilder.swift in Sources */,
+				9BA93CAA287965E300ED23AF /* RevenueCatAdapter.swift in Sources */,
 				9BB334AC2873BBA1007C4A6E /* AnalyticsManager.swift in Sources */,
 				9BAAAF442875C3170015CC65 /* AppleAuthManager.swift in Sources */,
 				9B4251472842705A006D908C /* ClockContainerView.swift in Sources */,
@@ -902,13 +954,16 @@
 				9B42515828433C29006D908C /* ClockDialView.swift in Sources */,
 				9B3C34FD287145BC009D0DB7 /* CounterClockwiseQuote.swift in Sources */,
 				9B31C2CB284E407400D5092F /* SettingList.swift in Sources */,
+				9BA93CA72879635800ED23AF /* Secret.swift in Sources */,
 				9BAAAF3A287495A00015CC65 /* RemoteConfigManager.swift in Sources */,
 				9B6DD6F0286211E100C86EF8 /* ShipQuoteView.swift in Sources */,
 				9B18A1BD2849E139001F1EA2 /* DrawArc.swift in Sources */,
 				9BAAAF452875C3170015CC65 /* AppleAuthManager.swift in Sources */,
+				9BA93CAF28796E7800ED23AF /* BuyDeveloperCafe.swift in Sources */,
 				9B4228D72843691400DA29D2 /* HourHandView.swift in Sources */,
 				9B31C2BA284DC43300D5092F /* BCWebView.swift in Sources */,
 				9BAAAF412875C0660015CC65 /* AppleSignInView.swift in Sources */,
+				9BA93CAB287965E300ED23AF /* RevenueCatAdapter.swift in Sources */,
 				9B42514F28431997006D908C /* BCColor.swift in Sources */,
 				9BA7975128703FE70064C526 /* UserDefaultsKeys.swift in Sources */,
 				9B153D8E285C468800D19E74 /* HandsColorThemeView.swift in Sources */,
@@ -930,6 +985,7 @@
 				9B31C2B0284C645500D5092F /* LaunchQuoteView.swift in Sources */,
 				9B42515E2843438B006D908C /* ClockTicksView.swift in Sources */,
 				9BA7974A287039630064C526 /* ThemeManager.swift in Sources */,
+				9BB6E46F2881624A0097B6CD /* VIPBannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -983,7 +1039,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070602;
+				CURRENT_PROJECT_VERSION = 2022071501;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CounterClockQuote/Info.plist;
@@ -1012,7 +1068,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070602;
+				CURRENT_PROJECT_VERSION = 2022071501;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CounterClockQuote/Info.plist;
@@ -1155,7 +1211,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "BackwardsClock (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070602;
+				CURRENT_PROJECT_VERSION = 2022071501;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				ENABLE_PREVIEWS = YES;
@@ -1193,7 +1249,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "BackwardsClock (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022070602;
+				CURRENT_PROJECT_VERSION = 2022071501;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				ENABLE_PREVIEWS = YES;
@@ -1423,16 +1479,24 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.2;
+			};
+		};
+		9B3A7D4F287654D200095441 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
 			};
 		};
 		9BAAAF232873F0790015CC65 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1442,6 +1506,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9B3A7D472875DA6F00095441 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
 			productName = KeychainAccess;
+		};
+		9B3A7D50287654D300095441 /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B3A7D4F287654D200095441 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
 		};
 		9BAAAF262873F0790015CC65 /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;

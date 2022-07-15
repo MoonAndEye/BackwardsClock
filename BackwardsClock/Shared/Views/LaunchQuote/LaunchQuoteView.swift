@@ -10,21 +10,11 @@ import SwiftUI
 struct LaunchQuoteView: View {
     
     var body: some View {
+        
         CounterClockwiseQuote()
             .onAppear {
-                switchToMainOrAppleSignIn()
-            }
-    }
-    
-    private func switchToMainOrAppleSignIn() {
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
-            if RemoteConfigManager.shared.appStatus == .underReviewing {
                 switchToAppleSignInView()
-            } else {
-                switchToMainView()
             }
-        }
     }
     
     private func switchToAppleSignInView() {
