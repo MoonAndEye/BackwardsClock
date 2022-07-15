@@ -9,17 +9,62 @@ import Foundation
 import Combine
 import RevenueCat
 
+extension RevenueCatAdapter {
+    static var buyDeveloperACafeKey: String {
+        "buy_developer_a_cafe"
+    }
+}
+
 class RevenueCatAdapter: ObservableObject {
+    
+    static let shared = RevenueCatAdapter()
+    private init() {}
     
     private(set) var fetchedOfferings: Offerings?
     
     @Published var finishedFetch = false
+    
+    @Published var isVIP = false {
+        didSet {
+            Logger.log("RevenuCat isVIP state changed: \(self.isVIP)")
+        }
+    }
     
     func activateRevenueCat() {
         #if DEBUG
         Purchases.logLevel = .debug
         #endif
         Purchases.configure(withAPIKey: revenuCatAPIKey)
+        getCustomerInfo() // activate 後就去拿 customer info
+    }
+}
+
+extension RevenueCatAdapter {
+    
+    func getCustomerInfo() {
+        
+        Purchases.shared.getCustomerInfo { [weak self] customerInfo, error in
+            if let error = error {
+                Logger.log("RevenueCat customer info error: \(error), description: \(error.localizedDescription)")
+                return
+            }
+            
+            if let customerInfo = customerInfo {
+                self?.update(customerInfo: customerInfo)
+            }
+        }
+    }
+    
+    func update(customerInfo: CustomerInfo) {
+        Logger.log("RevenueCat customer info: \(String(describing: customerInfo))")
+        
+        if customerInfo.entitlements.all[RevenueCatAdapter.buyDeveloperACafeKey]?.isActive == true {
+            isVIP = true
+            Logger.log("RevenueCat is activate: 已確認購買")
+        } else {
+            isVIP = false
+            Logger.log("RevenueCat : 使用者不是 VIP")
+        }
     }
     
     func fetchOfferings() {
@@ -58,9 +103,12 @@ class RevenueCatAdapter: ObservableObject {
     }
     
     func purchase(package: Package) {
-        Purchases.shared.purchase(package: package) { transaction, customerInfo, error, userCancelled in
+        Purchases.shared.purchase(package: package) { [weak self] transaction, customerInfo, error, userCancelled in
             Logger.log("completed purchase process, trans: \(String(describing: transaction)), info: \(String(describing: customerInfo)), error: \(String(describing: error)), cancelled: \(userCancelled)")
-            // TODO: - 完成購買
+            
+            if let customerInfo = customerInfo {
+                self?.update(customerInfo: customerInfo)
+            }
         }
     }
 }

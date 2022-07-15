@@ -52,3 +52,9 @@ extension BCColor {
         return Color(red: 61 / 255, green: 50 / 255, blue: 26 / 255)
     }
 }
+// MARK: - Settings page relate
+extension BCColor {
+    static var cupColor: Color {
+        Color(.sRGB, red: 196 / 255, green: 62 / 255, blue: 55 / 255, opacity: 1.0)
+    }
+}

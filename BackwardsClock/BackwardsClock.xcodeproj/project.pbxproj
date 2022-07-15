@@ -120,6 +120,8 @@
 		9BB3349C287343B2007C4A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */; };
 		9BB334A128734629007C4A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB334A028734629007C4A6E /* AppDelegate.swift */; };
 		9BB334AC2873BBA1007C4A6E /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB334AB2873BBA1007C4A6E /* AnalyticsManager.swift */; };
+		9BB6E46E2881624A0097B6CD /* VIPBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6E46D2881624A0097B6CD /* VIPBannerView.swift */; };
+		9BB6E46F2881624A0097B6CD /* VIPBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6E46D2881624A0097B6CD /* VIPBannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +227,7 @@
 		9BB3349A287343B2007C4A6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9BB334A028734629007C4A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB334AB2873BBA1007C4A6E /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		9BB6E46D2881624A0097B6CD /* VIPBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPBannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,6 +519,7 @@
 		9B42514528427032006D908C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9BB6E46C288162340097B6CD /* VIPBanner */,
 				9BA93CAC28796D7F00ED23AF /* BuyDeveloperCafe */,
 				9BAAAF3E2875C04E0015CC65 /* AppleSignIn */,
 				9B153C822856238400D19E74 /* AboutPage */,
@@ -639,6 +643,14 @@
 				9BB334AB2873BBA1007C4A6E /* AnalyticsManager.swift */,
 			);
 			name = Analytics;
+			sourceTree = "<group>";
+		};
+		9BB6E46C288162340097B6CD /* VIPBanner */ = {
+			isa = PBXGroup;
+			children = (
+				9BB6E46D2881624A0097B6CD /* VIPBannerView.swift */,
+			);
+			path = VIPBanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -888,6 +900,7 @@
 				9B4228DE2843901300DA29D2 /* DateUtility.swift in Sources */,
 				9B4251542843245A006D908C /* HandShape.swift in Sources */,
 				9B4228D0284368D000DA29D2 /* MinuteHandView.swift in Sources */,
+				9BB6E46E2881624A0097B6CD /* VIPBannerView.swift in Sources */,
 				9BAAAF39287495A00015CC65 /* RemoteConfigManager.swift in Sources */,
 				9B31C2CF284E423A00D5092F /* SettingListViewModel.swift in Sources */,
 				9BAAAF402875C0660015CC65 /* AppleSignInView.swift in Sources */,
@@ -972,6 +985,7 @@
 				9B31C2B0284C645500D5092F /* LaunchQuoteView.swift in Sources */,
 				9B42515E2843438B006D908C /* ClockTicksView.swift in Sources */,
 				9BA7974A287039630064C526 /* ThemeManager.swift in Sources */,
+				9BB6E46F2881624A0097B6CD /* VIPBannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1025,7 +1039,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022071301;
+				CURRENT_PROJECT_VERSION = 2022071501;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CounterClockQuote/Info.plist;
@@ -1054,7 +1068,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022071301;
+				CURRENT_PROJECT_VERSION = 2022071501;
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CounterClockQuote/Info.plist;
@@ -1197,7 +1211,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "BackwardsClock (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022071301;
+				CURRENT_PROJECT_VERSION = 2022071501;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				ENABLE_PREVIEWS = YES;
@@ -1235,7 +1249,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "BackwardsClock (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2022071301;
+				CURRENT_PROJECT_VERSION = 2022071501;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = PJPD95M4QP;
 				ENABLE_PREVIEWS = YES;

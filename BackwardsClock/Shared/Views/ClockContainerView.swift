@@ -20,6 +20,8 @@ struct ClockContainerView: View {
     
     @State private var isShowingSettingSheet = false
     
+    @StateObject private var revenueCatAdapter = RevenueCatAdapter.shared
+    
     private var graceWikiPageURL: String {
         "https://en.wikipedia.org/wiki/Grace_Hopper"
     }
@@ -76,8 +78,13 @@ struct ClockContainerView: View {
             .font(.system(size: 50))
             .padding([.leading, .trailing])
             
+            if revenueCatAdapter.isVIP {
+                VIPBannerView()
+                    .padding(.top, 8)
+            }
+            
             DayCalendarView(month: clockwork.month, day: clockwork.day)
-                .padding(.bottom, 40)
+                .padding(.bottom, 30)
             
             ZStack {
                 ClockDialView()
@@ -87,6 +94,8 @@ struct ClockContainerView: View {
                     .rotationEffect(Angle(radians: clockwork.minuteAngle))
                 SecondHandView()
                     .rotationEffect(Angle(radians: clockwork.secondAngle))
+                Circle()
+                    .frame(width: 20, height: 20)
             }
             .aspectRatio(1, contentMode: .fit)
             
